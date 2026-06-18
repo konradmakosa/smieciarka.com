@@ -119,44 +119,37 @@ def generate_ical(address_path: str):
     Generuje plik .ics dla podanego adresu.
     Przykład: /ical/platnicza-65.ics
     """
-    # Odtwórz adres z URL (zamień myślniki na spacje)
-    address_normalized = address_path.replace("-", " ").replace("_", " ")
-    
-    # Zamień z powrotem na polskie znaki (API Warszawy wymaga oryginału!)
-    # np. "platnicza" -> "Płatnicza"
-    def denormalize(text):
-        # Mapowanie odwrotne - zamień "latynkę" na polskie znaki
-        # Najpierw zróbmy capitalize (Pierwsza litera duża)
-        text = text.title()
-        # Zamiana specyficznych liter
-        denorm_map = {
-            'a': 'ą', 'c': 'ć', 'e': 'ę', 'l': 'ł', 'n': 'ń',
-            'o': 'ó', 's': 'ś', 'z': 'ż', 'x': 'ź',
-            'A': 'Ą', 'C': 'Ć', 'E': 'Ę', 'L': 'Ł', 'N': 'Ń',
-            'O': 'Ó', 'S': 'Ś', 'Z': 'Ż', 'X': 'Ź'
-        }
-        # Zamiana "l" na "ł" po spółgłoskach (najczęstszy przypadek)
-        result = []
-        for i, char in enumerate(text):
-            # Zamieniaj tylko jeśli kontekst sugeruje polski znak
-            if char == 'l' and i > 0 and text[i-1].lower() in 'ptkbdgmnrswz':
-                result.append('ł')
-            elif char == 'L' and i > 0 and text[i-1].lower() in 'ptkbdgmnrswz':
-                result.append('Ł')
-            else:
-                result.append(char)
-        return ''.join(result)
-    
-    address_original = denormalize(address_normalized)
-    
+    import traceback
     try:
+        # Odtwórz adres z URL (zamień myślniki na spacje)
+        address_normalized = address_path.replace("-", " ").replace("_", " ")
+        
+        # Zamień z powrotem na polskie znaki (API Warszawy wymaga oryginału!)
+        def denormalize(text):
+            text = text.title()
+            result = []
+            for i, char in enumerate(text):
+                if char == 'l' and i > 0 and text[i-1].lower() in 'ptkbdgmnrswz':
+                    result.append('ł')
+                elif char == 'L' and i > 0 and text[i-1].lower() in 'ptkbdgmnrswz':
+                    result.append('Ł')
+                else:
+                    result.append(char)
+            return ''.join(result)
+        
+        address_original = denormalize(address_normalized)
+        
         # Pobierz bezpośrednio z API Warszawy
         scraper = WarsawWasteScraper(street_address=address_original)
         collections = scraper.fetch_schedule()
+        
     except ValueError as e:
         raise HTTPException(status_code=404, detail=f"Adres '{address_original}' nie znaleziony: {str(e)}")
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Błąd API: {str(e)}")
+        # Log pełny traceback
+        error_detail = f"Błąd: {str(e)}\n{traceback.format_exc()}"
+        print(error_detail[:500])  # Ogranicz do 500 znaków
+        raise HTTPException(status_code=500, detail=f"Błąd serwera: {str(e)}")
     
     if not collections:
         raise HTTPException(status_code=404, detail="Brak danych w harmonogramie dla tego adresu")
