@@ -69,10 +69,13 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
     Przykład: /api/search?q=platnicza+65
     """
     try:
+        print(f"[SEARCH] Start: q='{q}'")
         scraper = WarsawWasteScraper(street_address=q)
         
         # Pobierz od razu cały harmonogram (przy okazji sprawdzamy czy adres istnieje)
+        print(f"[SEARCH] Fetching schedule...")
         collections = scraper.fetch_schedule()
+        print(f"[SEARCH] Found {len(collections)} collections")
         
         # Normalizuj PL znaki dla URL (czytelniejszy link)
         def normalize_for_url(text):
@@ -85,11 +88,14 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
             return ''.join(polish_map.get(c, c) for c in text)
         
         url_path = normalize_for_url(q).replace(' ', '-').lower()
+        print(f"[SEARCH] url_path='{url_path}'")
         
         # Zapisz w cache pod znormalizowanym kluczem (żeby /ical/ mogło odczytać bez polskich znaków)
         cache_key = f"schedule_{normalize_for_url(q).lower()}"
+        print(f"[SEARCH] cache_key='{cache_key}'")
         cache_data = [{'date': c.date.isoformat(), 'waste_type': c.waste_type} for c in collections]
         save_to_cache(cache_key, cache_data)
+        print(f"[SEARCH] Saved to cache. Cache keys now: {list(_memory_cache.keys())}")
         
         return {
             "results": [{
@@ -111,9 +117,12 @@ def generate_ical(address_path: str):
     """
     # Odtwórz adres z URL (zamień myślniki na spacje, lowercase)
     address = address_path.replace("-", " ").replace("_", " ").lower()
+    print(f"[ICAL] address_path='{address_path}' -> address='{address}'")
     
     # Sprawdź cache
     cache_key = f"schedule_{address}"
+    print(f"[ICAL] Looking for cache_key='{cache_key}'")
+    print(f"[ICAL] Available keys: {list(_memory_cache.keys())}")
     cached_data = get_from_cache(cache_key)
     
     if cached_data:
