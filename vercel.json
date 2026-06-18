@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/tlo_smieciarka.jpg",
-      "dest": "/tlo_smieciarka.jpg"
+      "src": "/(.*\\.(jpg|jpeg|png|gif|ico|svg))",
+      "dest": "/public/$1"
     },
     {
       "src": "/ical/(.*)",
