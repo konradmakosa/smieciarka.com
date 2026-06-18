@@ -137,8 +137,8 @@ def generate_ical(address_path: str):
     Generuje plik .ics dla podanego adresu.
     Przykład: /ical/platnicza-65.ics lub /ical/ulica-platnicza-65.ics
     """
-    # Odtwórz adres z URL (zamień myślniki na spacje)
-    address = address_path.replace("-", " ").replace("_", " ")
+    # Odtwórz adres z URL (zamień myślniki na spacje, lowercase)
+    address = address_path.replace("-", " ").replace("_", " ").lower()
     
     # Sprawdź cache
     cache_key = f"schedule_{address}"
