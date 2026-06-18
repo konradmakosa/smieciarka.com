@@ -169,7 +169,7 @@ def generate_ical(address_path: str):
     # Zmień nazwę kalendarza w nagłówku
     ics_content = ics_content.replace(
         "X-WR-CALNAME:Harmonogram Wywozu Odpadów",
-        f"X-WR-CALNAME:Wywóz śmieci - {address.title()}"
+        f"X-WR-CALNAME:Wywóz śmieci - {address_original.title()}"
     )
     
     # Dodaj refresh-interval (ważne dla Google Calendar)
@@ -178,7 +178,7 @@ def generate_ical(address_path: str):
         f"X-WR-TIMEZONE:Europe/Warsaw\nX-PUBLISHED-TTL:PT{CACHE_TTL_HOURS}H"
     )
     
-    safe_filename = address.replace(" ", "_").replace("/", "_")
+    safe_filename = address_original.replace(" ", "_").replace("/", "_")
     
     return Response(
         content=ics_content,
