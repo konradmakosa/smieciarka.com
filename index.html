@@ -11,13 +11,44 @@
         .bg-smieciarka {
             background-image: url('https://raw.githubusercontent.com/konradmakosa/smieciarka.com/main/public/tlo_smieciarka_m.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: 30% center;
             background-attachment: fixed;
+        }
+        /* Desktop: content po prawej stronie (nad białym bokiem śmieciarki) */
+        @media (min-width: 1024px) {
+            .content-container {
+                max-width: 420px;
+                margin-left: auto;
+                margin-right: 8%;
+                padding-top: 10vh;
+            }
+        }
+        /* Tablet: mniejszy margines */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .content-container {
+                max-width: 480px;
+                margin-left: auto;
+                margin-right: 4%;
+            }
+        }
+        /* Mobile: wyśrodkowane */
+        @media (max-width: 767px) {
+            .content-container {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 1rem;
+            }
+        }
+        /* Glassmorphism dla lepszej czytelności */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
     </style>
 </head>
-<body class="bg-smieciarka min-h-screen">
-    <div class="max-w-2xl mx-auto px-4 py-16">
+<body class="bg-smieciarka min-h-screen flex items-center justify-center lg:justify-end lg:pr-16">
+    <div class="content-container w-full px-4 py-8">
         
         <!-- Logo / Header -->
         <div class="text-center mb-12">
@@ -28,7 +59,7 @@
         </div>
 
         <!-- Wyszukiwarka -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
+        <div class="glass-panel rounded-2xl shadow-xl p-6 mb-6 border border-white/20">
             <label class="block text-sm font-medium text-gray-700 mb-2">Wpisz swój adres</label>
             <div class="flex gap-2">
                 <input 
