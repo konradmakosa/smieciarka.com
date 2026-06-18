@@ -15,57 +15,29 @@ from ics_generator import ICSGenerator
 
 app = FastAPI(title="Śmieciarka.com", description="Harmonogram wywozu odpadów dla Warszawy")
 
-CACHE_DIR = "/tmp/smieciarka_cache"
+# In-memory cache (działa na Vercel, resetuje się przy cold start)
+_memory_cache = {}
 CACHE_TTL_HOURS = 168  # 7 dni
-
-# Upewnij się, że katalog cache istnieje (tylko writable /tmp w Vercel)
-try:
-    os.makedirs(CACHE_DIR, exist_ok=True)
-except:
-    CACHE_DIR = None
-
-
-def get_cache_path(key: str) -> str:
-    """Generuje ścieżkę do pliku cache na podstawie klucza"""
-    safe_key = hashlib.md5(key.encode()).hexdigest()
-    return os.path.join(CACHE_DIR, f"{safe_key}.json")
-
 
 def get_from_cache(key: str) -> Optional[list]:
     """Pobiera dane z cache jeśli nie wygasły"""
-    if CACHE_DIR is None:
-        return None
-    cache_path = get_cache_path(key)
-    if not os.path.exists(cache_path):
+    if key not in _memory_cache:
         return None
     
-    try:
-        with open(cache_path, 'r', encoding='utf-8') as f:
-            cached = json.load(f)
-        
-        cached_time = datetime.fromisoformat(cached['cached_at'])
-        if datetime.now() - cached_time > timedelta(hours=CACHE_TTL_HOURS):
-            os.remove(cache_path)
-            return None
-        
-        return cached['data']
-    except Exception:
+    cached = _memory_cache[key]
+    cached_time = datetime.fromisoformat(cached['cached_at'])
+    if datetime.now() - cached_time > timedelta(hours=CACHE_TTL_HOURS):
+        del _memory_cache[key]
         return None
-
+    
+    return cached['data']
 
 def save_to_cache(key: str, data: list):
     """Zapisuje dane do cache"""
-    if CACHE_DIR is None:
-        return
-    cache_path = get_cache_path(key)
-    try:
-        with open(cache_path, 'w', encoding='utf-8') as f:
-            json.dump({
-                'cached_at': datetime.now().isoformat(),
-                'data': data
-            }, f, default=str)
-    except Exception:
-        pass
+    _memory_cache[key] = {
+        'cached_at': datetime.now().isoformat(),
+        'data': data
+    }
 
 
 @app.get("/", response_class=HTMLResponse)
