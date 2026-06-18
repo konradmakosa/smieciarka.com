@@ -84,7 +84,10 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
             }
             return ''.join(polish_map.get(c, c) for c in text)
         
-        url_path = normalize_for_url(q).replace(' ', '-').lower()
+        import urllib.parse
+        # Link z polskimi znakami (URL-encoded) - API Warszawy wymaga polskich znaków!
+        # np. "Płatnicza 65" -> "P%C5%82atnicza-65"
+        url_path = urllib.parse.quote(q.replace(' ', '-'))
         
         return {
             "results": [{
@@ -102,26 +105,18 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
 def generate_ical(address_path: str):
     """
     Generuje plik .ics dla podanego adresu.
-    Przykład: /ical/platnicza-65.ics
+    Przykład: /ical/P%C5%82atnicza-65.ics (Płatnicza-65)
     """
-    # Odtwórz adres z URL (zamień myślniki na spacje)
-    address_normalized = address_path.replace("-", " ").replace("_", " ")
-    
-    # Odwrotna normalizacja - zamień "latynkę" na polskie znaki
-    # np. "platnicza" -> "Płatnicza", "swietokrzyska" -> "Świętokrzyska"
-    def denormalize(text):
-        # Mapowanie odwrotne - próbujemy zamienić spowrotem
-        # To nie jest idealne, ale pokrywa większość nazw ulic w Warszawie
-        return text  # Tymczasowo - wysyłamy tak jak jest, API może obsłużyć
-    
-    address_original = denormalize(address_normalized)
+    import urllib.parse
+    # Dekoduj URL - dostajemy oryginalny adres z polskimi znakami
+    address = urllib.parse.unquote(address_path).replace("-", " ")
     
     try:
         # Pobierz bezpośrednio z API Warszawy
-        scraper = WarsawWasteScraper(street_address=address_original)
+        scraper = WarsawWasteScraper(street_address=address)
         collections = scraper.fetch_schedule()
     except ValueError as e:
-        raise HTTPException(status_code=404, detail=f"Adres '{address_original}' nie znaleziony: {str(e)}")
+        raise HTTPException(status_code=404, detail=f"Adres '{address}' nie znaleziony: {str(e)}")
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Błąd API: {str(e)}")
     
