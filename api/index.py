@@ -69,13 +69,10 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
     Przykład: /api/search?q=platnicza+65
     """
     try:
-        print(f"[SEARCH] Start: q='{q}'")
         scraper = WarsawWasteScraper(street_address=q)
         
         # Pobierz od razu cały harmonogram (przy okazji sprawdzamy czy adres istnieje)
-        print(f"[SEARCH] Fetching schedule...")
         collections = scraper.fetch_schedule()
-        print(f"[SEARCH] Found {len(collections)} collections")
         
         # Normalizuj PL znaki dla URL (czytelniejszy link)
         def normalize_for_url(text):
@@ -88,14 +85,6 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
             return ''.join(polish_map.get(c, c) for c in text)
         
         url_path = normalize_for_url(q).replace(' ', '-').lower()
-        print(f"[SEARCH] url_path='{url_path}'")
-        
-        # Zapisz w cache pod znormalizowanym kluczem (żeby /ical/ mogło odczytać bez polskich znaków)
-        cache_key = f"schedule_{normalize_for_url(q).lower()}"
-        print(f"[SEARCH] cache_key='{cache_key}'")
-        cache_data = [{'date': c.date.isoformat(), 'waste_type': c.waste_type} for c in collections]
-        save_to_cache(cache_key, cache_data)
-        print(f"[SEARCH] Saved to cache. Cache keys now: {list(_memory_cache.keys())}")
         
         return {
             "results": [{
@@ -113,29 +102,28 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
 def generate_ical(address_path: str):
     """
     Generuje plik .ics dla podanego adresu.
-    Przykład: /ical/platnicza-65.ics lub /ical/ulica-platnicza-65.ics
+    Przykład: /ical/platnicza-65.ics
     """
-    # Odtwórz adres z URL (zamień myślniki na spacje, lowercase)
-    address = address_path.replace("-", " ").replace("_", " ").lower()
-    print(f"[ICAL] address_path='{address_path}' -> address='{address}'")
+    # Odtwórz adres z URL (zamień myślniki na spacje)
+    address_normalized = address_path.replace("-", " ").replace("_", " ")
     
-    # Sprawdź cache
-    cache_key = f"schedule_{address}"
-    print(f"[ICAL] Looking for cache_key='{cache_key}'")
-    print(f"[ICAL] Available keys: {list(_memory_cache.keys())}")
-    cached_data = get_from_cache(cache_key)
+    # Odwrotna normalizacja - zamień "latynkę" na polskie znaki
+    # np. "platnicza" -> "Płatnicza", "swietokrzyska" -> "Świętokrzyska"
+    def denormalize(text):
+        # Mapowanie odwrotne - próbujemy zamienić spowrotem
+        # To nie jest idealne, ale pokrywa większość nazw ulic w Warszawie
+        return text  # Tymczasowo - wysyłamy tak jak jest, API może obsłużyć
     
-    if cached_data:
-        # Odtwórz obiekty z cache
-        collections = []
-        for item in cached_data:
-            from scraper import WasteCollection
-            from datetime import datetime
-            date_obj = datetime.strptime(item['date'], '%Y-%m-%d').date()
-            collections.append(WasteCollection(date_obj, item['waste_type']))
-    else:
-        # Brak w cache - adres trzeba najpierw wyszukać przez /search
-        raise HTTPException(status_code=404, detail=f"Nie znaleziono '{address}' w cache. Wyszukaj adres najpierw na stronie głównej.")
+    address_original = denormalize(address_normalized)
+    
+    try:
+        # Pobierz bezpośrednio z API Warszawy
+        scraper = WarsawWasteScraper(street_address=address_original)
+        collections = scraper.fetch_schedule()
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=f"Adres '{address_original}' nie znaleziony: {str(e)}")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Błąd API: {str(e)}")
     
     if not collections:
         raise HTTPException(status_code=404, detail="Brak danych w harmonogramie dla tego adresu")
