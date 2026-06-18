@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/tlo_smieciarka.jpg",
+      "dest": "/tlo_smieciarka.jpg"
+    },
+    {
       "src": "/ical/(.*)",
       "dest": "api/index.py"
     },
