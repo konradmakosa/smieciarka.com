@@ -101,11 +101,13 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
         geolocation_id = scraper.get_geolocation_id(q)
         
         # Format odpowiedzi: adres i jego ID
+        import urllib.parse
+        safe_url = urllib.parse.quote(q.replace(' ', '-'))
         return {
             "results": [{
                 "address": q,
                 "geolocation_id": geolocation_id,
-                "url": f"/ical/{q.replace(' ', '-').lower()}.ics"
+                "url": f"/ical/{safe_url}.ics"
             }]
         }
     except ValueError as e:
@@ -120,8 +122,10 @@ def generate_ical(address_path: str):
     Generuje plik .ics dla podanego adresu.
     Przykład: /ical/platnicza-65.ics lub /ical/ulica-platnicza-65.ics
     """
-    # Normalizacja adresu
-    address = address_path.replace("-", " ").replace("_", " ")
+    # Normalizacja adresu - zamiana URL-encoded znaków i myślników
+    import urllib.parse
+    address = urllib.parse.unquote(address_path)  # dekoduje np. %C5%82 -> ł
+    address = address.replace("-", " ").replace("_", " ")
     
     # Sprawdź cache
     cache_key = f"schedule_{address}"
@@ -145,9 +149,13 @@ def generate_ical(address_path: str):
             cache_data = [{'date': c.date.isoformat(), 'waste_type': c.waste_type} for c in collections]
             save_to_cache(cache_key, cache_data)
         except ValueError as e:
-            raise HTTPException(status_code=404, detail=str(e))
+            raise HTTPException(status_code=404, detail=f"Nie znaleziono adresu '{address}' w bazie Warszawy: {str(e)}")
+        except requests.exceptions.RequestException as e:
+            raise HTTPException(status_code=503, detail=f"Błąd połączenia z API Warszawy: {str(e)}")
         except Exception as e:
-            raise HTTPException(status_code=500, detail=f"Błąd pobierania danych: {str(e)}")
+            import traceback
+            error_detail = f"Błąd pobierania danych: {str(e)}\n{traceback.format_exc()}"
+            raise HTTPException(status_code=500, detail=error_detail[:500])
     
     if not collections:
         raise HTTPException(status_code=404, detail="Brak danych w harmonogramie dla tego adresu")
