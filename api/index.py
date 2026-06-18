@@ -10,21 +10,8 @@ from datetime import datetime, timedelta
 from typing import Optional
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.responses import Response, HTMLResponse
-import sys
-
-# Dodaj root projektu do path (dla importów z parent dir)
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if project_root not in sys.path:
-    sys.path.insert(0, project_root)
-
-try:
-    from scraper import WarsawWasteScraper
-    from ics_generator import ICSGenerator
-except ImportError:
-    # Fallback dla Vercel
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from scraper import WarsawWasteScraper
-    from ics_generator import ICSGenerator
+from scraper import WarsawWasteScraper
+from ics_generator import ICSGenerator
 
 app = FastAPI(title="Śmieciarka.com", description="Harmonogram wywozu odpadów dla Warszawy")
 
