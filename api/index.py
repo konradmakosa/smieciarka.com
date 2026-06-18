@@ -98,10 +98,11 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
     """
     try:
         scraper = WarsawWasteScraper(street_address=q)
-        geolocation_id = scraper.get_geolocation_id(q)
         
-        # Format odpowiedzi: adres i jego ID
-        # Normalizuj PL znaki dla URL (czytelniejszy link), ale zachowaj oryginał dla API
+        # Pobierz od razu cały harmonogram (przy okazji sprawdzamy czy adres istnieje)
+        collections = scraper.fetch_schedule()
+        
+        # Normalizuj PL znaki dla URL (czytelniejszy link)
         def normalize_for_url(text):
             polish_map = {
                 'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
@@ -113,10 +114,14 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
         
         url_path = normalize_for_url(q).replace(' ', '-').lower()
         
+        # Zapisz w cache pod znormalizowanym kluczem (żeby /ical/ mogło odczytać bez polskich znaków)
+        cache_key = f"schedule_{normalize_for_url(q).lower()}"
+        cache_data = [{'date': c.date.isoformat(), 'waste_type': c.waste_type} for c in collections]
+        save_to_cache(cache_key, cache_data)
+        
         return {
             "results": [{
                 "address": q,
-                "geolocation_id": geolocation_id,
                 "url": f"/ical/{url_path}.ics"
             }]
         }
@@ -148,22 +153,8 @@ def generate_ical(address_path: str):
             date_obj = datetime.strptime(item['date'], '%Y-%m-%d').date()
             collections.append(WasteCollection(date_obj, item['waste_type']))
     else:
-        # Pobierz z API Warszawy
-        try:
-            scraper = WarsawWasteScraper(street_address=address)
-            collections = scraper.fetch_schedule()
-            
-            # Zapisz do cache
-            cache_data = [{'date': c.date.isoformat(), 'waste_type': c.waste_type} for c in collections]
-            save_to_cache(cache_key, cache_data)
-        except ValueError as e:
-            raise HTTPException(status_code=404, detail=f"Nie znaleziono adresu '{address}' w bazie Warszawy: {str(e)}")
-        except requests.exceptions.RequestException as e:
-            raise HTTPException(status_code=503, detail=f"Błąd połączenia z API Warszawy: {str(e)}")
-        except Exception as e:
-            import traceback
-            error_detail = f"Błąd pobierania danych: {str(e)}\n{traceback.format_exc()}"
-            raise HTTPException(status_code=500, detail=error_detail[:500])
+        # Brak w cache - adres trzeba najpierw wyszukać przez /search
+        raise HTTPException(status_code=404, detail=f"Nie znaleziono '{address}' w cache. Wyszukaj adres najpierw na stronie głównej.")
     
     if not collections:
         raise HTTPException(status_code=404, detail="Brak danych w harmonogramie dla tego adresu")
