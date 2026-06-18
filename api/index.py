@@ -90,7 +90,7 @@ def index():
     """
 
 
-@app.get("/api/search")
+@app.get("/search")
 def search_addresses(q: str = Query(..., min_length=3, description="Fragment adresu (ulica numer)")):
     """
     Wyszukuje adresy w Warszawie.
