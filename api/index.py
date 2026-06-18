@@ -101,13 +101,23 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
         geolocation_id = scraper.get_geolocation_id(q)
         
         # Format odpowiedzi: adres i jego ID
-        import urllib.parse
-        safe_url = urllib.parse.quote(q.replace(' ', '-'))
+        # Normalizuj PL znaki dla URL (czytelniejszy link), ale zachowaj oryginał dla API
+        def normalize_for_url(text):
+            polish_map = {
+                'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n',
+                'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z',
+                'Ą': 'A', 'Ć': 'C', 'Ę': 'E', 'Ł': 'L', 'Ń': 'N',
+                'Ó': 'O', 'Ś': 'S', 'Ź': 'Z', 'Ż': 'Z'
+            }
+            return ''.join(polish_map.get(c, c) for c in text)
+        
+        url_path = normalize_for_url(q).replace(' ', '-').lower()
+        
         return {
             "results": [{
                 "address": q,
                 "geolocation_id": geolocation_id,
-                "url": f"/ical/{safe_url}.ics"
+                "url": f"/ical/{url_path}.ics"
             }]
         }
     except ValueError as e:
@@ -122,10 +132,8 @@ def generate_ical(address_path: str):
     Generuje plik .ics dla podanego adresu.
     Przykład: /ical/platnicza-65.ics lub /ical/ulica-platnicza-65.ics
     """
-    # Normalizacja adresu - zamiana URL-encoded znaków i myślników
-    import urllib.parse
-    address = urllib.parse.unquote(address_path)  # dekoduje np. %C5%82 -> ł
-    address = address.replace("-", " ").replace("_", " ")
+    # Odtwórz adres z URL (zamień myślniki na spacje)
+    address = address_path.replace("-", " ").replace("_", " ")
     
     # Sprawdź cache
     cache_key = f"schedule_{address}"
