@@ -15,11 +15,14 @@ from ics_generator import ICSGenerator
 
 app = FastAPI(title="Śmieciarka.com", description="Harmonogram wywozu odpadów dla Warszawy")
 
-CACHE_DIR = os.path.join(os.path.dirname(__file__), "..", "cache")
+CACHE_DIR = "/tmp/smieciarka_cache"
 CACHE_TTL_HOURS = 168  # 7 dni
 
-# Upewnij się, że katalog cache istnieje
-os.makedirs(CACHE_DIR, exist_ok=True)
+# Upewnij się, że katalog cache istnieje (tylko writable /tmp w Vercel)
+try:
+    os.makedirs(CACHE_DIR, exist_ok=True)
+except:
+    CACHE_DIR = None
 
 
 def get_cache_path(key: str) -> str:
@@ -30,6 +33,8 @@ def get_cache_path(key: str) -> str:
 
 def get_from_cache(key: str) -> Optional[list]:
     """Pobiera dane z cache jeśli nie wygasły"""
+    if CACHE_DIR is None:
+        return None
     cache_path = get_cache_path(key)
     if not os.path.exists(cache_path):
         return None
@@ -50,6 +55,8 @@ def get_from_cache(key: str) -> Optional[list]:
 
 def save_to_cache(key: str, data: list):
     """Zapisuje dane do cache"""
+    if CACHE_DIR is None:
+        return
     cache_path = get_cache_path(key)
     try:
         with open(cache_path, 'w', encoding='utf-8') as f:
