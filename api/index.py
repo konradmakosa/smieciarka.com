@@ -101,6 +101,16 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
         raise HTTPException(status_code=500, detail=f"Błąd wyszukiwania: {str(e)}")
 
 
+@app.get("/test/{address_path:path}")
+def test_ical(address_path: str):
+    """Testowy endpoint - zwraca co otrzymał"""
+    import urllib.parse
+    return {
+        "raw_path": address_path,
+        "decoded": urllib.parse.unquote(address_path),
+        "message": "Test OK"
+    }
+
 @app.get("/ical/{address_path:path}.ics")
 def generate_ical(address_path: str):
     """
