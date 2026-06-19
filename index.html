@@ -7,38 +7,84 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .bg-smieciarka {
-            background-image: url('https://raw.githubusercontent.com/konradmakosa/smieciarka.com/main/public/tlo_smieciarka_m.jpg');
-            background-size: cover;
-            background-position: 30% center;
-            background-attachment: fixed;
+        body { font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; }
+        
+        /* Kontener z obrazkiem i contentem */
+        .hero-container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
-        /* Desktop: content po prawej stronie (nad białym bokiem śmieciarki) */
+        
+        /* Obrazek śmieciarki jako osobna warstwa */
+        .hero-bg {
+            position: absolute;
+            height: 100%;
+            width: auto;
+            max-width: none;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        /* Content nad białym bokiem śmieciarki */
+        .content-overlay {
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            max-width: 420px;
+        }
+        
+        /* Desktop: content po prawej stronie obrazka (nad białym bokiem) */
         @media (min-width: 1024px) {
-            .content-container {
-                max-width: 420px;
-                margin-left: auto;
-                margin-right: 8%;
-                padding-top: 10vh;
+            .hero-bg {
+                height: 100vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .content-overlay {
+                left: 55%;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
+        
         /* Tablet: mniejszy margines */
         @media (min-width: 768px) and (max-width: 1023px) {
-            .content-container {
-                max-width: 480px;
-                margin-left: auto;
-                margin-right: 4%;
+            .hero-bg {
+                height: 100vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .content-overlay {
+                left: 52%;
+                top: 50%;
+                transform: translateY(-50%);
+                max-width: 380px;
             }
         }
+        
         /* Mobile: wyśrodkowane */
         @media (max-width: 767px) {
-            .content-container {
+            .hero-container {
+                min-height: auto;
+                padding: 2rem 1rem;
+            }
+            .hero-bg {
+                display: none; /* Na mobile ukrywamy obrazek, użyjemy innego tła */
+            }
+            .content-overlay {
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
                 max-width: 100%;
-                margin: 0 auto;
-                padding: 1rem;
             }
         }
+        
         /* Glassmorphism dla lepszej czytelności */
         .glass-panel {
             background: rgba(255, 255, 255, 0.95);
@@ -47,8 +93,17 @@
         }
     </style>
 </head>
-<body class="bg-smieciarka min-h-screen flex items-center justify-center lg:justify-end lg:pr-16">
-    <div class="content-container w-full px-4 py-8">
+<body>
+    <div class="hero-container">
+        <!-- Obrazek śmieciarki jako osobna warstwa -->
+        <img 
+            src="https://raw.githubusercontent.com/konradmakosa/smieciarka.com/main/public/tlo_smieciarka_m.jpg" 
+            alt="Śmieciarka" 
+            class="hero-bg"
+        >
+        
+        <!-- Content absolutnie pozycjonowany nad białym bokiem -->
+        <div class="content-overlay px-4 py-8">
         
         <!-- Logo / Header -->
         <div class="text-center mb-12">
@@ -59,7 +114,7 @@
         </div>
 
         <!-- Wyszukiwarka -->
-        <div class="glass-panel rounded-2xl shadow-xl p-6 mb-6 border border-white/20">
+        <div class="glass-panel rounded-2xl shadow-xl p-6 mb-6 border border-white/20" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);">
             <label class="block text-sm font-medium text-gray-700 mb-2">Wpisz swój adres</label>
             <div class="flex gap-2">
                 <input 
@@ -249,5 +304,7 @@
             }
         }
     </script>
+    </div><!-- /.content-overlay -->
+    </div><!-- /.hero-container -->
 </body>
 </html>
