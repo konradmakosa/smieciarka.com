@@ -225,17 +225,17 @@ def test_ical(address_path: str):
     }
 
 LOGIN_FORM = """<!DOCTYPE html><html><head><meta charset=UTF-8>
-<title>Admin - Śmieciarka.com</title>
-<style>body{font-family:sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f3f4f6;}
-.box{background:white;padding:40px;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.1);width:320px;}
-h2{margin:0 0 24px;font-size:1.2rem;}
-input{width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:10px;font-size:1rem;box-sizing:border-box;margin-bottom:12px;}
-button{width:100%;padding:10px;background:#16a34a;color:white;font-weight:700;border:none;border-radius:10px;font-size:1rem;cursor:pointer;}
-.err{color:#dc2626;font-size:0.85rem;margin-bottom:10px;}
+<title>Admin - Smieciarka.com</title>
+<style>body{{font-family:sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f3f4f6;}}
+.box{{background:white;padding:40px;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.1);width:320px;}}
+h2{{margin:0 0 24px;font-size:1.2rem;}}
+input{{width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:10px;font-size:1rem;box-sizing:border-box;margin-bottom:12px;}}
+button{{width:100%;padding:10px;background:#16a34a;color:white;font-weight:700;border:none;border-radius:10px;font-size:1rem;cursor:pointer;}}
+.err{{color:#dc2626;font-size:0.85rem;margin-bottom:10px;}}
 </style></head><body><div class="box">
-<h2>🗑️ Śmieciarka Admin</h2>
+<h2>Smieciarka Admin</h2>
 {error}
-<form method="POST"><input type="password" name="password" placeholder="Hasło" autofocus><button type="submit">Zaloguj</button></form>
+<form method="POST"><input type="password" name="password" placeholder="Haslo" autofocus><button type="submit">Zaloguj</button></form>
 </div></body></html>"""
 
 @app.get("/api/admin")
@@ -263,14 +263,18 @@ async def admin_panel(request: Request):
                 f'<td style="color:#6b7280;font-size:0.8em">{e["detail"]}</td>'
                 f'</tr>')
     rows = "".join(_row(e) for e in reversed(_event_log))
-    html = f"""<!DOCTYPE html><html><head><meta charset=UTF-8>
-    <title>Admin - Śmieciarka.com</title>
-    <style>body{{font-family:sans-serif;padding:20px;}}table{{border-collapse:collapse;width:100%;font-size:0.85rem;}}td,th{{padding:6px 10px;border:1px solid #e5e7eb;text-align:left;}}th{{background:#f3f4f6;}}</style>
-    </head><body>
-    <h2>🗑️ Admin - Śmieciarka.com</h2>
-    <p>Zdarzeń: <b>{total}</b> | Sukcesów: <b>{success_count}</b> | Błędów: <b>{total - success_count}</b></p>
-    <table><tr><th>Czas</th><th>Typ</th><th>IP</th><th>Zapytanie</th><th>Status</th><th>Detal</th></tr>{rows}</table>
-    </body></html>"""
+    html = (
+        "<!DOCTYPE html><html><head><meta charset=UTF-8>"
+        "<title>Admin - Smieciarka.com</title>"
+        "<style>body{font-family:sans-serif;padding:20px;}"
+        "table{border-collapse:collapse;width:100%;font-size:0.85rem;}"
+        "td,th{padding:6px 10px;border:1px solid #e5e7eb;text-align:left;}"
+        "th{background:#f3f4f6;}</style></head><body>"
+        "<h2>Admin - Smieciarka.com</h2>"
+        f"<p>Zdarzen: <b>{total}</b> | Sukcesow: <b>{success_count}</b> | Bledow: <b>{total - success_count}</b></p>"
+        "<table><tr><th>Czas</th><th>Typ</th><th>IP</th><th>Zapytanie</th><th>Status</th><th>Detal</th></tr>"
+        f"{rows}</table></body></html>"
+    )
     return HTMLResponse(html)
 
 
