@@ -10,10 +10,17 @@ from datetime import datetime, timedelta
 from typing import Optional
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.responses import Response, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from scraper import WarsawWasteScraper
 from ics_generator import ICSGenerator
 
 app = FastAPI(title="Śmieciarka.com", description="Harmonogram wywozu odpadów dla Warszawy")
+
+# Lokalne serwowanie plików statycznych z public/ (na Vercel obsługiwane natywnie)
+_project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_public_dir = os.path.join(_project_root, "public")
+if os.path.exists(_public_dir):
+    app.mount("/public", StaticFiles(directory=_public_dir), name="public")
 
 # In-memory cache (działa na Vercel, resetuje się przy cold start)
 _memory_cache = {}

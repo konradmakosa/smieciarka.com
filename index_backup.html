@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Śmieciarka.com - Harmonogram wywozu odpadów Warszawa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; }
+        
+        /* Kontener - overflow hidden żeby obrazek wychodził poza */
+        .hero-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Obrazek - sztywny, nie skaluje się, środek białego prostokąta na środku ekranu */
+        .hero-bg {
+            position: fixed;
+            width: 1920px;
+            height: 1020px;
+            left: 0;
+            top: 0;
+            transform: translate(calc(50vw - 1468px), calc(50vh - 762px));
+            object-fit: none;
+        }
+        
+        /* Czerwony prostokąt pokrywający białe pole śmieciarki - DRAGGABLE */
+        .white-rectangle-debug {
+            position: fixed;
+            z-index: 100;
+            border: 3px solid red;
+            background: rgba(255, 0, 0, 0.1);
+            cursor: move;
+            min-width: 200px;
+            min-height: 100px;
+        }
+        
+        /* Uchwyty do zmiany rozmiaru */
+        .resize-handle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            border: 2px solid white;
+            border-radius: 50%;
+            z-index: 101;
+        }
+        .resize-handle.se { bottom: -10px; right: -10px; cursor: se-resize; }
+        .resize-handle.sw { bottom: -10px; left: -10px; cursor: sw-resize; }
+        .resize-handle.ne { top: -10px; right: -10px; cursor: ne-resize; }
+        .resize-handle.nw { top: -10px; left: -10px; cursor: nw-resize; }
+        
+        /* Debug panel z pozycją */
+        .debug-panel {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 12px;
+            z-index: 1000;
+        }
+        
+        /* Content - SZTYWNY */
+        .content-overlay {
+            position: fixed;
+            z-index: 10;
+            width: 625px;
+            height: 343px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        /* Desktop: sztywny content, obrazek może wychodzić */
+        @media (min-width: 1024px) {
+            .white-rectangle-debug {
+                /* Białe pole śmieciarki w oryginale */
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 936px;
+                height: 515px;
+            }
+            .content-overlay {
+                /* Wyśrodkowanie na ekranie */
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        /* Tablet: mniejszy margines */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .hero-bg {
+                height: 100vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .content-overlay {
+                left: 54%;
+                top: 42%;
+                transform: translateY(-50%);
+                max-width: 380px;
+            }
+        }
+        
+        /* Mobile: wyśrodkowane */
+        @media (max-width: 767px) {
+            .hero-container {
+                min-height: auto;
+                padding: 2rem 1rem;
+            }
+            .hero-bg {
+                display: none; /* Na mobile ukrywamy obrazek, użyjemy innego tła */
+            }
+            .content-overlay {
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
+                max-width: 100%;
+            }
+        }
+        
+        /* Glassmorphism dla lepszej czytelności */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <!-- Obrazek śmieciarki jako osobna warstwa -->
+        <img 
+            src="/public/tlo_smieciarka_m.jpg" 
+            alt="Śmieciarka" 
+            class="hero-bg"
+        >
+        
+        <!-- Czerwony prostokąt DEBUG - pokrywa białe pole śmieciarki -->
+        <div class="white-rectangle-debug">
+            <div class="resize-handle se"></div>
+            <div class="resize-handle sw"></div>
+            <div class="resize-handle ne"></div>
+            <div class="resize-handle nw"></div>
+        </div>
+        
+        <!-- Content absolutnie pozycjonowany nad białym bokiem -->
+        <div class="content-overlay px-4 py-8">
+        
+        <!-- Tylko wyszukiwarka - bez tytułu i instrukcji -->
+        <!-- Logo / Header - UKRYTE na razie
+        <div class="text-center mb-12">
+            <div class="text-6xl mb-4">🗑️</div>
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">Śmieciarka.com</h1>
+            <p class="text-lg text-gray-600">Harmonogram wywozu odpadów dla Warszawy</p>
+            <p class="text-sm text-gray-500 mt-1">Zero rejestracji. Zero aplikacji. Kalendarz odświeża się sam.</p>
+        </div>
+        -->
+
+        <!-- Wyszukiwarka -->
+        <div class="glass-panel rounded-2xl shadow-xl p-6 mb-6 border border-white/20" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Wpisz swój adres</label>
+            <div class="flex gap-2">
+                <input 
+                    type="text" 
+                    id="addressInput" 
+                    placeholder="np. Platnicza 65"
+                    class="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none text-gray-900"
+                >
+                <button 
+                    onclick="searchAddress()"
+                    id="searchBtn"
+                    class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-colors"
+                >
+                    Szukaj
+                </button>
+            </div>
+            <p class="text-xs text-gray-500 mt-2">Format: ulica numer (np. "Marszałkowska 100")</p>
+            
+            <!-- Loading -->
+            <div id="loading" class="hidden mt-4 text-center text-gray-500">
+                <div class="inline-block animate-spin rounded-full h-5 w-5 border-b-2 border-green-600"></div>
+                Wyszukiwanie...
+            </div>
+            
+            <!-- Error -->
+            <div id="error" class="hidden mt-4 p-3 bg-red-50 text-red-700 rounded-lg text-sm"></div>
+        </div>
+
+        <!-- Wynik - Link do kalendarza -->
+        <div id="result" class="hidden bg-white rounded-2xl shadow-lg p-6 mb-8">
+            <div class="text-center">
+                <div class="text-green-600 text-5xl mb-4">✅</div>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">Znaleziono harmonogram!</h2>
+                <p class="text-gray-600 mb-6">Adres: <span id="foundAddress" class="font-medium"></span></p>
+                
+                <div class="bg-gray-50 rounded-xl p-4 mb-4">
+                    <code id="calendarUrl" class="text-sm text-gray-800 break-all"></code>
+                </div>
+                
+                <button 
+                    onclick="downloadCalendar()"
+                    id="downloadBtn"
+                    class="w-full px-6 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-colors text-lg flex items-center justify-center gap-2"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Pobierz plik .ics
+                </button>
+                <p id="downloadMsg" class="hidden mt-2 text-green-600 text-sm font-medium">Pobieranie rozpoczęte! ✅</p>
+            </div>
+        </div>
+
+        <!-- Instrukcja - UKRYTA na razie
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Jak dodać do kalendarza?</h3>
+            <div class="space-y-4">
+                <p class="text-sm text-gray-600">Google: Ustawienia → Dodaj kalendarz → Z adresu URL</p>
+                <p class="text-sm text-gray-600">Apple: Plik → Nowy kalendarz subskrybowany</p>
+            </div>
+        </div>
+        -->
+
+        <!-- Buy Me A Coffee -->
+        <div class="text-center">
+            <a 
+                href="https://www.buymeacoffee.com/smieciarka" 
+                target="_blank"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold rounded-xl transition-colors"
+            >
+                ☕ Postaw mi kawę
+            </a>
+            <p class="text-xs text-gray-500 mt-2">Serwis jest darmowy, ale kawa motywuje do rozwoju! 😊</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-12 text-sm text-gray-500">
+            <p>Dane pobierane z <a href="https://warszawa19115.pl" class="text-green-600 hover:underline" target="_blank">warszawa19115.pl</a></p>
+            <p class="mt-1">Cache odświeżany co 7 dni</p>
+        </div>
+
+    </div>
+
+    <script>
+        const addressInput = document.getElementById('addressInput');
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+        const result = document.getElementById('result');
+        const foundAddress = document.getElementById('foundAddress');
+        const calendarUrl = document.getElementById('calendarUrl');
+
+        // Enter w polu wyszukiwania
+        addressInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchAddress();
+        });
+
+        async function searchAddress() {
+            const query = addressInput.value.trim();
+            if (!query || query.length < 3) {
+                showError('Wpisz co najmniej 3 znaki');
+                return;
+            }
+
+            loading.classList.remove('hidden');
+            error.classList.add('hidden');
+            result.classList.add('hidden');
+
+            try {
+                const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.detail || 'Nie znaleziono adresu');
+                }
+
+                if (data.results && data.results.length > 0) {
+                    const item = data.results[0];
+                    showResult(item.address, item.url);
+                } else {
+                    throw new Error('Nie znaleziono adresu');
+                }
+            } catch (err) {
+                showError(err.message || 'Wystąpił błąd. Spróbuj ponownie.');
+            } finally {
+                loading.classList.add('hidden');
+            }
+        }
+
+        function showError(msg) {
+            error.textContent = msg;
+            error.classList.remove('hidden');
+        }
+
+        function showResult(address, url) {
+            foundAddress.textContent = address;
+            const fullUrl = window.location.origin + url;
+            calendarUrl.textContent = fullUrl;
+            calendarUrl.dataset.url = fullUrl;
+            result.classList.remove('hidden');
+            document.getElementById('copiedMsg').classList.add('hidden');
+        }
+
+        async function copyLink() {
+            const url = calendarUrl.dataset.url;
+            try {
+                await navigator.clipboard.writeText(url);
+                document.getElementById('copiedMsg').classList.remove('hidden');
+                setTimeout(() => {
+                    document.getElementById('copiedMsg').classList.add('hidden');
+                }, 2000);
+            } catch (err) {
+                // Fallback dla starszych przeglądarek
+                const textArea = document.createElement('textarea');
+                textArea.value = url;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                document.getElementById('copiedMsg').classList.remove('hidden');
+            }
+        }
+    </script>
+    
+    <!-- Debug panel z pozycją prostokąta -->
+    <div class="debug-panel" id="debugPanel">
+        <div>left: <span id="debugLeft">0</span>px</div>
+        <div>top: <span id="debugTop">0</span>px</div>
+        <div>width: <span id="debugWidth">0</span>px</div>
+        <div>height: <span id="debugHeight">0</span>px</div>
+        <hr style="margin: 8px 0; border-color: #555;">
+        <div style="font-size: 10px; color: #aaa;">
+            Przeciągaj czerwony<br>prostokąt myszką<br>i zmieniaj rozmiar
+        </div>
+    </div>
+    
+    <script>
+        // Debug - przeciąganie czerwonego prostokąta
+        const debugRect = document.querySelector('.white-rectangle-debug');
+        const debugPanel = document.getElementById('debugPanel');
+        const debugLeft = document.getElementById('debugLeft');
+        const debugTop = document.getElementById('debugTop');
+        const debugWidth = document.getElementById('debugWidth');
+        const debugHeight = document.getElementById('debugHeight');
+        
+        function updateDebugInfo() {
+            const rect = debugRect.getBoundingClientRect();
+            const container = document.querySelector('.hero-container').getBoundingClientRect();
+            // Pozycja względem środka kontenera
+            const left = Math.round(rect.left - container.left - container.width / 2);
+            const top = Math.round(rect.top - container.top - container.height / 2);
+            debugLeft.textContent = left;
+            debugTop.textContent = top;
+            debugWidth.textContent = Math.round(rect.width);
+            debugHeight.textContent = Math.round(rect.height);
+            console.log('Rectangle position:', { left, top, width: rect.width, height: rect.height });
+        }
+        
+        // Drag functionality
+        let isDragging = false;
+        let isResizing = false;
+        let startX, startY, startLeft, startTop, startWidth, startHeight;
+        
+        debugRect.addEventListener('mousedown', (e) => {
+            if (e.target.classList.contains('resize-handle')) return; // Nie przeciągaj gdy kliknięto uchwyt
+            isDragging = true;
+            startX = e.clientX;
+            startY = e.clientY;
+            const rect = debugRect.getBoundingClientRect();
+            const container = document.querySelector('.hero-container').getBoundingClientRect();
+            startLeft = rect.left - container.left;
+            startTop = rect.top - container.top;
+            debugRect.style.cursor = 'grabbing';
+        });
+        
+        // Resize functionality
+        document.querySelectorAll('.resize-handle').forEach(handle => {
+            handle.addEventListener('mousedown', (e) => {
+                e.stopPropagation();
+                isResizing = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                startWidth = debugRect.offsetWidth;
+                startHeight = debugRect.offsetHeight;
+                startLeft = debugRect.offsetLeft;
+                startTop = debugRect.offsetTop;
+            });
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                debugRect.style.left = (startLeft + dx) + 'px';
+                debugRect.style.top = (startTop + dy) + 'px';
+                updateDebugInfo();
+            } else if (isResizing) {
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                debugRect.style.width = (startWidth + dx) + 'px';
+                debugRect.style.height = (startHeight + dy) + 'px';
+                updateDebugInfo();
+            }
+        });
+        
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            isResizing = false;
+            debugRect.style.cursor = 'move';
+        });
+        
+        // Observe resize
+        const observer = new ResizeObserver(updateDebugInfo);
+        observer.observe(debugRect);
+        
+        // Initial update
+        setTimeout(updateDebugInfo, 100);
+    </script>
+    </div><!-- /.content-overlay -->
+    </div><!-- /.hero-container -->
+</body>
+</html>

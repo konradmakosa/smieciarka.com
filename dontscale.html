@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Fixed Canvas</title>
+
+<style>
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #111;
+}
+
+/* Kontener centrujący */
+.viewport {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Stała plansza 1920x1020 */
+.canvas {
+    position: absolute;
+
+    width: 1920px;
+    height: 1020px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* tylko dla podglądu */
+.cell {
+    border: 1px dashed rgba(255,255,255,0.2);
+}
+
+/* środkowa komórka */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-content {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 30px;
+    font-size: 32px;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="viewport">
+
+    <div class="canvas">
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+
+        <div class="cell center">
+            <div class="center-content">
+                ŚRODEK
+            </div>
+        </div>
+
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
