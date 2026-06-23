@@ -42,6 +42,50 @@
       box-sizing: border-box;
       overflow-y: auto;
     }
+
+    @media (max-width: 768px) {
+      .content-box label,
+      .content-box p,
+      .content-box a:not(.bg-green-600):not(.bg-yellow-400) {
+        color: white !important;
+      }
+      html, body {
+        overflow: auto;
+      }
+      .viewport {
+        overflow: visible;
+        height: auto;
+        min-height: 100vh;
+      }
+      .canvas {
+        position: relative;
+        width: 100vw;
+        height: 100svh;
+        min-height: 600px;
+        left: auto;
+        top: auto;
+        transform: none;
+        background-image: url("https://raw.githubusercontent.com/konradmakosa/smieciarka.com/main/public/tlo_mobilne.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content-box {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        height: auto;
+        max-width: 420px;
+        background: rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(2px);
+        border-radius: 16px;
+        padding: 20px;
+        overflow-y: visible;
+      }
+    }
   </style>
 </head>
 <body>
