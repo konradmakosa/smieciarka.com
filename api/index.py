@@ -224,11 +224,31 @@ def test_ical(address_path: str):
         "message": "Test OK"
     }
 
+LOGIN_FORM = """<!DOCTYPE html><html><head><meta charset=UTF-8>
+<title>Admin - Śmieciarka.com</title>
+<style>body{font-family:sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f3f4f6;}
+.box{background:white;padding:40px;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.1);width:320px;}
+h2{margin:0 0 24px;font-size:1.2rem;}
+input{width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:10px;font-size:1rem;box-sizing:border-box;margin-bottom:12px;}
+button{width:100%;padding:10px;background:#16a34a;color:white;font-weight:700;border:none;border-radius:10px;font-size:1rem;cursor:pointer;}
+.err{color:#dc2626;font-size:0.85rem;margin-bottom:10px;}
+</style></head><body><div class="box">
+<h2>🗑️ Śmieciarka Admin</h2>
+{error}
+<form method="POST"><input type="password" name="password" placeholder="Hasło" autofocus><button type="submit">Zaloguj</button></form>
+</div></body></html>"""
+
 @app.get("/api/admin")
-def admin_panel(request: Request, password: str = Query(...)):
+def admin_login_form():
+    return HTMLResponse(LOGIN_FORM.format(error=""))
+
+@app.post("/api/admin")
+async def admin_panel(request: Request):
     """Panel admina"""
+    form = await request.form()
+    password = form.get("password", "")
     if _hl.sha256(password.encode()).hexdigest() != ADMIN_PASSWORD_HASH:
-        raise HTTPException(status_code=403, detail="Błędne hasło")
+        return HTMLResponse(LOGIN_FORM.format(error='<p class="err">Błędne hasło</p>'), status_code=401)
     total = len(_event_log)
     success_count = sum(1 for e in _event_log if e["success"])
     def _row(e):
