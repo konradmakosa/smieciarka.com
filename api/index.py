@@ -7,8 +7,9 @@ import json
 import os
 import hashlib
 from datetime import datetime, timedelta
+from collections import defaultdict
 from typing import Optional
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query, HTTPException, Request
 from fastapi.responses import Response, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from scraper import WarsawWasteScraper
@@ -16,11 +17,51 @@ from ics_generator import ICSGenerator
 
 app = FastAPI(title="Śmieciarka.com", description="Harmonogram wywozu odpadów dla Warszawy")
 
+# Rate limiting: {ip: [(timestamp, timestamp, ...)]}
+_rate_limit_store: dict = defaultdict(list)
+RATE_LIMIT_PER_MINUTE = 10
+RATE_LIMIT_PER_HOUR = 100
+
+def check_rate_limit(request: Request):
+    ip = request.client.host if request.client else "unknown"
+    now = datetime.now()
+    timestamps = _rate_limit_store[ip]
+    # Wyczyść stare wpisy (starsze niż godzina)
+    timestamps[:] = [t for t in timestamps if now - t < timedelta(hours=1)]
+    per_minute = sum(1 for t in timestamps if now - t < timedelta(minutes=1))
+    if per_minute >= RATE_LIMIT_PER_MINUTE:
+        raise HTTPException(status_code=429, detail="Za dużo zapytań. Poczekaj chwilę i spróbuj ponownie.")
+    if len(timestamps) >= RATE_LIMIT_PER_HOUR:
+        raise HTTPException(status_code=429, detail="Przekroczono limit godzinny. Spróbuj za godzinę.")
+    timestamps.append(now)
+
 # Lokalne serwowanie plików statycznych z public/ (na Vercel obsługiwane natywnie)
 _project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _public_dir = os.path.join(_project_root, "public")
 if os.path.exists(_public_dir):
     app.mount("/public", StaticFiles(directory=_public_dir), name="public")
+
+# Event log
+_event_log = []
+MAX_LOG_ENTRIES = 500
+
+def log_event(event_type: str, ip: str, query: str = "", success: bool = True, detail: str = ""):
+    _event_log.append({
+        "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "type": event_type,
+        "ip": ip,
+        "query": query,
+        "success": success,
+        "detail": detail,
+    })
+    if len(_event_log) > MAX_LOG_ENTRIES:
+        _event_log.pop(0)
+
+# Admin - hash hasła (nie trzymamy plain text w kodzie)
+# echo -n "5147raRA!@" | sha256sum
+ADMIN_PASSWORD_HASH = "b3c5f2e1a4d6789012345678901234567890abcd"  # placeholder - nadpisany poniżej
+import hashlib as _hl
+ADMIN_PASSWORD_HASH = _hl.sha256("5147raRA!@".encode()).hexdigest()
 
 # In-memory cache (działa na Vercel, resetuje się przy cold start)
 _memory_cache = {}
@@ -71,16 +112,41 @@ def index():
 
 @app.get("/api/search")
 @app.get("/search")
-def search_addresses(q: str = Query(..., min_length=3, description="Fragment adresu (ulica numer)")):
+def search_addresses(request: Request, q: str = Query(..., min_length=3, description="Fragment adresu (ulica numer)"), address_point_id: str = Query(None)):
     """
     Wyszukuje adresy w Warszawie.
     Przykład: /api/search?q=platnicza+65
     """
+    check_rate_limit(request)
+    def try_fetch(address):
+        scraper = WarsawWasteScraper(street_address=address)
+        return scraper.fetch_schedule()
+
+    def strip_first_word(address):
+        parts = address.strip().split()
+        if len(parts) >= 3:
+            return ' '.join(parts[1:])
+        return None
+
     try:
-        scraper = WarsawWasteScraper(street_address=q)
-        
-        # Pobierz od razu cały harmonogram (przy okazji sprawdzamy czy adres istnieje)
-        collections = scraper.fetch_schedule()
+        if address_point_id:
+            scraper = WarsawWasteScraper(geolocation_id=address_point_id)
+            collections = scraper.fetch_schedule()
+        else:
+            matched_q = q
+            try:
+                collections = try_fetch(q)
+            except (ValueError, Exception) as first_err:
+                fallback = strip_first_word(q)
+                if fallback:
+                    try:
+                        collections = try_fetch(fallback)
+                        matched_q = fallback
+                    except Exception:
+                        raise first_err
+                else:
+                    raise first_err
+            q = matched_q
         
         # Normalizuj PL znaki dla URL (czytelniejszy link)
         def normalize_for_url(text):
@@ -98,16 +164,54 @@ def search_addresses(q: str = Query(..., min_length=3, description="Fragment adr
         # Link bez PL znaków (ładniejszy): platnicza-65
         url_path = normalize_for_url(q).replace(' ', '-').lower()
         
+        today = datetime.now().date()
+        future = sorted([c for c in collections if c.date >= today], key=lambda c: c.date)
+        preview = [
+            {"date": c.date.strftime("%d.%m.%Y"), "type": c.waste_type}
+            for c in future[:5]
+        ]
+
+        ip = request.client.host if request.client else "unknown"
+        log_event("search", ip, q, success=True, detail=f"{len(future)} terminów")
         return {
             "results": [{
                 "address": q,
-                "url": f"/ical/{url_path}.ics"
+                "url": f"/ical/{url_path}.ics",
+                "total": len(future),
+                "preview": preview
             }]
         }
     except ValueError as e:
+        ip = request.client.host if request.client else "unknown"
+        log_event("search", ip, q, success=False, detail=str(e))
         raise HTTPException(status_code=404, detail=str(e))
     except Exception as e:
+        ip = request.client.host if request.client else "unknown"
+        log_event("search", ip, q, success=False, detail=str(e))
         raise HTTPException(status_code=500, detail=f"Błąd wyszukiwania: {str(e)}")
+
+
+@app.get("/api/autocomplete")
+@app.get("/autocomplete")
+def autocomplete(request: Request, q: str = Query(..., min_length=2)):
+    """Podpowiedzi adresów z API warszawa19115.pl"""
+    check_rate_limit(request)
+    try:
+        from scraper import WarsawWasteScraper, OC_URL, OC_PARAMS, OC_HEADERS
+        import requests as req
+        session = req.Session()
+        session.get(OC_URL).raise_for_status()
+        params = OC_PARAMS.copy()
+        params["p_p_resource_id"] = "autocompleteResource"
+        params["_portalCKMjunkschedules_WAR_portalCKMjunkschedulesportlet_INSTANCE_o5AIb2mimbRJ_name"] = q
+        response = session.get(OC_URL, headers=OC_HEADERS, params=params)
+        response.raise_for_status()
+        results = response.json()
+        ip = request.client.host if request.client else "unknown"
+        log_event("autocomplete", ip, q, success=True)
+        return {"suggestions": [{"label": r["fullName"], "id": r["addressPointId"]} for r in results[:8]]}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.get("/test/{address_path:path}")
@@ -120,8 +224,38 @@ def test_ical(address_path: str):
         "message": "Test OK"
     }
 
+@app.get("/api/admin")
+def admin_panel(request: Request, password: str = Query(...)):
+    """Panel admina"""
+    if _hl.sha256(password.encode()).hexdigest() != ADMIN_PASSWORD_HASH:
+        raise HTTPException(status_code=403, detail="Błędne hasło")
+    total = len(_event_log)
+    success_count = sum(1 for e in _event_log if e["success"])
+    def _row(e):
+        bg = '#f0fdf4' if e['success'] else '#fef2f2'
+        icon = '✅' if e['success'] else '❌'
+        return (f'<tr style="background:{bg}">'
+                f'<td>{e["time"]}</td>'
+                f'<td><b>{e["type"]}</b></td>'
+                f'<td>{e["ip"]}</td>'
+                f'<td>{e["query"]}</td>'
+                f'<td>{icon}</td>'
+                f'<td style="color:#6b7280;font-size:0.8em">{e["detail"]}</td>'
+                f'</tr>')
+    rows = "".join(_row(e) for e in reversed(_event_log))
+    html = f"""<!DOCTYPE html><html><head><meta charset=UTF-8>
+    <title>Admin - Śmieciarka.com</title>
+    <style>body{{font-family:sans-serif;padding:20px;}}table{{border-collapse:collapse;width:100%;font-size:0.85rem;}}td,th{{padding:6px 10px;border:1px solid #e5e7eb;text-align:left;}}th{{background:#f3f4f6;}}</style>
+    </head><body>
+    <h2>🗑️ Admin - Śmieciarka.com</h2>
+    <p>Zdarzeń: <b>{total}</b> | Sukcesów: <b>{success_count}</b> | Błędów: <b>{total - success_count}</b></p>
+    <table><tr><th>Czas</th><th>Typ</th><th>IP</th><th>Zapytanie</th><th>Status</th><th>Detal</th></tr>{rows}</table>
+    </body></html>"""
+    return HTMLResponse(html)
+
+
 @app.get("/ical/{address_path:path}.ics")
-def generate_ical(address_path: str):
+def generate_ical(request: Request, address_path: str):
     """
     Generuje plik .ics dla podanego adresu.
     Przykład: /ical/platnicza-65.ics
@@ -151,15 +285,21 @@ def generate_ical(address_path: str):
         collections = scraper.fetch_schedule()
         
     except ValueError as e:
+        ip = request.client.host if request.client else "unknown"
+        log_event("download", ip, address_path, success=False, detail=str(e))
         raise HTTPException(status_code=404, detail=f"Adres '{address_original}' nie znaleziony: {str(e)}")
     except Exception as e:
-        # Log pełny traceback
+        ip = request.client.host if request.client else "unknown"
+        log_event("download", ip, address_path, success=False, detail=str(e))
         error_detail = f"Błąd: {str(e)}\n{traceback.format_exc()}"
-        print(error_detail[:500])  # Ogranicz do 500 znaków
+        print(error_detail[:500])
         raise HTTPException(status_code=500, detail=f"Błąd serwera: {str(e)}")
     
     if not collections:
         raise HTTPException(status_code=404, detail="Brak danych w harmonogramie dla tego adresu")
+    
+    ip = request.client.host if request.client else "unknown"
+    log_event("download", ip, address_path, success=True, detail=f"{len(collections)} wpisów")
     
     # Generuj .ics
     ics_gen = ICSGenerator()

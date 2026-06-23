@@ -6,6 +6,8 @@
   <title>Śmieciarka.com - Harmonogram wywozu odpadów Warszawa</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
     html, body {
       margin: 0;
@@ -43,47 +45,45 @@
       overflow-y: auto;
     }
 
+    .autocomplete-wrap { position: relative; flex: 1; }
+    .autocomplete-list {
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: white; border: 1px solid #d1d5db;
+      border-radius: 12px; margin-top: 4px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      z-index: 1000; overflow: hidden; display: none;
+    }
+    .autocomplete-list.open { display: block; }
+    .autocomplete-item {
+      padding: 10px 14px; cursor: pointer;
+      font-size: 0.85rem; color: #111;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .autocomplete-item:last-child { border-bottom: none; }
+    .autocomplete-item:hover { background: #f0fdf4; color: #16a34a; }
+    #mobile-view { display: none; }
+
     @media (max-width: 768px) {
-      .content-box label,
-      .content-box p,
-      .content-box a:not(.bg-green-600):not(.bg-yellow-400) {
-        color: white !important;
-      }
-      html, body {
-        overflow: auto;
-      }
-      .viewport {
-        overflow: visible;
-        height: auto;
+      .viewport { display: none; }
+      #mobile-view {
+        display: block;
         min-height: 100vh;
-      }
-      .canvas {
-        position: relative;
-        width: 100vw;
-        height: 100svh;
-        min-height: 600px;
-        left: auto;
-        top: auto;
-        transform: none;
         background-image: url("https://raw.githubusercontent.com/konradmakosa/smieciarka.com/main/public/tlo_mobilne.jpg");
         background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-position: center top;
+        background-attachment: fixed;
+        font-family: 'Inter', sans-serif;
       }
-      .content-box {
-        position: relative;
-        left: auto;
-        top: auto;
-        width: 90%;
-        height: auto;
-        max-width: 420px;
-        background: rgba(0, 0, 0, 0.35);
-        backdrop-filter: blur(2px);
-        border-radius: 16px;
+      #mobile-view .top-bar {
+        padding: 20px 16px 0;
+        text-align: center;
+      }
+      #mobile-view .form-card {
+        margin: 16px;
+        background: rgba(255,255,255,0.92);
+        border-radius: 20px;
         padding: 20px;
-        overflow-y: visible;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
       }
     }
   </style>
@@ -91,18 +91,33 @@
 <body>
   <div class="viewport">
     <div class="canvas" id="canvas">
+      <div id="desktop-title" style="position:absolute;left:605px;top:130px;width:690px;text-align:center;">
+        <h1 style="color:white;font-size:2rem;font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,0.5);margin:0">🗑️ Śmieciarka.com</h1>
+        <p style="color:rgba(255,255,255,0.9);font-size:0.9rem;text-shadow:0 1px 6px rgba(0,0,0,0.4);margin:4px 0 0">Harmonogram wywozu odpadów</p>
+      </div>
+
       <div class="content-box" id="cbox">
 
         <!-- Wyszukiwarka -->
         <div class="bg-white/90 rounded-2xl shadow-xl p-5 mb-3 border border-white/20">
-            <label class="block text-sm font-medium text-gray-900 mb-2">Wpisz swój adres</label>
+            <div class="mb-3">
+                <label class="block text-xs font-semibold text-gray-700 mb-1">Miasto</label>
+                <select id="citySelectD" class="w-full px-3 py-2 border border-gray-300 rounded-xl text-sm text-gray-900 bg-white outline-none focus:ring-2 focus:ring-green-500">
+                    <option value="warszawa">Warszawa</option>
+                </select>
+            </div>
+            <label class="block text-sm font-medium text-gray-900 mb-2">Adres</label>
             <div class="flex gap-2">
-                <input
-                    type="text"
-                    id="addressInput"
-                    placeholder="np. Platnicza 65"
-                    class="flex-1 px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none text-gray-900"
-                >
+                <div class="autocomplete-wrap">
+                  <input
+                      type="text"
+                      id="addressInput"
+                      placeholder="np. Płatnicza 65"
+                      autocomplete="off"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none text-gray-900"
+                  >
+                  <div class="autocomplete-list" id="acListD"></div>
+                </div>
                 <button
                     onclick="searchAddress()"
                     id="searchBtn"
@@ -112,6 +127,9 @@
                 </button>
             </div>
             <p class="text-xs text-gray-900 mt-2">Format: ulica numer (np. &quot;Marszałkowska 100&quot;)</p>
+            <button onclick="openMap('D')" class="w-full mt-2 px-3 py-2 border-2 border-dashed border-gray-300 rounded-xl text-gray-500 text-sm hover:border-gray-400 hover:text-gray-600 transition-colors">
+                📍 Wskaż na mapie
+            </button>
             <div id="loading" class="hidden mt-3 text-center text-gray-500 text-sm">
                 <div class="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-green-600"></div>
                 Wyszukiwanie...
@@ -121,28 +139,23 @@
 
         <!-- Wynik -->
         <div id="result" class="hidden bg-white/90 rounded-2xl shadow-lg p-4 mb-3">
-            <div class="text-center">
-                <p class="text-gray-900 mb-3 text-sm">Adres: <span id="foundAddress" class="font-medium"></span></p>
-                <div class="bg-gray-50 rounded-xl p-2 mb-3">
-                    <code id="calendarUrl" class="text-xs text-gray-900 break-all"></code>
-                </div>
-                <button
-                    onclick="downloadCalendar()"
-                    class="w-full px-4 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2"
-                >
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                    Pobierz plik .ics
-                </button>
-                <p id="downloadMsg" class="hidden mt-2 text-green-600 text-sm font-medium">Pobieranie rozpoczęte! ✅</p>
-            </div>
+            <p class="text-gray-900 text-sm mb-2">📍 <span id="foundAddress" class="font-semibold"></span></p>
+            <p id="resultTotal" class="text-xs text-gray-600 mb-3"></p>
+            <div id="previewList" class="mb-3 space-y-1"></div>
+            <button
+                onclick="downloadCalendar()"
+                class="w-full px-4 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2"
+            >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Pobierz plik .ics
+            </button>
+            <p class="text-xs text-gray-500 text-center mt-2">Pobierz i otwórz plik, aby dodać do kalendarza</p>
+            <p id="downloadMsg" class="hidden mt-2 text-green-600 text-sm font-medium text-center">Pobieranie rozpoczęte! ✅</p>
         </div>
 
         <!-- Buy Me A Coffee -->
         <div class="text-center">
-            <a href="https://www.buymeacoffee.com/smieciarka" target="_blank"
-               class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold rounded-xl transition-colors text-sm">
-                ☕ Postaw mi kawę
-            </a>
+            <a href="https://buycoffee.to/konradmakosa" target="_blank"><img src="https://buycoffee.to/static/img/share/share-button-primary.png" style="width:195px;height:51px;display:block;margin:0 auto" alt="Postaw kawę dla konradmakosa na buycoffee.to"></a>
             <p class="text-xs text-gray-900 mt-1">Serwis jest darmowy, ale kawa motywuje do rozwoju! 😊</p>
         </div>
 
@@ -156,13 +169,183 @@
     </div>
   </div>
 
+  <!-- MOBILE VIEW -->
+  <div id="mobile-view">
+    <div class="top-bar">
+      <h1 style="font-size:1.6rem;font-weight:700;color:white;text-shadow:0 2px 8px rgba(0,0,0,0.5);margin:0 0 4px">🗑️ Śmieciarka.com</h1>
+      <p style="color:rgba(255,255,255,0.9);font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.5);margin:0">Harmonogram wywozu odpadów</p>
+    </div>
+
+    <div class="form-card">
+      <!-- Miasto -->
+      <div style="margin-bottom:12px">
+        <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:4px">Miasto</label>
+        <select id="citySelect" style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:12px;font-size:0.95rem;color:#111;background:white;outline:none">
+          <option value="warszawa">Warszawa</option>
+        </select>
+      </div>
+
+      <!-- Adres -->
+      <div style="margin-bottom:12px">
+        <label style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:4px">Adres</label>
+        <div style="display:flex;gap:8px">
+          <div style="position:relative;flex:1">
+            <input
+              type="text"
+              id="addressInputM"
+              placeholder="np. Płatnicza 65"
+              autocomplete="off"
+              style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:12px;font-size:0.95rem;color:#111;outline:none;box-sizing:border-box"
+            >
+            <div class="autocomplete-list" id="acListM"></div>
+          </div>
+          <button
+            onclick="searchAddressM()"
+            style="padding:10px 18px;background:#16a34a;color:white;font-weight:700;border:none;border-radius:12px;font-size:0.95rem;cursor:pointer"
+          >Szukaj</button>
+        </div>
+        <p style="font-size:0.75rem;color:#6b7280;margin:6px 0 0">Format: ulica numer (np. "Marszałkowska 100")</p>
+      </div>
+
+      <!-- Wskaż na mapie -->
+      <button onclick="openMap('M')" style="width:100%;padding:10px;border:2px solid #d1d5db;border-radius:12px;background:transparent;color:#6b7280;font-size:0.85rem;cursor:pointer;margin-bottom:4px">
+        📍 Wskaż na mapie
+      </button>
+
+      <!-- Loading -->
+      <div id="loadingM" class="hidden" style="text-align:center;padding:12px;color:#6b7280;font-size:0.9rem">
+        <div style="display:inline-block;width:16px;height:16px;border:2px solid #d1d5db;border-top-color:#16a34a;border-radius:50%;animation:spin 0.8s linear infinite"></div>
+        Wyszukiwanie...
+      </div>
+
+      <!-- Error -->
+      <div id="errorM" class="hidden" style="margin-top:8px;padding:10px;background:#fef2f2;color:#dc2626;border-radius:10px;font-size:0.85rem"></div>
+    </div>
+
+    <!-- Wynik -->
+    <div id="resultM" class="hidden form-card" style="margin-top:0">
+      <p style="color:#374151;font-size:0.85rem;margin:0 0 2px">📍 <strong id="foundAddressM"></strong></p>
+      <p id="resultTotalM" style="color:#6b7280;font-size:0.75rem;margin:0 0 10px"></p>
+      <div id="previewListM" style="margin-bottom:12px"></div>
+      <button
+        onclick="downloadCalendarM()"
+        style="width:100%;padding:14px;background:#16a34a;color:white;font-weight:700;border:none;border-radius:12px;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px"
+      >
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        Pobierz plik .ics
+      </button>
+      <p style="text-align:center;color:#6b7280;font-size:0.75rem;margin-top:6px">Pobierz i otwórz plik, aby dodać do kalendarza</p>
+      <p id="downloadMsgM" class="hidden" style="text-align:center;color:#16a34a;font-size:0.85rem;margin-top:8px">Pobieranie rozpoczęte! ✅</p>
+    </div>
+
+    <!-- Kawa + footer -->
+    <div style="text-align:center;padding:20px 16px 32px">
+      <a href="https://buycoffee.to/konradmakosa" target="_blank"><img src="https://buycoffee.to/static/img/share/share-button-primary.png" style="width:195px;height:51px;display:block;margin:0 auto" alt="Postaw kawę dla konradmakosa na buycoffee.to"></a>
+      <p style="color:rgba(255,255,255,0.85);font-size:0.75rem;margin:8px 0 0;text-shadow:0 1px 3px rgba(0,0,0,0.4)">Serwis darmowy – kawa motywuje! 😊</p>
+      <p style="color:rgba(255,255,255,0.7);font-size:0.7rem;margin:4px 0 0;text-shadow:0 1px 3px rgba(0,0,0,0.4)">Dane: <a href="https://warszawa19115.pl" style="color:rgba(255,255,255,0.85)" target="_blank">warszawa19115.pl</a> · cache 7 dni</p>
+    </div>
+  </div>
+
+  <style>
+    @keyframes spin{to{transform:rotate(360deg)}}
+    #map-modal {
+      display:none;position:fixed;inset:0;z-index:9999;
+      background:rgba(0,0,0,0.6);
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+    }
+    #map-modal.open { display:flex; }
+    #map-container {
+      width:min(95vw,600px);
+      height:min(80vh,500px);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 20px 60px rgba(0,0,0,0.4);
+      position:relative;
+    }
+    #map { width:100%;height:100%; }
+    #map-hint {
+      position:absolute;top:10px;left:50%;transform:translateX(-50%);
+      background:rgba(255,255,255,0.95);
+      padding:6px 14px;border-radius:20px;
+      font-size:0.8rem;font-weight:600;color:#374151;
+      z-index:1000;white-space:nowrap;
+      box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    }
+    #map-close {
+      position:absolute;top:10px;right:10px;
+      background:white;border:none;border-radius:50%;
+      width:32px;height:32px;font-size:1.1rem;
+      cursor:pointer;z-index:1000;
+      box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    }
+    #map-loading {
+      position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
+      background:rgba(255,255,255,0.95);
+      padding:6px 14px;border-radius:20px;
+      font-size:0.8rem;color:#374151;
+      z-index:1000;display:none;
+    }
+  </style>
+
   <script>
     const addressInput = document.getElementById('addressInput');
     const loading = document.getElementById('loading');
     const error = document.getElementById('error');
     const result = document.getElementById('result');
     const foundAddress = document.getElementById('foundAddress');
-    const calendarUrl = document.getElementById('calendarUrl');
+    let _desktopIcsUrl = '';
+    let _desktopPointId = '';
+    let _mobilePointId = '';
+
+    // --- AUTOCOMPLETE ---
+    let _acTimer = null;
+
+    function setupAutocomplete(inputId, listId, onSelect) {
+      const input = document.getElementById(inputId);
+      const list = document.getElementById(listId);
+      if (!input || !list) return;
+
+      input.addEventListener('input', () => {
+        clearTimeout(_acTimer);
+        const q = input.value.trim();
+        if (q.length < 2) { list.classList.remove('open'); return; }
+        _acTimer = setTimeout(async () => {
+          try {
+            const res = await fetch(`/api/autocomplete?q=${encodeURIComponent(q)}`);
+            const data = await res.json();
+            if (!data.suggestions || !data.suggestions.length) { list.classList.remove('open'); return; }
+            list.innerHTML = data.suggestions.map(s =>
+              `<div class="autocomplete-item" data-id="${s.id}" data-label="${s.label}">${s.label}</div>`
+            ).join('');
+            list.classList.add('open');
+            list.querySelectorAll('.autocomplete-item').forEach(item => {
+              item.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                onSelect(item.dataset.label, item.dataset.id);
+                list.classList.remove('open');
+              });
+            });
+          } catch(e) {}
+        }, 300);
+      });
+
+      input.addEventListener('blur', () => setTimeout(() => list.classList.remove('open'), 150));
+      input.addEventListener('keypress', (e) => { if (e.key === 'Enter') { list.classList.remove('open'); } });
+    }
+
+    setupAutocomplete('addressInput', 'acListD', (label, id) => {
+      addressInput.value = label;
+      _desktopPointId = id;
+      searchAddress();
+    });
+
+    setupAutocomplete('addressInputM', 'acListM', (label, id) => {
+      document.getElementById('addressInputM').value = label;
+      _mobilePointId = id;
+      searchAddressM();
+    });
 
     addressInput.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') searchAddress();
@@ -178,17 +361,24 @@
       error.classList.add('hidden');
       result.classList.add('hidden');
       try {
-        const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+        const params = new URLSearchParams({ q: query });
+        if (_desktopPointId) params.set('address_point_id', _desktopPointId);
+        _desktopPointId = '';
+        const response = await fetch(`/api/search?${params}`);
         const data = await response.json();
         if (!response.ok) throw new Error(data.detail || 'Nie znaleziono adresu');
         if (data.results && data.results.length > 0) {
           const item = data.results[0];
-          showResult(item.address, item.url);
+          showResult(item.address, item.url, item.total, item.preview);
         } else {
           throw new Error('Nie znaleziono adresu');
         }
       } catch (err) {
-        showError(err.message || 'Wystąpił błąd. Spróbuj ponownie.');
+        const msg = err.message || '';
+        if (msg.includes('404') || msg.includes('Nie znaleziono')) showError('Nie znaleziono adresu. Sprawdź czy wpisałeś poprawną ulicę i numer.');
+        else if (msg.includes('500') || msg.includes('Błąd')) showError('Błąd serwera. Spróbuj ponownie za chwilę.');
+        else if (msg.includes('fetch') || msg.includes('network') || msg.includes('Failed')) showError('Brak połączenia z internetem. Sprawdź sieć.');
+        else showError(msg || 'Coś poszło nie tak. Spróbuj ponownie.');
       } finally {
         loading.classList.add('hidden');
       }
@@ -199,17 +389,24 @@
       error.classList.remove('hidden');
     }
 
-    function showResult(address, url) {
+    function showResult(address, url, total, preview) {
       foundAddress.textContent = address;
-      const fullUrl = window.location.origin + url;
-      calendarUrl.textContent = fullUrl;
-      calendarUrl.dataset.url = fullUrl;
+      _desktopIcsUrl = window.location.origin + url;
+      document.getElementById('resultTotal').textContent = `Znaleziono ${total} terminów wywozu`;
+      const list = document.getElementById('previewList');
+      list.innerHTML = (preview || []).map(e =>
+        `<div style="display:flex;justify-content:space-between;font-size:0.75rem;padding:3px 6px;background:#f9fafb;border-radius:6px">
+          <span style="color:#374151">${e.type}</span>
+          <span style="color:#6b7280;font-weight:600">${e.date}</span>
+        </div>`
+      ).join('');
       result.classList.remove('hidden');
       document.getElementById('downloadMsg').classList.add('hidden');
     }
 
     function downloadCalendar() {
-      const url = calendarUrl.dataset.url;
+      const url = _desktopIcsUrl;
+      if (!url) { showError('Najpierw wyszukaj adres'); return; }
       const a = document.createElement('a');
       a.href = url;
       a.download = '';
@@ -218,7 +415,137 @@
       document.body.removeChild(a);
       document.getElementById('downloadMsg').classList.remove('hidden');
     }
+
+    // --- MOBILE ---
+    const addressInputM = document.getElementById('addressInputM');
+    if (addressInputM) {
+      addressInputM.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') searchAddressM();
+      });
+    }
+
+    let _mobileIcsUrl = '';
+
+    async function searchAddressM() {
+      const query = document.getElementById('addressInputM').value.trim();
+      if (!query || query.length < 3) {
+        const el = document.getElementById('errorM');
+        el.textContent = 'Wpisz co najmniej 3 znaki';
+        el.classList.remove('hidden');
+        return;
+      }
+      document.getElementById('loadingM').classList.remove('hidden');
+      document.getElementById('errorM').classList.add('hidden');
+      document.getElementById('resultM').classList.add('hidden');
+      try {
+        const paramsM = new URLSearchParams({ q: query });
+        if (_mobilePointId) paramsM.set('address_point_id', _mobilePointId);
+        _mobilePointId = '';
+        const response = await fetch(`/api/search?${paramsM}`);
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'Nie znaleziono adresu');
+        if (data.results && data.results.length > 0) {
+          const item = data.results[0];
+          document.getElementById('foundAddressM').textContent = item.address;
+          _mobileIcsUrl = window.location.origin + item.url;
+          document.getElementById('resultTotalM').textContent = `Znaleziono ${item.total} terminów wywozu`;
+          const listM = document.getElementById('previewListM');
+          listM.innerHTML = (item.preview || []).map(e =>
+            `<div style="display:flex;justify-content:space-between;font-size:0.8rem;padding:4px 8px;background:#f9fafb;border-radius:8px;margin-bottom:4px">
+              <span style="color:#374151">${e.type}</span>
+              <span style="color:#6b7280;font-weight:600">${e.date}</span>
+            </div>`
+          ).join('');
+          document.getElementById('resultM').classList.remove('hidden');
+          document.getElementById('downloadMsgM').classList.add('hidden');
+        } else {
+          throw new Error('Nie znaleziono adresu');
+        }
+      } catch (err) {
+        const el = document.getElementById('errorM');
+        const msg = err.message || '';
+        if (msg.includes('404') || msg.includes('Nie znaleziono')) el.textContent = 'Nie znaleziono adresu. Sprawdź czy wpisałeś poprawną ulicę i numer.';
+        else if (msg.includes('500') || msg.includes('Błąd')) el.textContent = 'Błąd serwera. Spróbuj ponownie za chwilę.';
+        else if (msg.includes('fetch') || msg.includes('network') || msg.includes('Failed')) el.textContent = 'Brak połączenia z internetem. Sprawdź sieć.';
+        else el.textContent = msg || 'Coś poszło nie tak. Spróbuj ponownie.';
+        el.classList.remove('hidden');
+      } finally {
+        document.getElementById('loadingM').classList.add('hidden');
+      }
+    }
+
+    function downloadCalendarM() {
+      const a = document.createElement('a');
+      a.href = _mobileIcsUrl;
+      a.download = '';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      document.getElementById('downloadMsgM').classList.remove('hidden');
+    }
+
+    // --- MAPA ---
+    let _map = null;
+    let _mapMarker = null;
+    let _mapTargetInput = null;
+
+    function openMap(target) {
+      _mapTargetInput = target;
+      document.getElementById('map-modal').classList.add('open');
+      setTimeout(() => {
+        if (!_map) {
+          _map = L.map('map').setView([52.2297, 21.0122], 13);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+          }).addTo(_map);
+          _map.on('click', onMapClick);
+        } else {
+          _map.invalidateSize();
+        }
+      }, 100);
+    }
+
+    function closeMap() {
+      document.getElementById('map-modal').classList.remove('open');
+    }
+
+    async function onMapClick(e) {
+      const { lat, lng } = e.latlng;
+      document.getElementById('map-loading').style.display = 'block';
+      if (_mapMarker) _map.removeLayer(_mapMarker);
+      _mapMarker = L.marker([lat, lng]).addTo(_map);
+      try {
+        const res = await fetch(
+          `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&addressdetails=1&accept-language=pl`,
+          { headers: { 'Accept-Language': 'pl' } }
+        );
+        const data = await res.json();
+        const addr = data.address;
+        const road = addr.road || addr.pedestrian || addr.footway || '';
+        const num = addr.house_number || '';
+        const formatted = num ? `${road} ${num}` : road;
+        if (formatted) {
+          const inputId = _mapTargetInput === 'M' ? 'addressInputM' : 'addressInput';
+          document.getElementById(inputId).value = formatted;
+          closeMap();
+        }
+      } catch(e) {
+        console.error('Reverse geocoding error', e);
+      } finally {
+        document.getElementById('map-loading').style.display = 'none';
+      }
+    }
   </script>
+
+  <!-- MODAL MAPA -->
+  <div id="map-modal" onclick="if(event.target===this)closeMap()">
+    <div id="map-container">
+      <div id="map-hint">📍 Kliknij adres na mapie</div>
+      <button id="map-close" onclick="closeMap()">✕</button>
+      <div id="map-loading">Pobieranie adresu...</div>
+      <div id="map"></div>
+    </div>
+  </div>
 
 </body>
 </html>
