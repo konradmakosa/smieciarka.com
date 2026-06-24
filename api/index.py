@@ -467,13 +467,15 @@ def generate_ical(request: Request, address_path: str):
         f"X-WR-TIMEZONE:Europe/Warsaw\nX-PUBLISHED-TTL:PT{CACHE_TTL_HOURS}H"
     )
     
+    import urllib.parse
     safe_filename = address_original.replace(" ", "_").replace("/", "_")
+    encoded_filename = urllib.parse.quote(safe_filename)
     
     return Response(
         content=ics_content,
         media_type="text/calendar",
         headers={
-            "Content-Disposition": f'inline; filename="{safe_filename}.ics"',
+            "Content-Disposition": f'inline; filename="{encoded_filename}.ics"',
             "Cache-Control": f"public, max-age={CACHE_TTL_HOURS * 3600}"
         }
     )
