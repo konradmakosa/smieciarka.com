@@ -274,32 +274,27 @@ def address_page(slug: str):
   <meta name="description" content="{desc}">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
-  <meta property="og:url" content="https://www.smieciarka.com/adres/{slug}">
+  <meta property="og:url" content="https://www.smieciarka.com/ulica/{slug}">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://www.smieciarka.com/adres/{slug}">
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {{
-      document.getElementById('addr').value = '{address}';
-      if (window.innerWidth > 768) {{
-        document.getElementById('go').click();
-      }}
-    }});
-  </script>
+  <link rel="canonical" href="https://www.smieciarka.com/ulica/{slug}">
 </head>
 <body style="font-family:sans-serif;max-width:600px;margin:40px auto;padding:20px">
   <h1 style="font-size:1.4rem;color:#16a34a">🗑️ {title}</h1>
   <p>{desc}</p>
-  <div style="margin:24px 0">
-    <input id="addr" type="text" value="{address}" style="width:70%;padding:10px;border:1px solid #d1d5db;border-radius:8px;font-size:1rem">
-    <button id="go" onclick="window.location='/?q='+encodeURIComponent(document.getElementById(\\'addr\\').value)"
-      style="padding:10px 20px;background:#16a34a;color:white;border:none;border-radius:8px;font-size:1rem;cursor:pointer;margin-left:8px">
-      Szukaj
-    </button>
+  <p style="margin:24px 0">Sprawdź dokładne terminy wywozu odpadów dla tej ulicy. Pobierz gotowy plik kalendarza (.ics) i dodaj do Google Calendar, Outlook lub kalendarza iPhone.</p>
+  <a href="/?q={address}" style="display:inline-block;padding:14px 28px;background:#16a34a;color:white;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
+    Sprawdź harmonogram dla {address}
+  </a>
+  <div style="margin-top:32px;padding:16px;background:#f3f4f6;border-radius:8px">
+    <h2 style="font-size:1rem;margin:0 0 8px;color:#111">Co znajdziesz?</h2>
+    <ul style="margin:0;padding-left:20px;color:#374151">
+      <li>Terminy odbioru śmieci zmieszanych</li>
+      <li>Harmonogram odbioru plastiku, papieru, szkła</li>
+      <li>Daty odbioru odpadów wielkogabarytowych</li>
+      <li>Plik .ics do importu w kalendarzu</li>
+    </ul>
   </div>
-  <p style="color:#6b7280;font-size:0.85rem">Dane pobierane z <a href="https://warszawa19115.pl">warszawa19115.pl</a></p>
-  <script>
-    window.location = '/?q=' + encodeURIComponent('{address}');
-  </script>
+  <p style="color:#6b7280;font-size:0.85rem;margin-top:24px">Dane pobierane z <a href="https://warszawa19115.pl">warszawa19115.pl</a></p>
 </body>
 </html>"""
     return HTMLResponse(html)
