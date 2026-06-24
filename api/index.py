@@ -240,6 +240,85 @@ def autocomplete(request: Request, q: str = Query(..., min_length=2)):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.get("/robots.txt")
+def robots():
+    return Response(
+        content="User-agent: *\nAllow: /\nSitemap: https://www.smieciarka.com/sitemap.xml\n",
+        media_type="text/plain"
+    )
+
+
+@app.get("/sitemap.xml")
+def sitemap(request: Request):
+    """Sitemap dla robotów Google - popularne litery ulic"""
+    import requests as _req
+    base = "https://www.smieciarka.com"
+    urls = [f"<url><loc>{base}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>"]
+    letters = list("aąbcćdeęfghijklłmnńoópqrsśtuwxyzźż")
+    for letter in letters:
+        try:
+            session = _req.Session()
+            session.get(OC_URL).raise_for_status()
+            params = OC_PARAMS.copy()
+            params["p_p_resource_id"] = "autocompleteResource"
+            params["_portalCKMjunkschedules_WAR_portalCKMjunkschedulesportlet_INSTANCE_o5AIb2mimbRJ_name"] = letter
+            r = session.get(OC_URL, headers=OC_HEADERS, params=params, timeout=5)
+            for item in r.json()[:10]:
+                name = item.get("fullName", "")
+                slug = name.lower().replace(" ", "-")
+                urls.append(f"<url><loc>{base}/adres/{slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>")
+        except Exception:
+            pass
+    xml = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(urls) + "</urlset>"
+    return Response(content=xml, media_type="application/xml")
+
+
+@app.get("/adres/{slug:path}")
+def address_page(slug: str):
+    """Dedykowana strona SEO dla adresu"""
+    address = slug.replace("-", " ").title()
+    title = f"Harmonogram wywozu śmieci {address} Warszawa"
+    desc = f"Sprawdź kiedy odbierają śmieci przy ul. {address} w Warszawie. Pobierz harmonogram wywozu odpadów do kalendarza."
+    html = f"""<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content="{desc}">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{desc}">
+  <meta property="og:url" content="https://www.smieciarka.com/adres/{slug}">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.smieciarka.com/adres/{slug}">
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {{
+      document.getElementById('addr').value = '{address}';
+      if (window.innerWidth > 768) {{
+        document.getElementById('go').click();
+      }}
+    }});
+  </script>
+</head>
+<body style="font-family:sans-serif;max-width:600px;margin:40px auto;padding:20px">
+  <h1 style="font-size:1.4rem;color:#16a34a">🗑️ {title}</h1>
+  <p>{desc}</p>
+  <div style="margin:24px 0">
+    <input id="addr" type="text" value="{address}" style="width:70%;padding:10px;border:1px solid #d1d5db;border-radius:8px;font-size:1rem">
+    <button id="go" onclick="window.location='/?q='+encodeURIComponent(document.getElementById(\\'addr\\').value)"
+      style="padding:10px 20px;background:#16a34a;color:white;border:none;border-radius:8px;font-size:1rem;cursor:pointer;margin-left:8px">
+      Szukaj
+    </button>
+  </div>
+  <p style="color:#6b7280;font-size:0.85rem">Dane pobierane z <a href="https://warszawa19115.pl">warszawa19115.pl</a></p>
+  <script>
+    window.location = '/?q=' + encodeURIComponent('{address}');
+  </script>
+</body>
+</html>"""
+    return HTMLResponse(html)
+
+
 @app.get("/test/{address_path:path}")
 def test_ical(address_path: str):
     """Testowy endpoint - zwraca co otrzymał"""
