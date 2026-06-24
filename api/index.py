@@ -467,7 +467,7 @@ def generate_ical(request: Request, address_path: str):
         f"X-WR-TIMEZONE:Europe/Warsaw\nX-PUBLISHED-TTL:PT{CACHE_TTL_HOURS}H"
     )
     
-    safe_filename = address_normalized.replace(" ", "_").replace("/", "_")
+    safe_filename = address_original.replace(" ", "_").replace("/", "_")
     
     return Response(
         content=ics_content,
