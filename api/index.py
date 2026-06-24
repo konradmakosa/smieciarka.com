@@ -258,6 +258,40 @@ def sitemap():
     return Response(content='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>', media_type="application/xml")
 
 
+@app.get("/dzielnice/")
+def districts_page():
+    """Spis dzielnic i ulic - wewnętrzne linki SEO"""
+    streets_path = os.path.join(_project_root, "seo", "streets.json")
+    if not os.path.exists(streets_path):
+        return HTMLResponse("<p>Brak danych</p>", status_code=404)
+    with open(streets_path, "r", encoding="utf-8") as f:
+        streets = json.load(f)
+    by_district = {}
+    for slug, info in streets.items():
+        district = info.get("district", "Inne")
+        by_district.setdefault(district, []).append({
+            "slug": slug,
+            "street": info.get("street", "").title(),
+            "postcode": info.get("postcode", "")
+        })
+    for d in by_district:
+        by_district[d].sort(key=lambda x: x["street"])
+
+    title = "Wszystkie ulice Warszawy - harmonogram wywozu śmieci"
+    desc = "Spis ulic i dzielnic Warszawy. Sprawdź harmonogram wywozu odpadów dla każdej ulicy."
+    parts = [f"<!DOCTYPE html><html lang='pl'><head><meta charset='UTF-8'><title>{title}</title><meta name='description' content='{desc}'><link rel='canonical' href='https://www.smieciarka.com/dzielnice/'></head><body style='font-family:sans-serif;max-width:900px;margin:40px auto;padding:20px'><h1>🗑️ {title}</h1><p>{desc}</p>"]
+    for district in sorted(by_district.keys()):
+        parts.append(f"<h2 style='margin-top:32px;color:#16a34a'>{district}</h2><ul style='columns:2;column-gap:40px;list-style:none;padding:0;margin:0'>")
+        for item in by_district[district]:
+            street = item["street"]
+            slug = item["slug"]
+            postcode = item["postcode"]
+            parts.append(f"<li style='margin-bottom:6px'><a href='/ulica/{slug}' style='color:#2563eb;text-decoration:none'>{street} ({postcode})</a></li>")
+        parts.append("</ul>")
+    parts.append("<p style='margin-top:40px;color:#6b7280;font-size:0.85rem'>Dane pobierane z <a href='https://warszawa19115.pl'>warszawa19115.pl</a></p></body></html>")
+    return HTMLResponse("".join(parts))
+
+
 @app.get("/ulica/{slug:path}")
 def address_page(slug: str):
     """Dedykowana strona SEO dla adresu"""

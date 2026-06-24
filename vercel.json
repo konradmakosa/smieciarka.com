@@ -16,6 +16,10 @@
       "dest": "api/index.py"
     },
     {
+      "src": "/dzielnice/",
+      "dest": "api/index.py"
+    },
+    {
       "src": "/ulica/(.*)",
       "dest": "api/index.py"
     },
