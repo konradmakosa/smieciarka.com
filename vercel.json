@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*\\.(jpg|jpeg|png|gif|ico|svg))",
-      "dest": "/public/$1"
+      "dest": "/$1"
     },
     {
       "src": "/ical/(.*)",
