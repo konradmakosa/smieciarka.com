@@ -259,13 +259,8 @@ def sitemap():
 
 
 @app.get("/fb-share")
-def fb_share_test():
-    return Response(content="OK fb-share", media_type="text/plain")
-
-
-@app.get("/fb-share.jpg")
 def fb_share_image():
-    """Obraz do podglądu Facebook / Open Graph"""
+    """Obraz do podglądu Facebook / Open Graph (Vercel nie kieruje .jpg do Python)"""
     img_path = os.path.join(_project_root, "public", "fb-share.jpg")
     if os.path.exists(img_path):
         with open(img_path, "rb") as f:
