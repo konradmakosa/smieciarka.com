@@ -86,10 +86,12 @@
     #mobile-view { display: none; }
 
     @media (max-width: 768px) {
+      html, body { overflow: visible; }
       .viewport { display: none; }
       #mobile-view {
         display: block;
         min-height: 100vh;
+        overflow-y: auto;
         background-image: url("https://raw.githubusercontent.com/konradmakosa/smieciarka.com/main/public/tlo_mobilne.jpg");
         background-size: cover;
         background-position: center top;
