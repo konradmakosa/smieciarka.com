@@ -41,12 +41,38 @@ _public_dir = os.path.join(_project_root, "public")
 if os.path.exists(_public_dir):
     app.mount("/public", StaticFiles(directory=_public_dir), name="public")
 
-# Event log
-_event_log = []
+# Event log - Upstash Redis REST API
+import os as _os
+_KV_URL = _os.environ.get("KV_REST_API_URL", "")
+_KV_TOKEN = _os.environ.get("KV_REST_API_TOKEN", "")
+_KV_READ_TOKEN = _os.environ.get("KV_REST_API_READ_ONLY_TOKEN", "")
 MAX_LOG_ENTRIES = 500
+_LOG_KEY = "smieciarka:events"
+
+def _kv_post(cmd: list):
+    import requests as _r
+    if not _KV_URL or not _KV_TOKEN:
+        return None
+    try:
+        r = _r.post(f"{_KV_URL}", json=cmd,
+                    headers={"Authorization": f"Bearer {_KV_TOKEN}"}, timeout=3)
+        return r.json().get("result")
+    except Exception:
+        return None
+
+def _kv_get(cmd: list):
+    import requests as _r
+    if not _KV_URL or not _KV_READ_TOKEN:
+        return None
+    try:
+        r = _r.post(f"{_KV_URL}", json=cmd,
+                    headers={"Authorization": f"Bearer {_KV_READ_TOKEN}"}, timeout=3)
+        return r.json().get("result")
+    except Exception:
+        return None
 
 def log_event(event_type: str, ip: str, query: str = "", success: bool = True, detail: str = ""):
-    _event_log.append({
+    entry = json.dumps({
         "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "type": event_type,
         "ip": ip,
@@ -54,8 +80,8 @@ def log_event(event_type: str, ip: str, query: str = "", success: bool = True, d
         "success": success,
         "detail": detail,
     })
-    if len(_event_log) > MAX_LOG_ENTRIES:
-        _event_log.pop(0)
+    _kv_post(["LPUSH", _LOG_KEY, entry])
+    _kv_post(["LTRIM", _LOG_KEY, 0, MAX_LOG_ENTRIES - 1])
 
 # Admin - hash hasła (nie trzymamy plain text w kodzie)
 # echo -n "5147raRA!@" | sha256sum
@@ -249,20 +275,27 @@ async def admin_panel(request: Request):
     password = form.get("password", "")
     if _hl.sha256(password.encode()).hexdigest() != ADMIN_PASSWORD_HASH:
         return HTMLResponse(LOGIN_FORM.format(error='<p class="err">Błędne hasło</p>'), status_code=401)
-    total = len(_event_log)
-    success_count = sum(1 for e in _event_log if e["success"])
+    raw = _kv_get(["LRANGE", _LOG_KEY, 0, MAX_LOG_ENTRIES - 1]) or []
+    events = []
+    for item in raw:
+        try:
+            events.append(json.loads(item))
+        except Exception:
+            pass
+    total = len(events)
+    success_count = sum(1 for e in events if e.get("success"))
     def _row(e):
-        bg = '#f0fdf4' if e['success'] else '#fef2f2'
-        icon = '✅' if e['success'] else '❌'
+        bg = '#f0fdf4' if e.get('success') else '#fef2f2'
+        icon = '✅' if e.get('success') else '❌'
         return (f'<tr style="background:{bg}">'
-                f'<td>{e["time"]}</td>'
-                f'<td><b>{e["type"]}</b></td>'
-                f'<td>{e["ip"]}</td>'
-                f'<td>{e["query"]}</td>'
+                f'<td>{e.get("time","")}</td>'
+                f'<td><b>{e.get("type","")}</b></td>'
+                f'<td>{e.get("ip","")}</td>'
+                f'<td>{e.get("query","")}</td>'
                 f'<td>{icon}</td>'
-                f'<td style="color:#6b7280;font-size:0.8em">{e["detail"]}</td>'
+                f'<td style="color:#6b7280;font-size:0.8em">{e.get("detail","")}</td>'
                 f'</tr>')
-    rows = "".join(_row(e) for e in reversed(_event_log))
+    rows = "".join(_row(e) for e in events)
     html = (
         "<!DOCTYPE html><html><head><meta charset=UTF-8>"
         "<title>Admin - Smieciarka.com</title>"
