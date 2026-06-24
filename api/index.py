@@ -249,31 +249,16 @@ def robots():
 
 
 @app.get("/sitemap.xml")
-def sitemap(request: Request):
-    """Sitemap dla robotów Google - popularne litery ulic"""
-    import requests as _req
-    base = "https://www.smieciarka.com"
-    urls = [f"<url><loc>{base}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>"]
-    letters = list("aąbcćdeęfghijklłmnńoópqrsśtuwxyzźż")
-    for letter in letters:
-        try:
-            session = _req.Session()
-            session.get(OC_URL).raise_for_status()
-            params = OC_PARAMS.copy()
-            params["p_p_resource_id"] = "autocompleteResource"
-            params["_portalCKMjunkschedules_WAR_portalCKMjunkschedulesportlet_INSTANCE_o5AIb2mimbRJ_name"] = letter
-            r = session.get(OC_URL, headers=OC_HEADERS, params=params, timeout=5)
-            for item in r.json()[:10]:
-                name = item.get("fullName", "")
-                slug = name.lower().replace(" ", "-")
-                urls.append(f"<url><loc>{base}/adres/{slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>")
-        except Exception:
-            pass
-    xml = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(urls) + "</urlset>"
-    return Response(content=xml, media_type="application/xml")
+def sitemap():
+    """Sitemap dla robotów Google - serwowany z gotowego pliku"""
+    sitemap_path = os.path.join(_project_root, "seo", "sitemap.xml")
+    if os.path.exists(sitemap_path):
+        with open(sitemap_path, "r", encoding="utf-8") as f:
+            return Response(content=f.read(), media_type="application/xml")
+    return Response(content='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>', media_type="application/xml")
 
 
-@app.get("/adres/{slug:path}")
+@app.get("/ulica/{slug:path}")
 def address_page(slug: str):
     """Dedykowana strona SEO dla adresu"""
     address = slug.replace("-", " ").title()

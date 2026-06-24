@@ -33,3 +33,10 @@ Thumbs.db
 
 # Generated files
 *.ics
+
+# SEO - pages generowane dynamicznie, nie commitujemy
+seo/pages/
+# ale addresses.json i sitemap.xml commitujemy:
+!seo/addresses.json
+!seo/streets.json
+!seo/sitemap.xml

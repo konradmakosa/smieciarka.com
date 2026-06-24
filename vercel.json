@@ -16,7 +16,7 @@
       "dest": "api/index.py"
     },
     {
-      "src": "/adres/(.*)",
+      "src": "/ulica/(.*)",
       "dest": "api/index.py"
     },
     {

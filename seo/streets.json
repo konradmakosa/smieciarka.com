@@ -1,0 +1,5967 @@
+{
+  "11-listopada-03-435-praga-północ": {
+    "street": "11 LISTOPADA",
+    "district": "Praga-Północ",
+    "postcode": "03-435"
+  },
+  "11-listopada-03-447-praga-północ": {
+    "street": "11 LISTOPADA",
+    "district": "Praga-Północ",
+    "postcode": "03-447"
+  },
+  "11-listopada-03-446-praga-północ": {
+    "street": "11 LISTOPADA",
+    "district": "Praga-Północ",
+    "postcode": "03-446"
+  },
+  "al.-marsz.-j.-piłsudskiego-05-077-wesoła": {
+    "street": "AL. MARSZ. J. PIŁSUDSKIEGO",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "andrutowa-02-969-wilanów": {
+    "street": "ANDRUTOWA",
+    "district": "Wilanów",
+    "postcode": "02-969"
+  },
+  "bruzdowa-02-991-wilanów": {
+    "street": "BRUZDOWA",
+    "district": "Wilanów",
+    "postcode": "02-991"
+  },
+  "calowa-02-995-wilanów": {
+    "street": "CALOWA",
+    "district": "Wilanów",
+    "postcode": "02-995"
+  },
+  "echa-leśne-03-257-białołęka": {
+    "street": "ECHA LEŚNE",
+    "district": "Białołęka",
+    "postcode": "03-257"
+  },
+  "gościniec-05-077-wesoła": {
+    "street": "GOŚCINIEC",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "i.-paderewskiego-04-443-rembertów": {
+    "street": "I. PADEREWSKIEGO",
+    "district": "Rembertów",
+    "postcode": "04-443"
+  },
+  "jagielska-02-886-ursynów": {
+    "street": "JAGIELSKA",
+    "district": "Ursynów",
+    "postcode": "02-886"
+  },
+  "karmelicka-00-149-śródmieście": {
+    "street": "KARMELICKA",
+    "district": "Śródmieście",
+    "postcode": "00-149"
+  },
+  "koryncka-04-686-wawer": {
+    "street": "KORYNCKA",
+    "district": "Wawer",
+    "postcode": "04-686"
+  },
+  "czeremchowa-03-159-białołęka": {
+    "street": "CZEREMCHOWA",
+    "district": "Białołęka",
+    "postcode": "03-159"
+  },
+  "j.-sowińskiego-01-251-wola": {
+    "street": "J. SOWIŃSKIEGO",
+    "district": "Wola",
+    "postcode": "01-251"
+  },
+  "ochocka-02-495-ursus": {
+    "street": "OCHOCKA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "ostródzka-03-289-targówek": {
+    "street": "OSTRÓDZKA",
+    "district": "Targówek",
+    "postcode": "03-289"
+  },
+  "rosochata-02-998-wilanów": {
+    "street": "ROSOCHATA",
+    "district": "Wilanów",
+    "postcode": "02-998"
+  },
+  "sokołowska-01-142-wola": {
+    "street": "SOKOŁOWSKA",
+    "district": "Wola",
+    "postcode": "01-142"
+  },
+  "szarych-szeregów-01-210-wola": {
+    "street": "SZARYCH SZEREGÓW",
+    "district": "Wola",
+    "postcode": "01-210"
+  },
+  "szeligowska-01-320-bemowo": {
+    "street": "SZELIGOWSKA",
+    "district": "Bemowo",
+    "postcode": "01-320"
+  },
+  "sztumska-04-996-wawer": {
+    "street": "SZTUMSKA",
+    "district": "Wawer",
+    "postcode": "04-996"
+  },
+  "trakt-lubelski-04-870-wawer": {
+    "street": "TRAKT LUBELSKI",
+    "district": "Wawer",
+    "postcode": "04-870"
+  },
+  "kosaćcowa-04-991-wawer": {
+    "street": "KOSAĆCOWA",
+    "district": "Wawer",
+    "postcode": "04-991"
+  },
+  "trakt-lubelski-04-667-wawer": {
+    "street": "TRAKT LUBELSKI",
+    "district": "Wawer",
+    "postcode": "04-667"
+  },
+  "wiedeńska-02-962-wilanów": {
+    "street": "WIEDEŃSKA",
+    "district": "Wilanów",
+    "postcode": "02-962"
+  },
+  "zagórzańska-04-965-wawer": {
+    "street": "ZAGÓRZAŃSKA",
+    "district": "Wawer",
+    "postcode": "04-965"
+  },
+  "zasadowa-04-875-wawer": {
+    "street": "ZASADOWA",
+    "district": "Wawer",
+    "postcode": "04-875"
+  },
+  "rafaela-03-604-targówek": {
+    "street": "RAFAELA",
+    "district": "Targówek",
+    "postcode": "03-604"
+  },
+  "ostródzka-03-289-białołęka": {
+    "street": "OSTRÓDZKA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "agatowa-03-680-targówek": {
+    "street": "AGATOWA",
+    "district": "Targówek",
+    "postcode": "03-680"
+  },
+  "agatowa-05-077-wesoła": {
+    "street": "AGATOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "posag-7-panien-02-495-ursus": {
+    "street": "POSAG 7 PANIEN",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "e.-dahlbergha-01-436-wola": {
+    "street": "E. DAHLBERGHA",
+    "district": "Wola",
+    "postcode": "01-436"
+  },
+  "e.-dahlbergha-01-428-wola": {
+    "street": "E. DAHLBERGHA",
+    "district": "Wola",
+    "postcode": "01-428"
+  },
+  "al.-jana-pawła-ii-00-828-wola": {
+    "street": "AL. JANA PAWŁA II",
+    "district": "Wola",
+    "postcode": "00-828"
+  },
+  "al.-jana-pawła-ii-00-124-śródmieście": {
+    "street": "AL. JANA PAWŁA II",
+    "district": "Śródmieście",
+    "postcode": "00-124"
+  },
+  "al.-jana-pawła-ii-00-854-wola": {
+    "street": "AL. JANA PAWŁA II",
+    "district": "Wola",
+    "postcode": "00-854"
+  },
+  "al.-jana-pawła-ii-00-116-śródmieście": {
+    "street": "AL. JANA PAWŁA II",
+    "district": "Śródmieście",
+    "postcode": "00-116"
+  },
+  "al.-jana-pawła-ii-00-133-śródmieście": {
+    "street": "AL. JANA PAWŁA II",
+    "district": "Śródmieście",
+    "postcode": "00-133"
+  },
+  "1-maja-02-495-ursus": {
+    "street": "1 MAJA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "1-maja-05-075-wesoła": {
+    "street": "1 MAJA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "akacjowa-05-075-wesoła": {
+    "street": "AKACJOWA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "akacjowa-02-534-mokotów": {
+    "street": "AKACJOWA",
+    "district": "Mokotów",
+    "postcode": "02-534"
+  },
+  "al.-3-maja-00-401-śródmieście": {
+    "street": "AL. 3 MAJA",
+    "district": "Śródmieście",
+    "postcode": "00-401"
+  },
+  "al.-3-maja-00-391-śródmieście": {
+    "street": "AL. 3 MAJA",
+    "district": "Śródmieście",
+    "postcode": "00-391"
+  },
+  "15-sierpnia-03-173-białołęka": {
+    "street": "15 SIERPNIA",
+    "district": "Białołęka",
+    "postcode": "03-173"
+  },
+  "a.-ciołkosza-03-134-białołęka": {
+    "street": "A. CIOŁKOSZA",
+    "district": "Białołęka",
+    "postcode": "03-134"
+  },
+  "amarantowa-03-599-targówek": {
+    "street": "AMARANTOWA",
+    "district": "Targówek",
+    "postcode": "03-599"
+  },
+  "ambaras-03-013-białołęka": {
+    "street": "AMBARAS",
+    "district": "Białołęka",
+    "postcode": "03-013"
+  },
+  "al.-j.-rodowicza-„anody”-02-786-ursynów": {
+    "street": "AL. J. RODOWICZA „ANODY”",
+    "district": "Ursynów",
+    "postcode": "02-786"
+  },
+  "analityczna-02-211-włochy": {
+    "street": "ANALITYCZNA",
+    "district": "Włochy",
+    "postcode": "02-211"
+  },
+  "a.-szomańskiego-02-495-ursus": {
+    "street": "A. SZOMAŃSKIEGO",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "faraona-02-495-ursus": {
+    "street": "FARAONA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "apartamentowa-02-495-ursus": {
+    "street": "APARTAMENTOWA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "arabska-03-977-praga-południe": {
+    "street": "ARABSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-977"
+  },
+  "asfaltowa-02-527-mokotów": {
+    "street": "ASFALTOWA",
+    "district": "Mokotów",
+    "postcode": "02-527"
+  },
+  "baśniowa-02-349-ochota": {
+    "street": "BAŚNIOWA",
+    "district": "Ochota",
+    "postcode": "02-349"
+  },
+  "baśniowa-05-075-wesoła": {
+    "street": "BAŚNIOWA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "ateńska-03-978-praga-południe": {
+    "street": "ATEŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-978"
+  },
+  "augustówka-02-981-mokotów": {
+    "street": "AUGUSTÓWKA",
+    "district": "Mokotów",
+    "postcode": "02-981"
+  },
+  "augustówka-02-981-wilanów": {
+    "street": "AUGUSTÓWKA",
+    "district": "Wilanów",
+    "postcode": "02-981"
+  },
+  "awionetki-rwd-03-982-praga-południe": {
+    "street": "AWIONETKI RWD",
+    "district": "Praga-Południe",
+    "postcode": "03-982"
+  },
+  "21-pp-dzieci-warszawy-03-983-praga-południe": {
+    "street": "21 PP DZIECI WARSZAWY",
+    "district": "Praga-Południe",
+    "postcode": "03-983"
+  },
+  "t.-axentowicza-04-644-wawer": {
+    "street": "T. AXENTOWICZA",
+    "district": "Wawer",
+    "postcode": "04-644"
+  },
+  "t.-axentowicza-04-629-wawer": {
+    "street": "T. AXENTOWICZA",
+    "district": "Wawer",
+    "postcode": "04-629"
+  },
+  "gen.-l.-rayskiego-01-307-bemowo": {
+    "street": "GEN. L. RAYSKIEGO",
+    "district": "Bemowo",
+    "postcode": "01-307"
+  },
+  "k.-taylora-02-495-ursus": {
+    "street": "K. TAYLORA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "azaliowa-04-539-wawer": {
+    "street": "AZALIOWA",
+    "district": "Wawer",
+    "postcode": "04-539"
+  },
+  "azaliowa-05-077-wesoła": {
+    "street": "AZALIOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "f.-kniaźnina-01-607-żoliborz": {
+    "street": "F. KNIAŹNINA",
+    "district": "Żoliborz",
+    "postcode": "01-607"
+  },
+  "f.-kniaźnina-01-617-żoliborz": {
+    "street": "F. KNIAŹNINA",
+    "district": "Żoliborz",
+    "postcode": "01-617"
+  },
+  "gwiaździsta-01-651-żoliborz": {
+    "street": "GWIAŹDZISTA",
+    "district": "Żoliborz",
+    "postcode": "01-651"
+  },
+  "bażancia-02-892-ursynów": {
+    "street": "BAŻANCIA",
+    "district": "Ursynów",
+    "postcode": "02-892"
+  },
+  "1-praskiego-pułku-05-075-wesoła": {
+    "street": "1 PRASKIEGO PUŁKU",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "1-sierpnia-02-134-włochy": {
+    "street": "1 SIERPNIA",
+    "district": "Włochy",
+    "postcode": "02-134"
+  },
+  "27-grudnia-04-665-wawer": {
+    "street": "27 GRUDNIA",
+    "district": "Wawer",
+    "postcode": "04-665"
+  },
+  "29-listopada-00-465-śródmieście": {
+    "street": "29 LISTOPADA",
+    "district": "Śródmieście",
+    "postcode": "00-465"
+  },
+  "6-sierpnia-02-843-ursynów": {
+    "street": "6 SIERPNIA",
+    "district": "Ursynów",
+    "postcode": "02-843"
+  },
+  "a.-asnyka-02-028-ochota": {
+    "street": "A. ASNYKA",
+    "district": "Ochota",
+    "postcode": "02-028"
+  },
+  "a.-bohdziewicza-01-685-bielany": {
+    "street": "A. BOHDZIEWICZA",
+    "district": "Bielany",
+    "postcode": "01-685"
+  },
+  "a.-borkiewicza-00-712-mokotów": {
+    "street": "A. BORKIEWICZA",
+    "district": "Mokotów",
+    "postcode": "00-712"
+  },
+  "a.-b.-dobrowolskiego-01-483-bemowo": {
+    "street": "A. B. DOBROWOLSKIEGO",
+    "district": "Bemowo",
+    "postcode": "01-483"
+  },
+  "a.-bardiniego-04-957-wawer": {
+    "street": "A. BARDINIEGO",
+    "district": "Wawer",
+    "postcode": "04-957"
+  },
+  "1-praskiego-pułku-04-053-praga-południe": {
+    "street": "1 PRASKIEGO PUŁKU",
+    "district": "Praga-Południe",
+    "postcode": "04-053"
+  },
+  "a.-asnyka-05-075-wesoła": {
+    "street": "A. ASNYKA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "królowej-bony-02-496-ursus": {
+    "street": "KRÓLOWEJ BONY",
+    "district": "Ursus",
+    "postcode": "02-496"
+  },
+  "walcownicza-04-921-wawer": {
+    "street": "WALCOWNICZA",
+    "district": "Wawer",
+    "postcode": "04-921"
+  },
+  "pl.-czerwca-1976-r.-02-495-ursus": {
+    "street": "PL. CZERWCA 1976 R.",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "a.-śląskiej-04-957-wawer": {
+    "street": "A. ŚLĄSKIEJ",
+    "district": "Wawer",
+    "postcode": "04-957"
+  },
+  "dąbrowa-04-989-wawer": {
+    "street": "DĄBROWA",
+    "district": "Wawer",
+    "postcode": "04-989"
+  },
+  "al.-polski-walczącej-00-712-mokotów": {
+    "street": "AL. POLSKI WALCZĄCEJ",
+    "district": "Mokotów",
+    "postcode": "00-712"
+  },
+  "al.-prymasa-tysiąclecia-01-242-wola": {
+    "street": "AL. PRYMASA TYSIĄCLECIA",
+    "district": "Wola",
+    "postcode": "01-242"
+  },
+  "i.-prądzyńskiego-01-222-wola": {
+    "street": "I. PRĄDZYŃSKIEGO",
+    "district": "Wola",
+    "postcode": "01-222"
+  },
+  "chorągwi-pancernej-02-951-wilanów": {
+    "street": "CHORĄGWI PANCERNEJ",
+    "district": "Wilanów",
+    "postcode": "02-951"
+  },
+  "kalinowej-łąki-01-934-bielany": {
+    "street": "KALINOWEJ ŁĄKI",
+    "district": "Bielany",
+    "postcode": "01-934"
+  },
+  "kąpielowa-02-910-mokotów": {
+    "street": "KĄPIELOWA",
+    "district": "Mokotów",
+    "postcode": "02-910"
+  },
+  "prząśniczek-03-153-białołęka": {
+    "street": "PRZĄŚNICZEK",
+    "district": "Białołęka",
+    "postcode": "03-153"
+  },
+  "cichy-zakątek-03-037-białołęka": {
+    "street": "CICHY ZAKĄTEK",
+    "district": "Białołęka",
+    "postcode": "03-037"
+  },
+  "długi-kąt-03-289-białołęka": {
+    "street": "DŁUGI KĄT",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "nad-wąwozem-02-796-ursynów": {
+    "street": "NAD WĄWOZEM",
+    "district": "Ursynów",
+    "postcode": "02-796"
+  },
+  "brązownicza-01-929-bielany": {
+    "street": "BRĄZOWNICZA",
+    "district": "Bielany",
+    "postcode": "01-929"
+  },
+  "książkowa-03-134-białołęka": {
+    "street": "KSIĄŻKOWA",
+    "district": "Białołęka",
+    "postcode": "03-134"
+  },
+  "bitwy-pod-rokitną-01-506-żoliborz": {
+    "street": "BITWY POD ROKITNĄ",
+    "district": "Żoliborz",
+    "postcode": "01-506"
+  },
+  "czarująca-03-289-białołęka": {
+    "street": "CZARUJĄCA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "dolnośląska-01-736-żoliborz": {
+    "street": "DOLNOŚLĄSKA",
+    "district": "Żoliborz",
+    "postcode": "01-736"
+  },
+  "dąbrowiecka-03-932-praga-południe": {
+    "street": "DĄBROWIECKA",
+    "district": "Praga-Południe",
+    "postcode": "03-932"
+  },
+  "górnośląska-00-443-śródmieście": {
+    "street": "GÓRNOŚLĄSKA",
+    "district": "Śródmieście",
+    "postcode": "00-443"
+  },
+  "j.-dąbrowskiego-02-558-mokotów": {
+    "street": "J. DĄBROWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-558"
+  },
+  "kwitnącego-sadu-02-202-ochota": {
+    "street": "KWITNĄCEGO SADU",
+    "district": "Ochota",
+    "postcode": "02-202"
+  },
+  "dąbrowszczaków-03-474-praga-północ": {
+    "street": "DĄBROWSZCZAKÓW",
+    "district": "Praga-Północ",
+    "postcode": "03-474"
+  },
+  "dąbrowy-05-077-wesoła": {
+    "street": "DĄBROWY",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "górnośląska-00-444-śródmieście": {
+    "street": "GÓRNOŚLĄSKA",
+    "district": "Śródmieście",
+    "postcode": "00-444"
+  },
+  "gąsienicowa-04-521-wawer": {
+    "street": "GĄSIENICOWA",
+    "district": "Wawer",
+    "postcode": "04-521"
+  },
+  "gąsocińska-00-711-mokotów": {
+    "street": "GĄSOCIŃSKA",
+    "district": "Mokotów",
+    "postcode": "00-711"
+  },
+  "dąbrówki-03-909-praga-południe": {
+    "street": "DĄBRÓWKI",
+    "district": "Praga-Południe",
+    "postcode": "03-909"
+  },
+  "cząstkowska-01-678-bielany": {
+    "street": "CZĄSTKOWSKA",
+    "district": "Bielany",
+    "postcode": "01-678"
+  },
+  "jarząbków-02-817-ursynów": {
+    "street": "JARZĄBKÓW",
+    "district": "Ursynów",
+    "postcode": "02-817"
+  },
+  "dąbrowszczaków-03-476-praga-północ": {
+    "street": "DĄBROWSZCZAKÓW",
+    "district": "Praga-Północ",
+    "postcode": "03-476"
+  },
+  "elbląska-01-747-żoliborz": {
+    "street": "ELBLĄSKA",
+    "district": "Żoliborz",
+    "postcode": "01-747"
+  },
+  "gen.-j.-zajączka-01-518-żoliborz": {
+    "street": "GEN. J. ZAJĄCZKA",
+    "district": "Żoliborz",
+    "postcode": "01-518"
+  },
+  "elbląska-01-737-żoliborz": {
+    "street": "ELBLĄSKA",
+    "district": "Żoliborz",
+    "postcode": "01-737"
+  },
+  "gen.-j.-zajączka-01-522-żoliborz": {
+    "street": "GEN. J. ZAJĄCZKA",
+    "district": "Żoliborz",
+    "postcode": "01-522"
+  },
+  "górnośląska-00-432-śródmieście": {
+    "street": "GÓRNOŚLĄSKA",
+    "district": "Śródmieście",
+    "postcode": "00-432"
+  },
+  "dąbrowszczaków-03-482-praga-północ": {
+    "street": "DĄBROWSZCZAKÓW",
+    "district": "Praga-Północ",
+    "postcode": "03-482"
+  },
+  "borków-04-786-wawer": {
+    "street": "BORKÓW",
+    "district": "Wawer",
+    "postcode": "04-786"
+  },
+  "borowiecka-04-871-wawer": {
+    "street": "BOROWIECKA",
+    "district": "Wawer",
+    "postcode": "04-871"
+  },
+  "celulozy-04-986-wawer": {
+    "street": "CELULOZY",
+    "district": "Wawer",
+    "postcode": "04-986"
+  },
+  "draceny-04-879-wawer": {
+    "street": "DRACENY",
+    "district": "Wawer",
+    "postcode": "04-879"
+  },
+  "farbiarska-02-862-ursynów": {
+    "street": "FARBIARSKA",
+    "district": "Ursynów",
+    "postcode": "02-862"
+  },
+  "jagiellońska-03-301-praga-północ": {
+    "street": "JAGIELLOŃSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-301"
+  },
+  "zbąszyńska-02-221-włochy": {
+    "street": "ZBĄSZYŃSKA",
+    "district": "Włochy",
+    "postcode": "02-221"
+  },
+  "krasnowolska-02-849-ursynów": {
+    "street": "KRASNOWOLSKA",
+    "district": "Ursynów",
+    "postcode": "02-849"
+  },
+  "kuligowska-04-795-wawer": {
+    "street": "KULIGOWSKA",
+    "district": "Wawer",
+    "postcode": "04-795"
+  },
+  "ogórkowa-04-998-wawer": {
+    "street": "OGÓRKOWA",
+    "district": "Wawer",
+    "postcode": "04-998"
+  },
+  "przyjacielska-04-786-wawer": {
+    "street": "PRZYJACIELSKA",
+    "district": "Wawer",
+    "postcode": "04-786"
+  },
+  "strzygłowska-04-872-wawer": {
+    "street": "STRZYGŁOWSKA",
+    "district": "Wawer",
+    "postcode": "04-872"
+  },
+  "wiązana-04-680-wawer": {
+    "street": "WIĄZANA",
+    "district": "Wawer",
+    "postcode": "04-680"
+  },
+  "a.-worobczuka-02-972-wilanów": {
+    "street": "A. WOROBCZUKA",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "głubczycka-02-417-włochy": {
+    "street": "GŁUBCZYCKA",
+    "district": "Włochy",
+    "postcode": "02-417"
+  },
+  "będzińska-04-882-wawer": {
+    "street": "BĘDZIŃSKA",
+    "district": "Wawer",
+    "postcode": "04-882"
+  },
+  "objazdowa-03-711-praga-północ": {
+    "street": "OBJAZDOWA",
+    "district": "Praga-Północ",
+    "postcode": "03-711"
+  },
+  "objazdowa-03-771-praga-północ": {
+    "street": "OBJAZDOWA",
+    "district": "Praga-Północ",
+    "postcode": "03-771"
+  },
+  "objazdowa-05-077-wesoła": {
+    "street": "OBJAZDOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "dobka-z-oleśnicy-03-255-białołęka": {
+    "street": "DOBKA Z OLEŚNICY",
+    "district": "Białołęka",
+    "postcode": "03-255"
+  },
+  "blacharska-02-660-mokotów": {
+    "street": "BLACHARSKA",
+    "district": "Mokotów",
+    "postcode": "02-660"
+  },
+  "blaszana-03-703-praga-północ": {
+    "street": "BLASZANA",
+    "district": "Praga-Północ",
+    "postcode": "03-703"
+  },
+  "bliska-03-804-praga-południe": {
+    "street": "BLISKA",
+    "district": "Praga-Południe",
+    "postcode": "03-804"
+  },
+  "bł.-ładysława-z-gielniowa-02-066-ochota": {
+    "street": "BŁ. ŁADYSŁAWA Z GIELNIOWA",
+    "district": "Ochota",
+    "postcode": "02-066"
+  },
+  "bławatków-04-750-wawer": {
+    "street": "BŁAWATKÓW",
+    "district": "Wawer",
+    "postcode": "04-750"
+  },
+  "skalbmierska-01-844-bielany": {
+    "street": "SKALBMIERSKA",
+    "district": "Bielany",
+    "postcode": "01-844"
+  },
+  "chlubna-03-051-białołęka": {
+    "street": "CHLUBNA",
+    "district": "Białołęka",
+    "postcode": "03-051"
+  },
+  "bobrowa-03-044-białołęka": {
+    "street": "BOBROWA",
+    "district": "Białołęka",
+    "postcode": "03-044"
+  },
+  "bobrowiecka-00-728-mokotów": {
+    "street": "BOBROWIECKA",
+    "district": "Mokotów",
+    "postcode": "00-728"
+  },
+  "barbórki-04-511-wawer": {
+    "street": "BARBÓRKI",
+    "district": "Wawer",
+    "postcode": "04-511"
+  },
+  "abp.-j.-teodorowicza-02-972-wilanów": {
+    "street": "ABP. J. TEODOROWICZA",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "braci-pillatich-00-771-mokotów": {
+    "street": "BRACI PILLATICH",
+    "district": "Mokotów",
+    "postcode": "00-771"
+  },
+  "braci-wagów-02-791-ursynów": {
+    "street": "BRACI WAGÓW",
+    "district": "Ursynów",
+    "postcode": "02-791"
+  },
+  "a.-jarzębskiego-01-853-bielany": {
+    "street": "A. JARZĘBSKIEGO",
+    "district": "Bielany",
+    "postcode": "01-853"
+  },
+  "buchalteryjna-04-431-rembertów": {
+    "street": "BUCHALTERYJNA",
+    "district": "Rembertów",
+    "postcode": "04-431"
+  },
+  "obwodowa-03-532-targówek": {
+    "street": "OBWODOWA",
+    "district": "Targówek",
+    "postcode": "03-532"
+  },
+  "bychowska-04-523-wawer": {
+    "street": "BYCHOWSKA",
+    "district": "Wawer",
+    "postcode": "04-523"
+  },
+  "bzowa-02-708-mokotów": {
+    "street": "BZOWA",
+    "district": "Mokotów",
+    "postcode": "02-708"
+  },
+  "a.-dobiszewskiego-01-405-wola": {
+    "street": "A. DOBISZEWSKIEGO",
+    "district": "Wola",
+    "postcode": "01-405"
+  },
+  "a.-kocjana-01-473-bemowo": {
+    "street": "A. KOCJANA",
+    "district": "Bemowo",
+    "postcode": "01-473"
+  },
+  "a.-malawskiego-02-641-mokotów": {
+    "street": "A. MALAWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-641"
+  },
+  "a.-ponikowskiego-00-707-mokotów": {
+    "street": "A. PONIKOWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "00-707"
+  },
+  "a.-sołtana-01-494-bemowo": {
+    "street": "A. SOŁTANA",
+    "district": "Bemowo",
+    "postcode": "01-494"
+  },
+  "admiralska-00-910-rembertów": {
+    "street": "ADMIRALSKA",
+    "district": "Rembertów",
+    "postcode": "00-910"
+  },
+  "agawy-01-158-wola": {
+    "street": "AGAWY",
+    "district": "Wola",
+    "postcode": "01-158"
+  },
+  "a.-felińskiego-01-513-żoliborz": {
+    "street": "A. FELIŃSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-513"
+  },
+  "a.-prystora-02-497-ursus": {
+    "street": "A. PRYSTORA",
+    "district": "Ursus",
+    "postcode": "02-497"
+  },
+  "a.-zelwerowicza-02-928-mokotów": {
+    "street": "A. ZELWEROWICZA",
+    "district": "Mokotów",
+    "postcode": "02-928"
+  },
+  "afrodyty-01-497-bemowo": {
+    "street": "AFRODYTY",
+    "district": "Bemowo",
+    "postcode": "01-497"
+  },
+  "afrykańska-03-966-praga-południe": {
+    "street": "AFRYKAŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-966"
+  },
+  "a.-kędzierskiego-01-493-bemowo": {
+    "street": "A. KĘDZIERSKIEGO",
+    "district": "Bemowo",
+    "postcode": "01-493"
+  },
+  "a.-pawińskiego-02-106-ochota": {
+    "street": "A. PAWIŃSKIEGO",
+    "district": "Ochota",
+    "postcode": "02-106"
+  },
+  "aluzyjna-03-149-białołęka": {
+    "street": "ALUZYJNA",
+    "district": "Białołęka",
+    "postcode": "03-149"
+  },
+  "alzacka-03-972-praga-południe": {
+    "street": "ALZACKA",
+    "district": "Praga-Południe",
+    "postcode": "03-972"
+  },
+  "a.-cieszkowskiego-01-636-żoliborz": {
+    "street": "A. CIESZKOWSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-636"
+  },
+  "akcent-01-937-bielany": {
+    "street": "AKCENT",
+    "district": "Bielany",
+    "postcode": "01-937"
+  },
+  "akurat-02-488-włochy": {
+    "street": "AKURAT",
+    "district": "Włochy",
+    "postcode": "02-488"
+  },
+  "al.-bohaterów-września-02-389-ochota": {
+    "street": "AL. BOHATERÓW WRZEŚNIA",
+    "district": "Ochota",
+    "postcode": "02-389"
+  },
+  "a.-corellego-03-289-białołęka": {
+    "street": "A. CORELLEGO",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "antoniewska-02-977-mokotów": {
+    "street": "ANTONIEWSKA",
+    "district": "Mokotów",
+    "postcode": "02-977"
+  },
+  "balkonowa-03-329-targówek": {
+    "street": "BALKONOWA",
+    "district": "Targówek",
+    "postcode": "03-329"
+  },
+  "algierska-03-977-praga-południe": {
+    "street": "ALGIERSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-977"
+  },
+  "annopol-03-236-białołęka": {
+    "street": "ANNOPOL",
+    "district": "Białołęka",
+    "postcode": "03-236"
+  },
+  "antoniewska-02-997-mokotów": {
+    "street": "ANTONIEWSKA",
+    "district": "Mokotów",
+    "postcode": "02-997"
+  },
+  "apollina-01-497-bemowo": {
+    "street": "APOLLINA",
+    "district": "Bemowo",
+    "postcode": "01-497"
+  },
+  "artemidy-01-497-bemowo": {
+    "street": "ARTEMIDY",
+    "district": "Bemowo",
+    "postcode": "01-497"
+  },
+  "al.-wilanowska-02-765-wilanów": {
+    "street": "AL. WILANOWSKA",
+    "district": "Wilanów",
+    "postcode": "02-765"
+  },
+  "bambusowa-04-914-wawer": {
+    "street": "BAMBUSOWA",
+    "district": "Wawer",
+    "postcode": "04-914"
+  },
+  "batalionu-ak-„zośka”-01-130-wola": {
+    "street": "BATALIONU AK „ZOŚKA”",
+    "district": "Wola",
+    "postcode": "01-130"
+  },
+  "batuty-02-743-mokotów": {
+    "street": "BATUTY",
+    "district": "Mokotów",
+    "postcode": "02-743"
+  },
+  "berneńska-03-976-praga-południe": {
+    "street": "BERNEŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-976"
+  },
+  "bitwy-warszawskiej-1920-r.-02-366-ochota": {
+    "street": "BITWY WARSZAWSKIEJ 1920 R.",
+    "district": "Ochota",
+    "postcode": "02-366"
+  },
+  "biwakowa-02-965-wilanów": {
+    "street": "BIWAKOWA",
+    "district": "Wilanów",
+    "postcode": "02-965"
+  },
+  "a.-kotsisa-03-307-praga-północ": {
+    "street": "A. KOTSISA",
+    "district": "Praga-Północ",
+    "postcode": "03-307"
+  },
+  "a.-mickiewicza-05-075-wesoła": {
+    "street": "A. MICKIEWICZA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "al.-wyścigowa-02-681-mokotów": {
+    "street": "AL. WYŚCIGOWA",
+    "district": "Mokotów",
+    "postcode": "02-681"
+  },
+  "albatrosów-02-806-ursynów": {
+    "street": "ALBATROSÓW",
+    "district": "Ursynów",
+    "postcode": "02-806"
+  },
+  "arktyczna-04-763-wawer": {
+    "street": "ARKTYCZNA",
+    "district": "Wawer",
+    "postcode": "04-763"
+  },
+  "aksamitna-02-287-włochy": {
+    "street": "AKSAMITNA",
+    "district": "Włochy",
+    "postcode": "02-287"
+  },
+  "al.-gen.-a.-chruściela-„montera”-04-454-rembertów": {
+    "street": "AL. GEN. A. CHRUŚCIELA „MONTERA”",
+    "district": "Rembertów",
+    "postcode": "04-454"
+  },
+  "al.-gen.-w.-sikorskiego-02-758-mokotów": {
+    "street": "AL. GEN. W. SIKORSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-758"
+  },
+  "antenowa-04-656-wawer": {
+    "street": "ANTENOWA",
+    "district": "Wawer",
+    "postcode": "04-656"
+  },
+  "b.-hertza-04-603-wawer": {
+    "street": "B. HERTZA",
+    "district": "Wawer",
+    "postcode": "04-603"
+  },
+  "babie-lato-04-257-rembertów": {
+    "street": "BABIE LATO",
+    "district": "Rembertów",
+    "postcode": "04-257"
+  },
+  "a.-dygasińskiego-01-603-żoliborz": {
+    "street": "A. DYGASIŃSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-603"
+  },
+  "a.-fleminga-03-176-białołęka": {
+    "street": "A. FLEMINGA",
+    "district": "Białołęka",
+    "postcode": "03-176"
+  },
+  "brzeziny-03-256-białołęka": {
+    "street": "BRZEZINY",
+    "district": "Białołęka",
+    "postcode": "03-256"
+  },
+  "chełmżyńska-04-464-rembertów": {
+    "street": "CHEŁMŻYŃSKA",
+    "district": "Rembertów",
+    "postcode": "04-464"
+  },
+  "komitetu-obrony-robotników-02-148-włochy": {
+    "street": "KOMITETU OBRONY ROBOTNIKÓW",
+    "district": "Włochy",
+    "postcode": "02-148"
+  },
+  "kąty-grodziskie-03-289-białołęka": {
+    "street": "KĄTY GRODZISKIE",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "ojca-aniceta-03-264-białołęka": {
+    "street": "OJCA ANICETA",
+    "district": "Białołęka",
+    "postcode": "03-264"
+  },
+  "oliwska-03-334-targówek": {
+    "street": "OLIWSKA",
+    "district": "Targówek",
+    "postcode": "03-334"
+  },
+  "poprawna-03-984-wawer": {
+    "street": "POPRAWNA",
+    "district": "Wawer",
+    "postcode": "03-984"
+  },
+  "trombity-02-850-ursynów": {
+    "street": "TROMBITY",
+    "district": "Ursynów",
+    "postcode": "02-850"
+  },
+  "ch.-botewa-03-127-białołęka": {
+    "street": "CH. BOTEWA",
+    "district": "Białołęka",
+    "postcode": "03-127"
+  },
+  "ciasna-05-075-wesoła": {
+    "street": "CIASNA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "ciasna-00-232-śródmieście": {
+    "street": "CIASNA",
+    "district": "Śródmieście",
+    "postcode": "00-232"
+  },
+  "a.-branickiego-02-972-wilanów": {
+    "street": "A. BRANICKIEGO",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "bracławska-04-044-praga-południe": {
+    "street": "BRACŁAWSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-044"
+  },
+  "gocławska-03-810-praga-południe": {
+    "street": "GOCŁAWSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-810"
+  },
+  "cmentarna-03-524-targówek": {
+    "street": "CMENTARNA",
+    "district": "Targówek",
+    "postcode": "03-524"
+  },
+  "mocna-02-984-mokotów": {
+    "street": "MOCNA",
+    "district": "Mokotów",
+    "postcode": "02-984"
+  },
+  "pomocnicza-03-609-targówek": {
+    "street": "POMOCNICZA",
+    "district": "Targówek",
+    "postcode": "03-609"
+  },
+  "codzienna-03-607-targówek": {
+    "street": "CODZIENNA",
+    "district": "Targówek",
+    "postcode": "03-607"
+  },
+  "dowódców-04-475-rembertów": {
+    "street": "DOWÓDCÓW",
+    "district": "Rembertów",
+    "postcode": "04-475"
+  },
+  "a.-kacpury-04-480-rembertów": {
+    "street": "A. KACPURY",
+    "district": "Rembertów",
+    "postcode": "04-480"
+  },
+  "lipiec-reymontowskich-02-495-ursus": {
+    "street": "LIPIEC REYMONTOWSKICH",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "h.-arctowskiego-02-784-ursynów": {
+    "street": "H. ARCTOWSKIEGO",
+    "district": "Ursynów",
+    "postcode": "02-784"
+  },
+  "cudna-03-289-białołęka": {
+    "street": "CUDNA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "cybernetyki-02-677-mokotów": {
+    "street": "CYBERNETYKI",
+    "district": "Mokotów",
+    "postcode": "02-677"
+  },
+  "cz.-kłosia-02-466-włochy": {
+    "street": "CZ. KŁOSIA",
+    "district": "Włochy",
+    "postcode": "02-466"
+  },
+  "cz.-kłosia-02-446-włochy": {
+    "street": "CZ. KŁOSIA",
+    "district": "Włochy",
+    "postcode": "02-446"
+  },
+  "al.-dzieci-polskich-04-730-wawer": {
+    "street": "AL. DZIECI POLSKICH",
+    "district": "Wawer",
+    "postcode": "04-730"
+  },
+  "anilinowa-03-149-białołęka": {
+    "street": "ANILINOWA",
+    "district": "Białołęka",
+    "postcode": "03-149"
+  },
+  "b.-gidzińskiego-02-293-włochy": {
+    "street": "B. GIDZIŃSKIEGO",
+    "district": "Włochy",
+    "postcode": "02-293"
+  },
+  "b.-wesołowskiego-04-691-wawer": {
+    "street": "B. WESOŁOWSKIEGO",
+    "district": "Wawer",
+    "postcode": "04-691"
+  },
+  "bakaliowa-04-222-praga-południe": {
+    "street": "BAKALIOWA",
+    "district": "Praga-Południe",
+    "postcode": "04-222"
+  },
+  "balladyny-02-553-mokotów": {
+    "street": "BALLADYNY",
+    "district": "Mokotów",
+    "postcode": "02-553"
+  },
+  "blokowa-03-641-targówek": {
+    "street": "BLOKOWA",
+    "district": "Targówek",
+    "postcode": "03-641"
+  },
+  "bolkowska-01-466-bemowo": {
+    "street": "BOLKOWSKA",
+    "district": "Bemowo",
+    "postcode": "01-466"
+  },
+  "baletowa-02-867-ursynów": {
+    "street": "BALETOWA",
+    "district": "Ursynów",
+    "postcode": "02-867"
+  },
+  "batalionu-ak-„pięść”-01-406-wola": {
+    "street": "BATALIONU AK „PIĘŚĆ”",
+    "district": "Wola",
+    "postcode": "01-406"
+  },
+  "bielszowicka-04-738-wawer": {
+    "street": "BIELSZOWICKA",
+    "district": "Wawer",
+    "postcode": "04-738"
+  },
+  "bluszczańska-00-712-mokotów": {
+    "street": "BLUSZCZAŃSKA",
+    "district": "Mokotów",
+    "postcode": "00-712"
+  },
+  "boczańska-03-156-białołęka": {
+    "street": "BOCZAŃSKA",
+    "district": "Białołęka",
+    "postcode": "03-156"
+  },
+  "babiego-lata-05-077-wesoła": {
+    "street": "BABIEGO LATA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "borkowska-05-077-wesoła": {
+    "street": "BORKOWSKA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "brazylijska-03-946-praga-południe": {
+    "street": "BRAZYLIJSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-946"
+  },
+  "brodnicka-04-960-wawer": {
+    "street": "BRODNICKA",
+    "district": "Wawer",
+    "postcode": "04-960"
+  },
+  "biały-kamień-02-593-mokotów": {
+    "street": "BIAŁY KAMIEŃ",
+    "district": "Mokotów",
+    "postcode": "02-593"
+  },
+  "bruzdowa-02-994-wilanów": {
+    "street": "BRUZDOWA",
+    "district": "Wilanów",
+    "postcode": "02-994"
+  },
+  "bitwy-pod-lenino-01-118-wola": {
+    "street": "BITWY POD LENINO",
+    "district": "Wola",
+    "postcode": "01-118"
+  },
+  "bociania-02-807-ursynów": {
+    "street": "BOCIANIA",
+    "district": "Ursynów",
+    "postcode": "02-807"
+  },
+  "ćmielowska-03-127-białołęka": {
+    "street": "ĆMIELOWSKA",
+    "district": "Białołęka",
+    "postcode": "03-127"
+  },
+  "maćka-z-bogdańca-03-289-białołęka": {
+    "street": "MAĆKA Z BOGDAŃCA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "m.-ćwiklińskiej-03-142-białołęka": {
+    "street": "M. ĆWIKLIŃSKIEJ",
+    "district": "Białołęka",
+    "postcode": "03-142"
+  },
+  "wolność-01-018-wola": {
+    "street": "WOLNOŚĆ",
+    "district": "Wola",
+    "postcode": "01-018"
+  },
+  "boleść-00-259-śródmieście": {
+    "street": "BOLEŚĆ",
+    "district": "Śródmieście",
+    "postcode": "00-259"
+  },
+  "płyćwiańska-02-713-mokotów": {
+    "street": "PŁYĆWIAŃSKA",
+    "district": "Mokotów",
+    "postcode": "02-713"
+  },
+  "a.-j.-madalińskiego-02-549-mokotów": {
+    "street": "A. J. MADALIŃSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-549"
+  },
+  "karczunkowska-02-871-ursynów": {
+    "street": "KARCZUNKOWSKA",
+    "district": "Ursynów",
+    "postcode": "02-871"
+  },
+  "kobiałka-03-044-białołęka": {
+    "street": "KOBIAŁKA",
+    "district": "Białołęka",
+    "postcode": "03-044"
+  },
+  "morwowa-03-019-białołęka": {
+    "street": "MORWOWA",
+    "district": "Białołęka",
+    "postcode": "03-019"
+  },
+  "mrówcza-04-857-wawer": {
+    "street": "MRÓWCZA",
+    "district": "Wawer",
+    "postcode": "04-857"
+  },
+  "mydlarska-04-690-wawer": {
+    "street": "MYDLARSKA",
+    "district": "Wawer",
+    "postcode": "04-690"
+  },
+  "naddnieprzańska-04-205-praga-południe": {
+    "street": "NADDNIEPRZAŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-205"
+  },
+  "dedala-03-983-praga-południe": {
+    "street": "DEDALA",
+    "district": "Praga-Południe",
+    "postcode": "03-983"
+  },
+  "dębicka-01-461-bemowo": {
+    "street": "DĘBICKA",
+    "district": "Bemowo",
+    "postcode": "01-461"
+  },
+  "dębinki-03-054-białołęka": {
+    "street": "DĘBINKI",
+    "district": "Białołęka",
+    "postcode": "03-054"
+  },
+  "podgrodzie-01-327-bemowo": {
+    "street": "PODGRODZIE",
+    "district": "Bemowo",
+    "postcode": "01-327"
+  },
+  "i.-gandhi-02-776-ursynów": {
+    "street": "I. GANDHI",
+    "district": "Ursynów",
+    "postcode": "02-776"
+  },
+  "diamentowa-03-682-targówek": {
+    "street": "DIAMENTOWA",
+    "district": "Targówek",
+    "postcode": "03-682"
+  },
+  "diamentowa-05-077-wesoła": {
+    "street": "DIAMENTOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "podjazd-04-924-wawer": {
+    "street": "PODJAZD",
+    "district": "Wawer",
+    "postcode": "04-924"
+  },
+  "budki-szczęśliwickie-02-460-włochy": {
+    "street": "BUDKI SZCZĘŚLIWICKIE",
+    "district": "Włochy",
+    "postcode": "02-460"
+  },
+  "al.-e.-wedla-03-822-praga-południe": {
+    "street": "AL. E. WEDLA",
+    "district": "Praga-Południe",
+    "postcode": "03-822"
+  },
+  "al.-niepodległości-02-653-mokotów": {
+    "street": "AL. NIEPODLEGŁOŚCI",
+    "district": "Mokotów",
+    "postcode": "02-653"
+  },
+  "długa-00-263-śródmieście": {
+    "street": "DŁUGA",
+    "district": "Śródmieście",
+    "postcode": "00-263"
+  },
+  "długa-05-075-wesoła": {
+    "street": "DŁUGA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "długa-00-238-śródmieście": {
+    "street": "DŁUGA",
+    "district": "Śródmieście",
+    "postcode": "00-238"
+  },
+  "dmuchawcowa-04-979-wawer": {
+    "street": "DMUCHAWCOWA",
+    "district": "Wawer",
+    "postcode": "04-979"
+  },
+  "heroldów-01-991-bielany": {
+    "street": "HEROLDÓW",
+    "district": "Bielany",
+    "postcode": "01-991"
+  },
+  "nad-potokiem-03-284-targówek": {
+    "street": "NAD POTOKIEM",
+    "district": "Targówek",
+    "postcode": "03-284"
+  },
+  "przedświt-04-488-rembertów": {
+    "street": "PRZEDŚWIT",
+    "district": "Rembertów",
+    "postcode": "04-488"
+  },
+  "j.-brandta-01-472-bemowo": {
+    "street": "J. BRANDTA",
+    "district": "Bemowo",
+    "postcode": "01-472"
+  },
+  "dubieńska-04-331-praga-południe": {
+    "street": "DUBIEŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-331"
+  },
+  "dworcowa-04-714-wawer": {
+    "street": "DWORCOWA",
+    "district": "Wawer",
+    "postcode": "04-714"
+  },
+  "dychowska-04-671-wawer": {
+    "street": "DYCHOWSKA",
+    "district": "Wawer",
+    "postcode": "04-671"
+  },
+  "dziatwy-03-109-białołęka": {
+    "street": "DZIATWY",
+    "district": "Białołęka",
+    "postcode": "03-109"
+  },
+  "dźwigowa-02-437-włochy": {
+    "street": "DŹWIGOWA",
+    "district": "Włochy",
+    "postcode": "02-437"
+  },
+  "drożdżowa-03-112-białołęka": {
+    "street": "DROŻDŻOWA",
+    "district": "Białołęka",
+    "postcode": "03-112"
+  },
+  "batalionu-ak-„karpaty”-00-712-mokotów": {
+    "street": "BATALIONU AK „KARPATY”",
+    "district": "Mokotów",
+    "postcode": "00-712"
+  },
+  "al.-zieleniecka-03-727-praga-południe": {
+    "street": "AL. ZIELENIECKA",
+    "district": "Praga-Południe",
+    "postcode": "03-727"
+  },
+  "chojnowska-03-583-targówek": {
+    "street": "CHOJNOWSKA",
+    "district": "Targówek",
+    "postcode": "03-583"
+  },
+  "ciupagi-03-016-białołęka": {
+    "street": "CIUPAGI",
+    "district": "Białołęka",
+    "postcode": "03-016"
+  },
+  "bielika-04-988-wawer": {
+    "street": "BIELIKA",
+    "district": "Wawer",
+    "postcode": "04-988"
+  },
+  "bazyliańska-03-203-targówek": {
+    "street": "BAZYLIAŃSKA",
+    "district": "Targówek",
+    "postcode": "03-203"
+  },
+  "buszycka-02-869-ursynów": {
+    "street": "BUSZYCKA",
+    "district": "Ursynów",
+    "postcode": "02-869"
+  },
+  "białostocka-03-741-praga-północ": {
+    "street": "BIAŁOSTOCKA",
+    "district": "Praga-Północ",
+    "postcode": "03-741"
+  },
+  "ceramiczna-03-126-białołęka": {
+    "street": "CERAMICZNA",
+    "district": "Białołęka",
+    "postcode": "03-126"
+  },
+  "czarna-droga-03-620-targówek": {
+    "street": "CZARNA DROGA",
+    "district": "Targówek",
+    "postcode": "03-620"
+  },
+  "czereśniowa-02-457-włochy": {
+    "street": "CZEREŚNIOWA",
+    "district": "Włochy",
+    "postcode": "02-457"
+  },
+  "dereniowa-02-776-ursynów": {
+    "street": "DERENIOWA",
+    "district": "Ursynów",
+    "postcode": "02-776"
+  },
+  "czarnoleska-04-540-wawer": {
+    "street": "CZARNOLESKA",
+    "district": "Wawer",
+    "postcode": "04-540"
+  },
+  "dobrodzieja-02-998-wilanów": {
+    "street": "DOBRODZIEJA",
+    "district": "Wilanów",
+    "postcode": "02-998"
+  },
+  "bronowska-03-995-wawer": {
+    "street": "BRONOWSKA",
+    "district": "Wawer",
+    "postcode": "03-995"
+  },
+  "cymbalistów-02-881-ursynów": {
+    "street": "CYMBALISTÓW",
+    "district": "Ursynów",
+    "postcode": "02-881"
+  },
+  "dzięcioła-04-988-wawer": {
+    "street": "DZIĘCIOŁA",
+    "district": "Wawer",
+    "postcode": "04-988"
+  },
+  "f.-rymkiewicza-01-644-żoliborz": {
+    "street": "F. RYMKIEWICZA",
+    "district": "Żoliborz",
+    "postcode": "01-644"
+  },
+  "chóralna-02-879-ursynów": {
+    "street": "CHÓRALNA",
+    "district": "Ursynów",
+    "postcode": "02-879"
+  },
+  "a.-malczewskiego-02-622-mokotów": {
+    "street": "A. MALCZEWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-622"
+  },
+  "a.-mickiewicza-01-517-żoliborz": {
+    "street": "A. MICKIEWICZA",
+    "district": "Żoliborz",
+    "postcode": "01-517"
+  },
+  "a.-nobla-03-930-praga-południe": {
+    "street": "A. NOBLA",
+    "district": "Praga-Południe",
+    "postcode": "03-930"
+  },
+  "brzezińska-03-075-białołęka": {
+    "street": "BRZEZIŃSKA",
+    "district": "Białołęka",
+    "postcode": "03-075"
+  },
+  "cieślewskich-03-017-białołęka": {
+    "street": "CIEŚLEWSKICH",
+    "district": "Białołęka",
+    "postcode": "03-017"
+  },
+  "juranda-ze-spychowa-03-257-białołęka": {
+    "street": "JURANDA ZE SPYCHOWA",
+    "district": "Białołęka",
+    "postcode": "03-257"
+  },
+  "a.-fredry-05-075-wesoła": {
+    "street": "A. FREDRY",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "gen.-f.-kleeberga-01-478-bemowo": {
+    "street": "GEN. F. KLEEBERGA",
+    "district": "Bemowo",
+    "postcode": "01-478"
+  },
+  "j.-vermeera-03-531-targówek": {
+    "street": "J. VERMEERA",
+    "district": "Targówek",
+    "postcode": "03-531"
+  },
+  "l.-van-beethovena-00-769-mokotów": {
+    "street": "L. VAN BEETHOVENA",
+    "district": "Mokotów",
+    "postcode": "00-769"
+  },
+  "potułkały-02-971-wilanów": {
+    "street": "POTUŁKAŁY",
+    "district": "Wilanów",
+    "postcode": "02-971"
+  },
+  "al.-józefa-poniatowskiego-03-901-praga-południe": {
+    "street": "AL. JÓZEFA PONIATOWSKIEGO",
+    "district": "Praga-Południe",
+    "postcode": "03-901"
+  },
+  "gen.-m.-štefánika-03-133-białołęka": {
+    "street": "GEN. M. ŠTEFÁNIKA",
+    "district": "Białołęka",
+    "postcode": "03-133"
+  },
+  "egejska-02-764-mokotów": {
+    "street": "EGEJSKA",
+    "district": "Mokotów",
+    "postcode": "02-764"
+  },
+  "j.-mehoffera-03-131-białołęka": {
+    "street": "J. MEHOFFERA",
+    "district": "Białołęka",
+    "postcode": "03-131"
+  },
+  "a.-einsteina-01-480-bemowo": {
+    "street": "A. EINSTEINA",
+    "district": "Bemowo",
+    "postcode": "01-480"
+  },
+  "a.-wejnerta-02-619-mokotów": {
+    "street": "A. WEJNERTA",
+    "district": "Mokotów",
+    "postcode": "02-619"
+  },
+  "bitwy-warszawskiej-1920-r.-02-362-ochota": {
+    "street": "BITWY WARSZAWSKIEJ 1920 R.",
+    "district": "Ochota",
+    "postcode": "02-362"
+  },
+  "ekologiczna-02-798-ursynów": {
+    "street": "EKOLOGICZNA",
+    "district": "Ursynów",
+    "postcode": "02-798"
+  },
+  "bawełniana-01-487-bemowo": {
+    "street": "BAWEŁNIANA",
+    "district": "Bemowo",
+    "postcode": "01-487"
+  },
+  "emaliowa-02-295-włochy": {
+    "street": "EMALIOWA",
+    "district": "Włochy",
+    "postcode": "02-295"
+  },
+  "encyklopedyczna-01-990-bielany": {
+    "street": "ENCYKLOPEDYCZNA",
+    "district": "Bielany",
+    "postcode": "01-990"
+  },
+  "deotymy-01-407-wola": {
+    "street": "DEOTYMY",
+    "district": "Wola",
+    "postcode": "01-407"
+  },
+  "deotymy-01-409-wola": {
+    "street": "DEOTYMY",
+    "district": "Wola",
+    "postcode": "01-409"
+  },
+  "deotymy-01-441-wola": {
+    "street": "DEOTYMY",
+    "district": "Wola",
+    "postcode": "01-441"
+  },
+  "epopei-03-029-białołęka": {
+    "street": "EPOPEI",
+    "district": "Białołęka",
+    "postcode": "03-029"
+  },
+  "erazma-z-zakroczymia-03-185-białołęka": {
+    "street": "ERAZMA Z ZAKROCZYMIA",
+    "district": "Białołęka",
+    "postcode": "03-185"
+  },
+  "esej-01-923-bielany": {
+    "street": "ESEJ",
+    "district": "Bielany",
+    "postcode": "01-923"
+  },
+  "kadrowa-04-421-rembertów": {
+    "street": "KADROWA",
+    "district": "Rembertów",
+    "postcode": "04-421"
+  },
+  "etiudy-rewolucyjnej-02-643-mokotów": {
+    "street": "ETIUDY REWOLUCYJNEJ",
+    "district": "Mokotów",
+    "postcode": "02-643"
+  },
+  "eukaliptusowa-02-765-mokotów": {
+    "street": "EUKALIPTUSOWA",
+    "district": "Mokotów",
+    "postcode": "02-765"
+  },
+  "europejska-02-964-wilanów": {
+    "street": "EUROPEJSKA",
+    "district": "Wilanów",
+    "postcode": "02-964"
+  },
+  "ewy-03-641-targówek": {
+    "street": "EWY",
+    "district": "Targówek",
+    "postcode": "03-641"
+  },
+  "a.-gieysztora-02-999-wilanów": {
+    "street": "A. GIEYSZTORA",
+    "district": "Wilanów",
+    "postcode": "02-999"
+  },
+  "al.-w.-reymonta-01-840-bielany": {
+    "street": "AL. W. REYMONTA",
+    "district": "Bielany",
+    "postcode": "01-840"
+  },
+  "al.-w.-reymonta-01-842-bielany": {
+    "street": "AL. W. REYMONTA",
+    "district": "Bielany",
+    "postcode": "01-842"
+  },
+  "ezopa-04-801-wawer": {
+    "street": "EZOPA",
+    "district": "Wawer",
+    "postcode": "04-801"
+  },
+  "jeździecka-01-461-bemowo": {
+    "street": "JEŹDZIECKA",
+    "district": "Bemowo",
+    "postcode": "01-461"
+  },
+  "jeździecka-05-077-wesoła": {
+    "street": "JEŹDZIECKA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "bieżanowska-02-655-mokotów": {
+    "street": "BIEŻANOWSKA",
+    "district": "Mokotów",
+    "postcode": "02-655"
+  },
+  "bieżuńska-03-578-targówek": {
+    "street": "BIEŻUŃSKA",
+    "district": "Targówek",
+    "postcode": "03-578"
+  },
+  "batystowa-02-835-ursynów": {
+    "street": "BATYSTOWA",
+    "district": "Ursynów",
+    "postcode": "02-835"
+  },
+  "bulwar-flotylli-pińskiej-00-468-śródmieście": {
+    "street": "BULWAR FLOTYLLI PIŃSKIEJ",
+    "district": "Śródmieście",
+    "postcode": "00-468"
+  },
+  "błękitna-04-649-wawer": {
+    "street": "BŁĘKITNA",
+    "district": "Wawer",
+    "postcode": "04-649"
+  },
+  "dobrogniewa-01-438-wola": {
+    "street": "DOBROGNIEWA",
+    "district": "Wola",
+    "postcode": "01-438"
+  },
+  "cypryjska-02-761-mokotów": {
+    "street": "CYPRYJSKA",
+    "district": "Mokotów",
+    "postcode": "02-761"
+  },
+  "człuchowska-01-100-wola": {
+    "street": "CZŁUCHOWSKA",
+    "district": "Wola",
+    "postcode": "01-100"
+  },
+  "danusi-03-259-białołęka": {
+    "street": "DANUSI",
+    "district": "Białołęka",
+    "postcode": "03-259"
+  },
+  "gawota-02-830-ursynów": {
+    "street": "GAWOTA",
+    "district": "Ursynów",
+    "postcode": "02-830"
+  },
+  "dostatnia-02-991-wilanów": {
+    "street": "DOSTATNIA",
+    "district": "Wilanów",
+    "postcode": "02-991"
+  },
+  "fortel-03-166-białołęka": {
+    "street": "FORTEL",
+    "district": "Białołęka",
+    "postcode": "03-166"
+  },
+  "frachtowa-03-043-białołęka": {
+    "street": "FRACHTOWA",
+    "district": "Białołęka",
+    "postcode": "03-043"
+  },
+  "dudziarska-04-317-praga-południe": {
+    "street": "DUDZIARSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-317"
+  },
+  "gen.-k.-sosnkowskiego-02-495-ursus": {
+    "street": "GEN. K. SOSNKOWSKIEGO",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "gen.-t.-bora-komorowskiego-03-982-praga-południe": {
+    "street": "GEN. T. BORA-KOMOROWSKIEGO",
+    "district": "Praga-Południe",
+    "postcode": "03-982"
+  },
+  "głuszca-02-859-ursynów": {
+    "street": "GŁUSZCA",
+    "district": "Ursynów",
+    "postcode": "02-859"
+  },
+  "głębocka-03-287-targówek": {
+    "street": "GŁĘBOCKA",
+    "district": "Targówek",
+    "postcode": "03-287"
+  },
+  "gliniana-01-054-wola": {
+    "street": "GLINIANA",
+    "district": "Wola",
+    "postcode": "01-054"
+  },
+  "goplańska-02-954-mokotów": {
+    "street": "GOPLAŃSKA",
+    "district": "Mokotów",
+    "postcode": "02-954"
+  },
+  "cylichowska-04-769-wawer": {
+    "street": "CYLICHOWSKA",
+    "district": "Wawer",
+    "postcode": "04-769"
+  },
+  "dwusieczna-03-071-białołęka": {
+    "street": "DWUSIECZNA",
+    "district": "Białołęka",
+    "postcode": "03-071"
+  },
+  "f.-raszei-01-410-wola": {
+    "street": "F. RASZEI",
+    "district": "Wola",
+    "postcode": "01-410"
+  },
+  "fabryczna-05-077-wesoła": {
+    "street": "FABRYCZNA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "gabriela-01-347-bemowo": {
+    "street": "GABRIELA",
+    "district": "Bemowo",
+    "postcode": "01-347"
+  },
+  "h.-wieniawskiego-01-572-żoliborz": {
+    "street": "H. WIENIAWSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-572"
+  },
+  "imbirowa-02-797-ursynów": {
+    "street": "IMBIROWA",
+    "district": "Ursynów",
+    "postcode": "02-797"
+  },
+  "dębowa-03-054-białołęka": {
+    "street": "DĘBOWA",
+    "district": "Białołęka",
+    "postcode": "03-054"
+  },
+  "f.-m.-lanciego-02-792-ursynów": {
+    "street": "F. M. LANCIEGO",
+    "district": "Ursynów",
+    "postcode": "02-792"
+  },
+  "białego-dębu-02-757-mokotów": {
+    "street": "BIAŁEGO DĘBU",
+    "district": "Mokotów",
+    "postcode": "02-757"
+  },
+  "białołęcka-03-251-białołęka": {
+    "street": "BIAŁOŁĘCKA",
+    "district": "Białołęka",
+    "postcode": "03-251"
+  },
+  "białołęcka-03-253-białołęka": {
+    "street": "BIAŁOŁĘCKA",
+    "district": "Białołęka",
+    "postcode": "03-253"
+  },
+  "dzięgielowa-04-732-wawer": {
+    "street": "DZIĘGIELOWA",
+    "district": "Wawer",
+    "postcode": "04-732"
+  },
+  "dostępna-01-490-bemowo": {
+    "street": "DOSTĘPNA",
+    "district": "Bemowo",
+    "postcode": "01-490"
+  },
+  "częstochowska-02-344-ochota": {
+    "street": "CZĘSTOCHOWSKA",
+    "district": "Ochota",
+    "postcode": "02-344"
+  },
+  "a.-świętochowskiego-01-318-bemowo": {
+    "street": "A. ŚWIĘTOCHOWSKIEGO",
+    "district": "Bemowo",
+    "postcode": "01-318"
+  },
+  "kręta-00-759-śródmieście": {
+    "street": "KRĘTA",
+    "district": "Śródmieście",
+    "postcode": "00-759"
+  },
+  "miętowa-03-041-białołęka": {
+    "street": "MIĘTOWA",
+    "district": "Białołęka",
+    "postcode": "03-041"
+  },
+  "zwycięzców-03-941-praga-południe": {
+    "street": "ZWYCIĘZCÓW",
+    "district": "Praga-Południe",
+    "postcode": "03-941"
+  },
+  "zwycięzców-03-936-praga-południe": {
+    "street": "ZWYCIĘZCÓW",
+    "district": "Praga-Południe",
+    "postcode": "03-936"
+  },
+  "księżnej-anny-03-866-targówek": {
+    "street": "KSIĘŻNEJ ANNY",
+    "district": "Targówek",
+    "postcode": "03-866"
+  },
+  "księżycowa-01-934-bemowo": {
+    "street": "KSIĘŻYCOWA",
+    "district": "Bemowo",
+    "postcode": "01-934"
+  },
+  "księżycowa-01-934-bielany": {
+    "street": "KSIĘŻYCOWA",
+    "district": "Bielany",
+    "postcode": "01-934"
+  },
+  "a.-kamińskiego-03-130-białołęka": {
+    "street": "A. KAMIŃSKIEGO",
+    "district": "Białołęka",
+    "postcode": "03-130"
+  },
+  "anecińska-03-106-białołęka": {
+    "street": "ANECIŃSKA",
+    "district": "Białołęka",
+    "postcode": "03-106"
+  },
+  "animuszu-03-153-białołęka": {
+    "street": "ANIMUSZU",
+    "district": "Białołęka",
+    "postcode": "03-153"
+  },
+  "a.-vivaldiego-03-289-białołęka": {
+    "street": "A. VIVALDIEGO",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "aroniowa-03-289-białołęka": {
+    "street": "ARONIOWA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "a.-pajdaka-03-134-białołęka": {
+    "street": "A. PAJDAKA",
+    "district": "Białołęka",
+    "postcode": "03-134"
+  },
+  "artyleryjska-03-276-białołęka": {
+    "street": "ARTYLERYJSKA",
+    "district": "Białołęka",
+    "postcode": "03-276"
+  },
+  "atrakcyjna-03-289-białołęka": {
+    "street": "ATRAKCYJNA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "atutowa-03-126-białołęka": {
+    "street": "ATUTOWA",
+    "district": "Białołęka",
+    "postcode": "03-126"
+  },
+  "babinicza-03-289-białołęka": {
+    "street": "BABINICZA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "bohuna-03-257-białołęka": {
+    "street": "BOHUNA",
+    "district": "Białołęka",
+    "postcode": "03-257"
+  },
+  "borzęcińska-01-473-bemowo": {
+    "street": "BORZĘCIŃSKA",
+    "district": "Bemowo",
+    "postcode": "01-473"
+  },
+  "podkowy-04-937-wawer": {
+    "street": "PODKOWY",
+    "district": "Wawer",
+    "postcode": "04-937"
+  },
+  "waligóry-03-019-białołęka": {
+    "street": "WALIGÓRY",
+    "district": "Białołęka",
+    "postcode": "03-019"
+  },
+  "wólczyńska-01-919-bielany": {
+    "street": "WÓLCZYŃSKA",
+    "district": "Bielany",
+    "postcode": "01-919"
+  },
+  "hafciarska-04-704-wawer": {
+    "street": "HAFCIARSKA",
+    "district": "Wawer",
+    "postcode": "04-704"
+  },
+  "h.-wolff-04-902-wawer": {
+    "street": "H. WOLFF",
+    "district": "Wawer",
+    "postcode": "04-902"
+  },
+  "figara-03-604-targówek": {
+    "street": "FIGARA",
+    "district": "Targówek",
+    "postcode": "03-604"
+  },
+  "m.-wolfkego-01-494-bemowo": {
+    "street": "M. WOLFKEGO",
+    "district": "Bemowo",
+    "postcode": "01-494"
+  },
+  "flagowa-02-431-włochy": {
+    "street": "FLAGOWA",
+    "district": "Włochy",
+    "postcode": "02-431"
+  },
+  "foksal-00-366-śródmieście": {
+    "street": "FOKSAL",
+    "district": "Śródmieście",
+    "postcode": "00-366"
+  },
+  "foksal-00-372-śródmieście": {
+    "street": "FOKSAL",
+    "district": "Śródmieście",
+    "postcode": "00-372"
+  },
+  "elfów-03-259-białołęka": {
+    "street": "ELFÓW",
+    "district": "Białołęka",
+    "postcode": "03-259"
+  },
+  "franciszkańska-00-227-śródmieście": {
+    "street": "FRANCISZKAŃSKA",
+    "district": "Śródmieście",
+    "postcode": "00-227"
+  },
+  "franciszkańska-00-233-śródmieście": {
+    "street": "FRANCISZKAŃSKA",
+    "district": "Śródmieście",
+    "postcode": "00-233"
+  },
+  "franciszkańska-00-214-śródmieście": {
+    "street": "FRANCISZKAŃSKA",
+    "district": "Śródmieście",
+    "postcode": "00-214"
+  },
+  "fuksji-04-721-wawer": {
+    "street": "FUKSJI",
+    "district": "Wawer",
+    "postcode": "04-721"
+  },
+  "fundamentowa-04-036-praga-południe": {
+    "street": "FUNDAMENTOWA",
+    "district": "Praga-Południe",
+    "postcode": "04-036"
+  },
+  "fundamentowa-04-057-praga-południe": {
+    "street": "FUNDAMENTOWA",
+    "district": "Praga-Południe",
+    "postcode": "04-057"
+  },
+  "j.-brożka-01-442-wola": {
+    "street": "J. BROŻKA",
+    "district": "Wola",
+    "postcode": "01-442"
+  },
+  "bysławska-04-993-wawer": {
+    "street": "BYSŁAWSKA",
+    "district": "Wawer",
+    "postcode": "04-993"
+  },
+  "gen.-w.-czumy-01-355-bemowo": {
+    "street": "GEN. W. CZUMY",
+    "district": "Bemowo",
+    "postcode": "01-355"
+  },
+  "grenady-01-154-wola": {
+    "street": "GRENADY",
+    "district": "Wola",
+    "postcode": "01-154"
+  },
+  "inspektowa-02-711-mokotów": {
+    "street": "INSPEKTOWA",
+    "district": "Mokotów",
+    "postcode": "02-711"
+  },
+  "h.-wawelberga-01-184-wola": {
+    "street": "H. WAWELBERGA",
+    "district": "Wola",
+    "postcode": "01-184"
+  },
+  "jara-02-988-wilanów": {
+    "street": "JARA",
+    "district": "Wilanów",
+    "postcode": "02-988"
+  },
+  "hoserów-02-995-wilanów": {
+    "street": "HOSERÓW",
+    "district": "Wilanów",
+    "postcode": "02-995"
+  },
+  "j.-k.-ordona-01-237-wola": {
+    "street": "J. K. ORDONA",
+    "district": "Wola",
+    "postcode": "01-237"
+  },
+  "jubilerska-04-190-praga-południe": {
+    "street": "JUBILERSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-190"
+  },
+  "kolarska-04-718-wawer": {
+    "street": "KOLARSKA",
+    "district": "Wawer",
+    "postcode": "04-718"
+  },
+  "kopalniana-01-321-bemowo": {
+    "street": "KOPALNIANA",
+    "district": "Bemowo",
+    "postcode": "01-321"
+  },
+  "kurhan-02-203-ochota": {
+    "street": "KURHAN",
+    "district": "Ochota",
+    "postcode": "02-203"
+  },
+  "kępa-tarchomińska-03-113-białołęka": {
+    "street": "KĘPA TARCHOMIŃSKA",
+    "district": "Białołęka",
+    "postcode": "03-113"
+  },
+  "cyklamenów-04-798-wawer": {
+    "street": "CYKLAMENÓW",
+    "district": "Wawer",
+    "postcode": "04-798"
+  },
+  "gen.-m.-c.-coopera-01-315-bemowo": {
+    "street": "GEN. M. C. COOPERA",
+    "district": "Bemowo",
+    "postcode": "01-315"
+  },
+  "jaspisowa-05-077-wesoła": {
+    "street": "JASPISOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "karpacka-04-541-wawer": {
+    "street": "KARPACKA",
+    "district": "Wawer",
+    "postcode": "04-541"
+  },
+  "królowej-jadwigi-01-986-bielany": {
+    "street": "KRÓLOWEJ JADWIGI",
+    "district": "Bielany",
+    "postcode": "01-986"
+  },
+  "kuropatwy-02-892-ursynów": {
+    "street": "KUROPATWY",
+    "district": "Ursynów",
+    "postcode": "02-892"
+  },
+  "lemiesz-03-030-białołęka": {
+    "street": "LEMIESZ",
+    "district": "Białołęka",
+    "postcode": "03-030"
+  },
+  "koziołka-03-035-białołęka": {
+    "street": "KOZIOŁKA",
+    "district": "Białołęka",
+    "postcode": "03-035"
+  },
+  "al.-jerozolimskie-02-486-włochy": {
+    "street": "AL. JEROZOLIMSKIE",
+    "district": "Włochy",
+    "postcode": "02-486"
+  },
+  "marcina-z-wrocimowic-03-145-białołęka": {
+    "street": "MARCINA Z WROCIMOWIC",
+    "district": "Białołęka",
+    "postcode": "03-145"
+  },
+  "północna-04-763-wawer": {
+    "street": "PÓŁNOCNA",
+    "district": "Wawer",
+    "postcode": "04-763"
+  },
+  "gąbińska-01-703-bielany": {
+    "street": "GĄBIŃSKA",
+    "district": "Bielany",
+    "postcode": "01-703"
+  },
+  "gdańska-01-633-żoliborz": {
+    "street": "GDAŃSKA",
+    "district": "Żoliborz",
+    "postcode": "01-633"
+  },
+  "gedymina-04-120-praga-południe": {
+    "street": "GEDYMINA",
+    "district": "Praga-Południe",
+    "postcode": "04-120"
+  },
+  "gębicka-03-126-białołęka": {
+    "street": "GĘBICKA",
+    "district": "Białołęka",
+    "postcode": "03-126"
+  },
+  "gęsta-00-314-śródmieście": {
+    "street": "GĘSTA",
+    "district": "Śródmieście",
+    "postcode": "00-314"
+  },
+  "gęślarska-02-412-włochy": {
+    "street": "GĘŚLARSKA",
+    "district": "Włochy",
+    "postcode": "02-412"
+  },
+  "v.-van-gogha-03-188-białołęka": {
+    "street": "V. VAN GOGHA",
+    "district": "Białołęka",
+    "postcode": "03-188"
+  },
+  "gibraltarska-03-664-targówek": {
+    "street": "GIBRALTARSKA",
+    "district": "Targówek",
+    "postcode": "03-664"
+  },
+  "gladioli-03-113-białołęka": {
+    "street": "GLADIOLI",
+    "district": "Białołęka",
+    "postcode": "03-113"
+  },
+  "gładka-02-172-włochy": {
+    "street": "GŁADKA",
+    "district": "Włochy",
+    "postcode": "02-172"
+  },
+  "s.-jagmina-03-125-białołęka": {
+    "street": "S. JAGMINA",
+    "district": "Białołęka",
+    "postcode": "03-125"
+  },
+  "gniazdowska-03-637-targówek": {
+    "street": "GNIAZDOWSKA",
+    "district": "Targówek",
+    "postcode": "03-637"
+  },
+  "gobelinowa-02-991-wilanów": {
+    "street": "GOBELINOWA",
+    "district": "Wilanów",
+    "postcode": "02-991"
+  },
+  "góralska-01-112-wola": {
+    "street": "GÓRALSKA",
+    "district": "Wola",
+    "postcode": "01-112"
+  },
+  "grabalówki-02-996-wilanów": {
+    "street": "GRABALÓWKI",
+    "district": "Wilanów",
+    "postcode": "02-996"
+  },
+  "al.-j.-waszyngtona-03-910-praga-południe": {
+    "street": "AL. J. WASZYNGTONA",
+    "district": "Praga-Południe",
+    "postcode": "03-910"
+  },
+  "gubinowska-02-956-wilanów": {
+    "street": "GUBINOWSKA",
+    "district": "Wilanów",
+    "postcode": "02-956"
+  },
+  "gwardii-01-538-żoliborz": {
+    "street": "GWARDII",
+    "district": "Żoliborz",
+    "postcode": "01-538"
+  },
+  "gwarków-04-459-rembertów": {
+    "street": "GWARKÓW",
+    "district": "Rembertów",
+    "postcode": "04-459"
+  },
+  "gwarna-02-991-wilanów": {
+    "street": "GWARNA",
+    "district": "Wilanów",
+    "postcode": "02-991"
+  },
+  "gżegżółki-02-804-ursynów": {
+    "street": "GŻEGŻÓŁKI",
+    "district": "Ursynów",
+    "postcode": "02-804"
+  },
+  "juhasów-04-784-wawer": {
+    "street": "JUHASÓW",
+    "district": "Wawer",
+    "postcode": "04-784"
+  },
+  "k.-wyki-01-318-bemowo": {
+    "street": "K. WYKI",
+    "district": "Bemowo",
+    "postcode": "01-318"
+  },
+  "królowej-marysieńki-02-954-wilanów": {
+    "street": "KRÓLOWEJ MARYSIEŃKI",
+    "district": "Wilanów",
+    "postcode": "02-954"
+  },
+  "k.-garbińskiego-01-122-wola": {
+    "street": "K. GARBIŃSKIEGO",
+    "district": "Wola",
+    "postcode": "01-122"
+  },
+  "czeladnicza-04-743-wawer": {
+    "street": "CZELADNICZA",
+    "district": "Wawer",
+    "postcode": "04-743"
+  },
+  "droga-golfowa-04-865-wawer": {
+    "street": "DROGA GOLFOWA",
+    "district": "Wawer",
+    "postcode": "04-865"
+  },
+  "pilarzy-04-425-rembertów": {
+    "street": "PILARZY",
+    "district": "Rembertów",
+    "postcode": "04-425"
+  },
+  "l.-berensona-03-287-białołęka": {
+    "street": "L. BERENSONA",
+    "district": "Białołęka",
+    "postcode": "03-287"
+  },
+  "lebiodowa-04-674-wawer": {
+    "street": "LEBIODOWA",
+    "district": "Wawer",
+    "postcode": "04-674"
+  },
+  "pilawska-04-716-wawer": {
+    "street": "PILAWSKA",
+    "district": "Wawer",
+    "postcode": "04-716"
+  },
+  "polska-00-703-mokotów": {
+    "street": "POLSKA",
+    "district": "Mokotów",
+    "postcode": "00-703"
+  },
+  "ruskowy-bród-03-289-białołęka": {
+    "street": "RUSKOWY BRÓD",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "pod-strzechą-02-798-ursynów": {
+    "street": "POD STRZECHĄ",
+    "district": "Ursynów",
+    "postcode": "02-798"
+  },
+  "czerwonych-beretów-00-910-rembertów": {
+    "street": "CZERWONYCH BERETÓW",
+    "district": "Rembertów",
+    "postcode": "00-910"
+  },
+  "wiązana-04-765-wawer": {
+    "street": "WIĄZANA",
+    "district": "Wawer",
+    "postcode": "04-765"
+  },
+  "świętych-cyryla-i-metodego-03-403-praga-północ": {
+    "street": "ŚWIĘTYCH CYRYLA I METODEGO",
+    "district": "Praga-Północ",
+    "postcode": "03-403"
+  },
+  "hebanowa-03-678-targówek": {
+    "street": "HEBANOWA",
+    "district": "Targówek",
+    "postcode": "03-678"
+  },
+  "hebanowa-05-077-wesoła": {
+    "street": "HEBANOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "chęcińska-03-136-białołęka": {
+    "street": "CHĘCIŃSKA",
+    "district": "Białołęka",
+    "postcode": "03-136"
+  },
+  "orlich-gniazd-01-493-bemowo": {
+    "street": "ORLICH GNIAZD",
+    "district": "Bemowo",
+    "postcode": "01-493"
+  },
+  "hiacyntowa-05-077-wesoła": {
+    "street": "HIACYNTOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "hiacyntowa-04-908-wawer": {
+    "street": "HIACYNTOWA",
+    "district": "Wawer",
+    "postcode": "04-908"
+  },
+  "dzikich-jabłoni-02-757-mokotów": {
+    "street": "DZIKICH JABŁONI",
+    "district": "Mokotów",
+    "postcode": "02-757"
+  },
+  "pl.-trzech-krzyży-00-535-śródmieście": {
+    "street": "PL. TRZECH KRZYŻY",
+    "district": "Śródmieście",
+    "postcode": "00-535"
+  },
+  "pl.-trzech-krzyży-00-499-śródmieście": {
+    "street": "PL. TRZECH KRZYŻY",
+    "district": "Śródmieście",
+    "postcode": "00-499"
+  },
+  "pl.-trzech-krzyży-00-507-śródmieście": {
+    "street": "PL. TRZECH KRZYŻY",
+    "district": "Śródmieście",
+    "postcode": "00-507"
+  },
+  "chlebowa-03-061-białołęka": {
+    "street": "CHLEBOWA",
+    "district": "Białołęka",
+    "postcode": "03-061"
+  },
+  "batalionów-chłopskich-01-305-bemowo": {
+    "street": "BATALIONÓW CHŁOPSKICH",
+    "district": "Bemowo",
+    "postcode": "01-305"
+  },
+  "batalionów-chłopskich-01-308-bemowo": {
+    "street": "BATALIONÓW CHŁOPSKICH",
+    "district": "Bemowo",
+    "postcode": "01-308"
+  },
+  "bachmacka-02-647-mokotów": {
+    "street": "BACHMACKA",
+    "district": "Mokotów",
+    "postcode": "02-647"
+  },
+  "a.-próchnika-01-585-żoliborz": {
+    "street": "A. PRÓCHNIKA",
+    "district": "Żoliborz",
+    "postcode": "01-585"
+  },
+  "duchnicka-01-796-żoliborz": {
+    "street": "DUCHNICKA",
+    "district": "Żoliborz",
+    "postcode": "01-796"
+  },
+  "gen.-k.-ziemskiego-„wachnowskiego”-04-408-rembertów": {
+    "street": "GEN. K. ZIEMSKIEGO „WACHNOWSKIEGO”",
+    "district": "Rembertów",
+    "postcode": "04-408"
+  },
+  "m.-mochnackiego-02-042-ochota": {
+    "street": "M. MOCHNACKIEGO",
+    "district": "Ochota",
+    "postcode": "02-042"
+  },
+  "hodowlana-03-543-targówek": {
+    "street": "HODOWLANA",
+    "district": "Targówek",
+    "postcode": "03-543"
+  },
+  "a.-z-lubomirskich-potockiej-02-972-wilanów": {
+    "street": "A. Z LUBOMIRSKICH POTOCKIEJ",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "rajskich-ptaków-02-816-ursynów": {
+    "street": "RAJSKICH PTAKÓW",
+    "district": "Ursynów",
+    "postcode": "02-816"
+  },
+  "hrubieszowska-01-209-wola": {
+    "street": "HRUBIESZOWSKA",
+    "district": "Wola",
+    "postcode": "01-209"
+  },
+  "al.-gen.-a.-chruściela-„montera”-04-401-rembertów": {
+    "street": "AL. GEN. A. CHRUŚCIELA „MONTERA”",
+    "district": "Rembertów",
+    "postcode": "04-401"
+  },
+  "kazachska-02-999-wilanów": {
+    "street": "KAZACHSKA",
+    "district": "Wilanów",
+    "postcode": "02-999"
+  },
+  "polskich-skrzydeł-03-982-praga-południe": {
+    "street": "POLSKICH SKRZYDEŁ",
+    "district": "Praga-Południe",
+    "postcode": "03-982"
+  },
+  "szarych-szeregów-05-075-wesoła": {
+    "street": "SZARYCH SZEREGÓW",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "szarych-szeregów-01-212-wola": {
+    "street": "SZARYCH SZEREGÓW",
+    "district": "Wola",
+    "postcode": "01-212"
+  },
+  "srebrnych-świerków-02-757-mokotów": {
+    "street": "SREBRNYCH ŚWIERKÓW",
+    "district": "Mokotów",
+    "postcode": "02-757"
+  },
+  "b.-brechta-03-472-praga-północ": {
+    "street": "B. BRECHTA",
+    "district": "Praga-Północ",
+    "postcode": "03-472"
+  },
+  "b.-brechta-03-473-praga-północ": {
+    "street": "B. BRECHTA",
+    "district": "Praga-Północ",
+    "postcode": "03-473"
+  },
+  "h.-dobrzańskiego-„hubala”-01-473-bemowo": {
+    "street": "H. DOBRZAŃSKIEGO „HUBALA”",
+    "district": "Bemowo",
+    "postcode": "01-473"
+  },
+  "czerwonych-wierchów-02-829-ursynów": {
+    "street": "CZERWONYCH WIERCHÓW",
+    "district": "Ursynów",
+    "postcode": "02-829"
+  },
+  "czterech-wiatrów-02-860-ursynów": {
+    "street": "CZTERECH WIATRÓW",
+    "district": "Ursynów",
+    "postcode": "02-860"
+  },
+  "leśnych-ziół-05-077-wesoła": {
+    "street": "LEŚNYCH ZIÓŁ",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "czołowa-03-028-białołęka": {
+    "street": "CZOŁOWA",
+    "district": "Białołęka",
+    "postcode": "03-028"
+  },
+  "drzemlika-02-843-ursynów": {
+    "street": "DRZEMLIKA",
+    "district": "Ursynów",
+    "postcode": "02-843"
+  },
+  "klubowa-02-847-ursynów": {
+    "street": "KLUBOWA",
+    "district": "Ursynów",
+    "postcode": "02-847"
+  },
+  "karabeli-01-313-bemowo": {
+    "street": "KARABELI",
+    "district": "Bemowo",
+    "postcode": "01-313"
+  },
+  "kolumbijska-01-991-bielany": {
+    "street": "KOLUMBIJSKA",
+    "district": "Bielany",
+    "postcode": "01-991"
+  },
+  "marecka-04-717-wawer": {
+    "street": "MARECKA",
+    "district": "Wawer",
+    "postcode": "04-717"
+  },
+  "mirtowa-04-690-wawer": {
+    "street": "MIRTOWA",
+    "district": "Wawer",
+    "postcode": "04-690"
+  },
+  "kirasjerów-04-072-praga-południe": {
+    "street": "KIRASJERÓW",
+    "district": "Praga-Południe",
+    "postcode": "04-072"
+  },
+  "libijska-03-977-praga-południe": {
+    "street": "LIBIJSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-977"
+  },
+  "marokańska-03-977-praga-południe": {
+    "street": "MAROKAŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-977"
+  },
+  "k.-wóycickiego-01-938-bielany": {
+    "street": "K. WÓYCICKIEGO",
+    "district": "Bielany",
+    "postcode": "01-938"
+  },
+  "gryfitów-03-266-białołęka": {
+    "street": "GRYFITÓW",
+    "district": "Białołęka",
+    "postcode": "03-266"
+  },
+  "mrągowska-04-988-wawer": {
+    "street": "MRĄGOWSKA",
+    "district": "Wawer",
+    "postcode": "04-988"
+  },
+  "poetów-03-147-białołęka": {
+    "street": "POETÓW",
+    "district": "Białołęka",
+    "postcode": "03-147"
+  },
+  "powroźnicza-04-466-rembertów": {
+    "street": "POWROŹNICZA",
+    "district": "Rembertów",
+    "postcode": "04-466"
+  },
+  "prawdziwka-02-973-ursynów": {
+    "street": "PRAWDZIWKA",
+    "district": "Ursynów",
+    "postcode": "02-973"
+  },
+  "ratuszowa-03-450-praga-północ": {
+    "street": "RATUSZOWA",
+    "district": "Praga-Północ",
+    "postcode": "03-450"
+  },
+  "rosy-02-996-wilanów": {
+    "street": "ROSY",
+    "district": "Wilanów",
+    "postcode": "02-996"
+  },
+  "al.-wilanowska-02-765-mokotów": {
+    "street": "AL. WILANOWSKA",
+    "district": "Mokotów",
+    "postcode": "02-765"
+  },
+  "al.-wilanowska-02-730-mokotów": {
+    "street": "AL. WILANOWSKA",
+    "district": "Mokotów",
+    "postcode": "02-730"
+  },
+  "belwederska-00-762-mokotów": {
+    "street": "BELWEDERSKA",
+    "district": "Mokotów",
+    "postcode": "00-762"
+  },
+  "iberyjska-02-764-mokotów": {
+    "street": "IBERYJSKA",
+    "district": "Mokotów",
+    "postcode": "02-764"
+  },
+  "ibisa-02-812-ursynów": {
+    "street": "IBISA",
+    "district": "Ursynów",
+    "postcode": "02-812"
+  },
+  "a.-idźkowskiego-00-442-śródmieście": {
+    "street": "A. IDŹKOWSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-442"
+  },
+  "al.-„solidarności”-03-411-praga-północ": {
+    "street": "AL. „SOLIDARNOŚCI”",
+    "district": "Praga-Północ",
+    "postcode": "03-411"
+  },
+  "al.-„solidarności”-03-412-praga-północ": {
+    "street": "AL. „SOLIDARNOŚCI”",
+    "district": "Praga-Północ",
+    "postcode": "03-412"
+  },
+  "bonifraterska-00-203-śródmieście": {
+    "street": "BONIFRATERSKA",
+    "district": "Śródmieście",
+    "postcode": "00-203"
+  },
+  "bonifraterska-00-213-śródmieście": {
+    "street": "BONIFRATERSKA",
+    "district": "Śródmieście",
+    "postcode": "00-213"
+  },
+  "igańska-04-087-praga-południe": {
+    "street": "IGAŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-087"
+  },
+  "ii-armii-wojska-polskiego-02-495-ursus": {
+    "street": "II ARMII WOJSKA POLSKIEGO",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "belgijska-02-511-mokotów": {
+    "street": "BELGIJSKA",
+    "district": "Mokotów",
+    "postcode": "02-511"
+  },
+  "ikara-02-705-mokotów": {
+    "street": "IKARA",
+    "district": "Mokotów",
+    "postcode": "02-705"
+  },
+  "iławska-04-393-praga-południe": {
+    "street": "IŁAWSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-393"
+  },
+  "iłżecka-02-135-włochy": {
+    "street": "IŁŻECKA",
+    "district": "Włochy",
+    "postcode": "02-135"
+  },
+  "a.-radziwiłł-02-661-mokotów": {
+    "street": "A. RADZIWIŁŁ",
+    "district": "Mokotów",
+    "postcode": "02-661"
+  },
+  "d.-siedzikówny-„inki”-01-115-wola": {
+    "street": "D. SIEDZIKÓWNY „INKI”",
+    "district": "Wola",
+    "postcode": "01-115"
+  },
+  "d.-siedzikówny-„inki”-01-449-wola": {
+    "street": "D. SIEDZIKÓWNY „INKI”",
+    "district": "Wola",
+    "postcode": "01-449"
+  },
+  "al.-przyjaciół-00-565-śródmieście": {
+    "street": "AL. PRZYJACIÓŁ",
+    "district": "Śródmieście",
+    "postcode": "00-565"
+  },
+  "bogoriów-03-279-białołęka": {
+    "street": "BOGORIÓW",
+    "district": "Białołęka",
+    "postcode": "03-279"
+  },
+  "i-poprzeczna-04-602-wawer": {
+    "street": "I POPRZECZNA",
+    "district": "Wawer",
+    "postcode": "04-602"
+  },
+  "ireny-03-641-targówek": {
+    "street": "IRENY",
+    "district": "Targówek",
+    "postcode": "03-641"
+  },
+  "iskry-01-472-bemowo": {
+    "street": "ISKRY",
+    "district": "Bemowo",
+    "postcode": "01-472"
+  },
+  "japońskiej-wiśni-02-757-mokotów": {
+    "street": "JAPOŃSKIEJ WIŚNI",
+    "district": "Mokotów",
+    "postcode": "02-757"
+  },
+  "jesiennych-liści-03-289-białołęka": {
+    "street": "JESIENNYCH LIŚCI",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "aksamitki-02-747-wilanów": {
+    "street": "AKSAMITKI",
+    "district": "Wilanów",
+    "postcode": "02-747"
+  },
+  "iwicka-00-735-mokotów": {
+    "street": "IWICKA",
+    "district": "Mokotów",
+    "postcode": "00-735"
+  },
+  "ix-poprzeczna-04-637-wawer": {
+    "street": "IX POPRZECZNA",
+    "district": "Wawer",
+    "postcode": "04-637"
+  },
+  "izabelli-01-738-żoliborz": {
+    "street": "IZABELLI",
+    "district": "Żoliborz",
+    "postcode": "01-738"
+  },
+  "b.-ludwiżanki-00-769-mokotów": {
+    "street": "B. LUDWIŻANKI",
+    "district": "Mokotów",
+    "postcode": "00-769"
+  },
+  "dyliżansowa-03-136-białołęka": {
+    "street": "DYLIŻANSOWA",
+    "district": "Białołęka",
+    "postcode": "03-136"
+  },
+  "wąchocka-03-934-praga-południe": {
+    "street": "WĄCHOCKA",
+    "district": "Praga-Południe",
+    "postcode": "03-934"
+  },
+  "l.-mierosławskiego-01-527-żoliborz": {
+    "street": "L. MIEROSŁAWSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-527"
+  },
+  "i.-domeyki-04-146-praga-południe": {
+    "street": "I. DOMEYKI",
+    "district": "Praga-Południe",
+    "postcode": "04-146"
+  },
+  "i.-kruszewskiego-04-086-praga-południe": {
+    "street": "I. KRUSZEWSKIEGO",
+    "district": "Praga-Południe",
+    "postcode": "04-086"
+  },
+  "i.-l.-pereca-00-849-wola": {
+    "street": "I. L. PERECA",
+    "district": "Wola",
+    "postcode": "00-849"
+  },
+  "i.-newtona-01-482-bemowo": {
+    "street": "I. NEWTONA",
+    "district": "Bemowo",
+    "postcode": "01-482"
+  },
+  "i.-paderewskiego-04-438-rembertów": {
+    "street": "I. PADEREWSKIEGO",
+    "district": "Rembertów",
+    "postcode": "04-438"
+  },
+  "i.-krasickiego-02-628-mokotów": {
+    "street": "I. KRASICKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-628"
+  },
+  "i.-potockiego-00-393-śródmieście": {
+    "street": "I. POTOCKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-393"
+  },
+  "i.-łukasiewicza-03-657-targówek": {
+    "street": "I. ŁUKASIEWICZA",
+    "district": "Targówek",
+    "postcode": "03-657"
+  },
+  "i.-paderewskiego-04-450-rembertów": {
+    "street": "I. PADEREWSKIEGO",
+    "district": "Rembertów",
+    "postcode": "04-450"
+  },
+  "i.-kosmowskiej-03-750-praga-północ": {
+    "street": "I. KOSMOWSKIEJ",
+    "district": "Praga-Północ",
+    "postcode": "03-750"
+  },
+  "i.-kruszewskiego-04-079-praga-południe": {
+    "street": "I. KRUSZEWSKIEGO",
+    "district": "Praga-Południe",
+    "postcode": "04-079"
+  },
+  "jabłeczna-04-683-wawer": {
+    "street": "JABŁECZNA",
+    "district": "Wawer",
+    "postcode": "04-683"
+  },
+  "j.-szanajcy-03-481-praga-północ": {
+    "street": "J. SZANAJCY",
+    "district": "Praga-Północ",
+    "postcode": "03-481"
+  },
+  "gajdy-02-878-ursynów": {
+    "street": "GAJDY",
+    "district": "Ursynów",
+    "postcode": "02-878"
+  },
+  "dywizjonu-ak-„jeleń”-00-712-mokotów": {
+    "street": "DYWIZJONU AK „JELEŃ”",
+    "district": "Mokotów",
+    "postcode": "00-712"
+  },
+  "h.-jędrzejowskiego-03-113-białołęka": {
+    "street": "H. JĘDRZEJOWSKIEGO",
+    "district": "Białołęka",
+    "postcode": "03-113"
+  },
+  "białej-floty-02-654-mokotów": {
+    "street": "BIAŁEJ FLOTY",
+    "district": "Mokotów",
+    "postcode": "02-654"
+  },
+  "borowej-góry-01-354-bemowo": {
+    "street": "BOROWEJ GÓRY",
+    "district": "Bemowo",
+    "postcode": "01-354"
+  },
+  "nowej-huty-01-338-bemowo": {
+    "street": "NOWEJ HUTY",
+    "district": "Bemowo",
+    "postcode": "01-338"
+  },
+  "wejherowska-03-538-targówek": {
+    "street": "WEJHEROWSKA",
+    "district": "Targówek",
+    "postcode": "03-538"
+  },
+  "al.-komisji-edukacji-narodowej-02-797-ursynów": {
+    "street": "AL. KOMISJI EDUKACJI NARODOWEJ",
+    "district": "Ursynów",
+    "postcode": "02-797"
+  },
+  "czerwonej-jarzębiny-03-604-targówek": {
+    "street": "CZERWONEJ JARZĘBINY",
+    "district": "Targówek",
+    "postcode": "03-604"
+  },
+  "a.-gajkowicza-03-562-targówek": {
+    "street": "A. GAJKOWICZA",
+    "district": "Targówek",
+    "postcode": "03-562"
+  },
+  "jodłowa-02-907-mokotów": {
+    "street": "JODŁOWA",
+    "district": "Mokotów",
+    "postcode": "02-907"
+  },
+  "jodłowa-05-077-wesoła": {
+    "street": "JODŁOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "józefowska-03-784-targówek": {
+    "street": "JÓZEFOWSKA",
+    "district": "Targówek",
+    "postcode": "03-784"
+  },
+  "porajów-03-188-białołęka": {
+    "street": "PORAJÓW",
+    "district": "Białołęka",
+    "postcode": "03-188"
+  },
+  "grejpfrutowa-00-713-mokotów": {
+    "street": "GREJPFRUTOWA",
+    "district": "Mokotów",
+    "postcode": "00-713"
+  },
+  "leśnej-polanki-03-142-białołęka": {
+    "street": "LEŚNEJ POLANKI",
+    "district": "Białołęka",
+    "postcode": "03-142"
+  },
+  "chińskiej-róży-02-202-ochota": {
+    "street": "CHIŃSKIEJ RÓŻY",
+    "district": "Ochota",
+    "postcode": "02-202"
+  },
+  "dzikiej-róży-05-077-wesoła": {
+    "street": "DZIKIEJ RÓŻY",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "al.-wojska-polskiego-01-524-żoliborz": {
+    "street": "AL. WOJSKA POLSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-524"
+  },
+  "dewajtis-01-815-bielany": {
+    "street": "DEWAJTIS",
+    "district": "Bielany",
+    "postcode": "01-815"
+  },
+  "t.-rejtana-02-516-mokotów": {
+    "street": "T. REJTANA",
+    "district": "Mokotów",
+    "postcode": "02-516"
+  },
+  "t.-rejtana-05-075-wesoła": {
+    "street": "T. REJTANA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "białej-wody-02-829-ursynów": {
+    "street": "BIAŁEJ WODY",
+    "district": "Ursynów",
+    "postcode": "02-829"
+  },
+  "pejzażowa-02-703-mokotów": {
+    "street": "PEJZAŻOWA",
+    "district": "Mokotów",
+    "postcode": "02-703"
+  },
+  "małej-żabki-03-289-białołęka": {
+    "street": "MAŁEJ ŻABKI",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "międzyosiedlowa-04-763-wawer": {
+    "street": "MIĘDZYOSIEDLOWA",
+    "district": "Wawer",
+    "postcode": "04-763"
+  },
+  "ogrodowa-00-896-wola": {
+    "street": "OGRODOWA",
+    "district": "Wola",
+    "postcode": "00-896"
+  },
+  "oliwska-03-316-targówek": {
+    "street": "OLIWSKA",
+    "district": "Targówek",
+    "postcode": "03-316"
+  },
+  "podróżnicza-03-111-białołęka": {
+    "street": "PODRÓŻNICZA",
+    "district": "Białołęka",
+    "postcode": "03-111"
+  },
+  "karmazynowa-02-887-ursynów": {
+    "street": "KARMAZYNOWA",
+    "district": "Ursynów",
+    "postcode": "02-887"
+  },
+  "marmurowa-03-053-białołęka": {
+    "street": "MARMUROWA",
+    "district": "Białołęka",
+    "postcode": "03-053"
+  },
+  "św.-wojciecha-01-137-wola": {
+    "street": "ŚW. WOJCIECHA",
+    "district": "Wola",
+    "postcode": "01-137"
+  },
+  "saska-03-968-praga-południe": {
+    "street": "SASKA",
+    "district": "Praga-Południe",
+    "postcode": "03-968"
+  },
+  "wilkowiecka-03-035-białołęka": {
+    "street": "WILKOWIECKA",
+    "district": "Białołęka",
+    "postcode": "03-035"
+  },
+  "zawiślańska-03-068-białołęka": {
+    "street": "ZAWIŚLAŃSKA",
+    "district": "Białołęka",
+    "postcode": "03-068"
+  },
+  "kądziołeczki-02-850-ursynów": {
+    "street": "KĄDZIOŁECZKI",
+    "district": "Ursynów",
+    "postcode": "02-850"
+  },
+  "lasek-brzozowy-02-792-ursynów": {
+    "street": "LASEK BRZOZOWY",
+    "district": "Ursynów",
+    "postcode": "02-792"
+  },
+  "ketlinga-03-289-białołęka": {
+    "street": "KETLINGA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "kędzierzyńska-04-915-wawer": {
+    "street": "KĘDZIERZYŃSKA",
+    "district": "Wawer",
+    "postcode": "04-915"
+  },
+  "kibiców-03-059-białołęka": {
+    "street": "KIBICÓW",
+    "district": "Białołęka",
+    "postcode": "03-059"
+  },
+  "kielecka-02-504-mokotów": {
+    "street": "KIELECKA",
+    "district": "Mokotów",
+    "postcode": "02-504"
+  },
+  "kielecka-02-550-mokotów": {
+    "street": "KIELECKA",
+    "district": "Mokotów",
+    "postcode": "02-550"
+  },
+  "lekka-01-910-bielany": {
+    "street": "LEKKA",
+    "district": "Bielany",
+    "postcode": "01-910"
+  },
+  "s.-mikkego-00-454-śródmieście": {
+    "street": "S. MIKKEGO",
+    "district": "Śródmieście",
+    "postcode": "00-454"
+  },
+  "klamrowa-03-685-targówek": {
+    "street": "KLAMROWA",
+    "district": "Targówek",
+    "postcode": "03-685"
+  },
+  "klarnecistów-02-875-ursynów": {
+    "street": "KLARNECISTÓW",
+    "district": "Ursynów",
+    "postcode": "02-875"
+  },
+  "kłobucka-02-699-ursynów": {
+    "street": "KŁOBUCKA",
+    "district": "Ursynów",
+    "postcode": "02-699"
+  },
+  "kmicica-02-728-mokotów": {
+    "street": "KMICICA",
+    "district": "Mokotów",
+    "postcode": "02-728"
+  },
+  "kminkowa-04-991-wawer": {
+    "street": "KMINKOWA",
+    "district": "Wawer",
+    "postcode": "04-991"
+  },
+  "kniei-03-287-białołęka": {
+    "street": "KNIEI",
+    "district": "Białołęka",
+    "postcode": "03-287"
+  },
+  "kórnicka-02-870-ursynów": {
+    "street": "KÓRNICKA",
+    "district": "Ursynów",
+    "postcode": "02-870"
+  },
+  "al.-dwudziestolatków-02-157-włochy": {
+    "street": "AL. DWUDZIESTOLATKÓW",
+    "district": "Włochy",
+    "postcode": "02-157"
+  },
+  "kpt.-w.-raginisa-01-317-bemowo": {
+    "street": "KPT. W. RAGINISA",
+    "district": "Bemowo",
+    "postcode": "01-317"
+  },
+  "konik-polny-03-290-białołęka": {
+    "street": "KONIK POLNY",
+    "district": "Białołęka",
+    "postcode": "03-290"
+  },
+  "grupy-ak-„krybar”-00-712-mokotów": {
+    "street": "GRUPY AK „KRYBAR”",
+    "district": "Mokotów",
+    "postcode": "00-712"
+  },
+  "ks.-b.-markiewicza-01-493-bemowo": {
+    "street": "KS. B. MARKIEWICZA",
+    "district": "Bemowo",
+    "postcode": "01-493"
+  },
+  "ks.-i.-kłopotowskiego-03-718-praga-północ": {
+    "street": "KS. I. KŁOPOTOWSKIEGO",
+    "district": "Praga-Północ",
+    "postcode": "03-718"
+  },
+  "ks.-i.-kłopotowskiego-03-717-praga-północ": {
+    "street": "KS. I. KŁOPOTOWSKIEGO",
+    "district": "Praga-Północ",
+    "postcode": "03-717"
+  },
+  "aktorska-02-495-ursus": {
+    "street": "AKTORSKA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "kubańska-03-949-praga-południe": {
+    "street": "KUBAŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-949"
+  },
+  "kubusia-puchatka-05-075-wesoła": {
+    "street": "KUBUSIA PUCHATKA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "kwarciana-04-045-praga-południe": {
+    "street": "KWARCIANA",
+    "district": "Praga-Południe",
+    "postcode": "04-045"
+  },
+  "kwarty-02-991-wilanów": {
+    "street": "KWARTY",
+    "district": "Wilanów",
+    "postcode": "02-991"
+  },
+  "motylkowa-04-776-wawer": {
+    "street": "MOTYLKOWA",
+    "district": "Wawer",
+    "postcode": "04-776"
+  },
+  "pasłęcka-03-137-białołęka": {
+    "street": "PASŁĘCKA",
+    "district": "Białołęka",
+    "postcode": "03-137"
+  },
+  "spiralna-02-984-mokotów": {
+    "street": "SPIRALNA",
+    "district": "Mokotów",
+    "postcode": "02-984"
+  },
+  "m.-drzymały-02-495-ursus": {
+    "street": "M. DRZYMAŁY",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "piastowska-02-495-ursus": {
+    "street": "PIASTOWSKA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "prymasa-a.-hlonda-02-972-wilanów": {
+    "street": "PRYMASA A. HLONDA",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "rodzynkowa-00-708-mokotów": {
+    "street": "RODZYNKOWA",
+    "district": "Mokotów",
+    "postcode": "00-708"
+  },
+  "przylaszczkowa-04-994-wawer": {
+    "street": "PRZYLASZCZKOWA",
+    "district": "Wawer",
+    "postcode": "04-994"
+  },
+  "sarmacka-02-972-wilanów": {
+    "street": "SARMACKA",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "słonki-02-814-ursynów": {
+    "street": "SŁONKI",
+    "district": "Ursynów",
+    "postcode": "02-814"
+  },
+  "stuletnia-03-035-białołęka": {
+    "street": "STULETNIA",
+    "district": "Białołęka",
+    "postcode": "03-035"
+  },
+  "sęczkowa-03-986-wawer": {
+    "street": "SĘCZKOWA",
+    "district": "Wawer",
+    "postcode": "03-986"
+  },
+  "zabraniecka-03-872-targówek": {
+    "street": "ZABRANIECKA",
+    "district": "Targówek",
+    "postcode": "03-872"
+  },
+  "arkuszowa-01-934-bielany": {
+    "street": "ARKUSZOWA",
+    "district": "Bielany",
+    "postcode": "01-934"
+  },
+  "mochtyńska-03-289-białołęka": {
+    "street": "MOCHTYŃSKA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "lakowa-04-244-rembertów": {
+    "street": "LAKOWA",
+    "district": "Rembertów",
+    "postcode": "04-244"
+  },
+  "lądowa-00-759-śródmieście": {
+    "street": "LĄDOWA",
+    "district": "Śródmieście",
+    "postcode": "00-759"
+  },
+  "a.-malczewskiego-02-617-mokotów": {
+    "street": "A. MALCZEWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-617"
+  },
+  "c.-goldoniego-01-913-bielany": {
+    "street": "C. GOLDONIEGO",
+    "district": "Bielany",
+    "postcode": "01-913"
+  },
+  "g.-garibaldiego-04-078-praga-południe": {
+    "street": "G. GARIBALDIEGO",
+    "district": "Praga-Południe",
+    "postcode": "04-078"
+  },
+  "lęborska-03-443-praga-północ": {
+    "street": "LĘBORSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-443"
+  },
+  "lędzka-01-446-wola": {
+    "street": "LĘDZKA",
+    "district": "Wola",
+    "postcode": "01-446"
+  },
+  "delfina-03-196-białołęka": {
+    "street": "DELFINA",
+    "district": "Białołęka",
+    "postcode": "03-196"
+  },
+  "a.-sulkiewicza-00-758-śródmieście": {
+    "street": "A. SULKIEWICZA",
+    "district": "Śródmieście",
+    "postcode": "00-758"
+  },
+  "filmowa-04-935-wawer": {
+    "street": "FILMOWA",
+    "district": "Wawer",
+    "postcode": "04-935"
+  },
+  "lniana-03-889-targówek": {
+    "street": "LNIANA",
+    "district": "Targówek",
+    "postcode": "03-889"
+  },
+  "archiwalna-02-103-ochota": {
+    "street": "ARCHIWALNA",
+    "district": "Ochota",
+    "postcode": "02-103"
+  },
+  "bohaterów-z-kopalni-„wujek”-05-075-wesoła": {
+    "street": "BOHATERÓW Z KOPALNI „WUJEK”",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "b.-pietraszewicza-„lota”-02-790-ursynów": {
+    "street": "B. PIETRASZEWICZA „LOTA”",
+    "district": "Ursynów",
+    "postcode": "02-790"
+  },
+  "lokalna-04-903-wawer": {
+    "street": "LOKALNA",
+    "district": "Wawer",
+    "postcode": "04-903"
+  },
+  "alpejska-04-628-wawer": {
+    "street": "ALPEJSKA",
+    "district": "Wawer",
+    "postcode": "04-628"
+  },
+  "ulrychowska-01-113-wola": {
+    "street": "ULRYCHOWSKA",
+    "district": "Wola",
+    "postcode": "01-113"
+  },
+  "a.-krywulta-00-370-śródmieście": {
+    "street": "A. KRYWULTA",
+    "district": "Śródmieście",
+    "postcode": "00-370"
+  },
+  "alternatywy-02-775-ursynów": {
+    "street": "ALTERNATYWY",
+    "district": "Ursynów",
+    "postcode": "02-775"
+  },
+  "altowa-02-386-ochota": {
+    "street": "ALTOWA",
+    "district": "Ochota",
+    "postcode": "02-386"
+  },
+  "lubartowska-04-326-praga-południe": {
+    "street": "LUBARTOWSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-326"
+  },
+  "lwa-03-668-targówek": {
+    "street": "LWA",
+    "district": "Targówek",
+    "postcode": "03-668"
+  },
+  "r.-bailly-01-494-bemowo": {
+    "street": "R. BAILLY",
+    "district": "Bemowo",
+    "postcode": "01-494"
+  },
+  "elżbiety-rakuszanki-02-496-ursus": {
+    "street": "ELŻBIETY RAKUSZANKI",
+    "district": "Ursus",
+    "postcode": "02-496"
+  },
+  "r.-pazińskiego-04-643-wawer": {
+    "street": "R. PAZIŃSKIEGO",
+    "district": "Wawer",
+    "postcode": "04-643"
+  },
+  "mołdawska-02-127-ochota": {
+    "street": "MOŁDAWSKA",
+    "district": "Ochota",
+    "postcode": "02-127"
+  },
+  "m.-zaruskiego-00-468-śródmieście": {
+    "street": "M. ZARUSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-468"
+  },
+  "talarowa-03-130-białołęka": {
+    "street": "TALAROWA",
+    "district": "Białołęka",
+    "postcode": "03-130"
+  },
+  "tawułkowa-04-953-wawer": {
+    "street": "TAWUŁKOWA",
+    "district": "Wawer",
+    "postcode": "04-953"
+  },
+  "łabiszyńska-03-361-targówek": {
+    "street": "ŁABISZYŃSKA",
+    "district": "Targówek",
+    "postcode": "03-361"
+  },
+  "łabiszyńska-03-385-targówek": {
+    "street": "ŁABISZYŃSKA",
+    "district": "Targówek",
+    "postcode": "03-385"
+  },
+  "łabiszyńska-03-397-targówek": {
+    "street": "ŁABISZYŃSKA",
+    "district": "Targówek",
+    "postcode": "03-397"
+  },
+  "łabiszyńska-03-204-targówek": {
+    "street": "ŁABISZYŃSKA",
+    "district": "Targówek",
+    "postcode": "03-204"
+  },
+  "łączna-03-113-białołęka": {
+    "street": "ŁĄCZNA",
+    "district": "Białołęka",
+    "postcode": "03-113"
+  },
+  "wałbrzyska-02-739-mokotów": {
+    "street": "WAŁBRZYSKA",
+    "district": "Mokotów",
+    "postcode": "02-739"
+  },
+  "bełchatowska-04-028-praga-południe": {
+    "street": "BEŁCHATOWSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-028"
+  },
+  "chełchowska-04-948-wawer": {
+    "street": "CHEŁCHOWSKA",
+    "district": "Wawer",
+    "postcode": "04-948"
+  },
+  "bełdan-02-695-mokotów": {
+    "street": "BEŁDAN",
+    "district": "Mokotów",
+    "postcode": "02-695"
+  },
+  "działdowska-01-184-wola": {
+    "street": "DZIAŁDOWSKA",
+    "district": "Wola",
+    "postcode": "01-184"
+  },
+  "łęczycka-02-065-ochota": {
+    "street": "ŁĘCZYCKA",
+    "district": "Ochota",
+    "postcode": "02-065"
+  },
+  "łęgi-01-329-bemowo": {
+    "street": "ŁĘGI",
+    "district": "Bemowo",
+    "postcode": "01-329"
+  },
+  "łęgowa-02-998-wilanów": {
+    "street": "ŁĘGOWA",
+    "district": "Wilanów",
+    "postcode": "02-998"
+  },
+  "biłgorajska-04-303-praga-południe": {
+    "street": "BIŁGORAJSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-303"
+  },
+  "bułgarska-03-971-praga-południe": {
+    "street": "BUŁGARSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-971"
+  },
+  "j.-bułhaka-01-472-bemowo": {
+    "street": "J. BUŁHAKA",
+    "district": "Bemowo",
+    "postcode": "01-472"
+  },
+  "barbary-radziwiłłówny-02-496-ursus": {
+    "street": "BARBARY RADZIWIŁŁÓWNY",
+    "district": "Ursus",
+    "postcode": "02-496"
+  },
+  "chełmska-00-724-mokotów": {
+    "street": "CHEŁMSKA",
+    "district": "Mokotów",
+    "postcode": "00-724"
+  },
+  "chełmska-00-725-mokotów": {
+    "street": "CHEŁMSKA",
+    "district": "Mokotów",
+    "postcode": "00-725"
+  },
+  "łobeska-02-250-włochy": {
+    "street": "ŁOBESKA",
+    "district": "Włochy",
+    "postcode": "02-250"
+  },
+  "łochowska-03-757-praga-północ": {
+    "street": "ŁOCHOWSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-757"
+  },
+  "kiełpińska-01-707-bielany": {
+    "street": "KIEŁPIŃSKA",
+    "district": "Bielany",
+    "postcode": "01-707"
+  },
+  "łubinowa-03-878-targówek": {
+    "street": "ŁUBINOWA",
+    "district": "Targówek",
+    "postcode": "03-878"
+  },
+  "łucka-00-845-wola": {
+    "street": "ŁUCKA",
+    "district": "Wola",
+    "postcode": "00-845"
+  },
+  "łucka-00-842-wola": {
+    "street": "ŁUCKA",
+    "district": "Wola",
+    "postcode": "00-842"
+  },
+  "s.-tołwińskiego-01-711-żoliborz": {
+    "street": "S. TOŁWIŃSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-711"
+  },
+  "łysakowska-04-528-wawer": {
+    "street": "ŁYSAKOWSKA",
+    "district": "Wawer",
+    "postcode": "04-528"
+  },
+  "w.-bełzy-02-495-ursus": {
+    "street": "W. BEŁZY",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "wrzeciono-01-961-bielany": {
+    "street": "WRZECIONO",
+    "district": "Bielany",
+    "postcode": "01-961"
+  },
+  "zgrupowania-ak-„żmija”-01-875-bielany": {
+    "street": "ZGRUPOWANIA AK „ŻMIJA”",
+    "district": "Bielany",
+    "postcode": "01-875"
+  },
+  "wapienna-04-691-wawer": {
+    "street": "WAPIENNA",
+    "district": "Wawer",
+    "postcode": "04-691"
+  },
+  "ligustrowa-03-995-wawer": {
+    "street": "LIGUSTROWA",
+    "district": "Wawer",
+    "postcode": "03-995"
+  },
+  "ł.-drewny-02-968-wilanów": {
+    "street": "Ł. DREWNY",
+    "district": "Wilanów",
+    "postcode": "02-968"
+  },
+  "ł.-gołębiowskiego-01-504-żoliborz": {
+    "street": "Ł. GOŁĘBIOWSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-504"
+  },
+  "łacińska-01-451-wola": {
+    "street": "ŁACIŃSKA",
+    "district": "Wola",
+    "postcode": "01-451"
+  },
+  "łagiewnicka-02-860-ursynów": {
+    "street": "ŁAGIEWNICKA",
+    "district": "Ursynów",
+    "postcode": "02-860"
+  },
+  "naddnieprzańska-04-205-wawer": {
+    "street": "NADDNIEPRZAŃSKA",
+    "district": "Wawer",
+    "postcode": "04-205"
+  },
+  "ł.-górnickiego-02-063-ochota": {
+    "street": "Ł. GÓRNICKIEGO",
+    "district": "Ochota",
+    "postcode": "02-063"
+  },
+  "łabędzia-04-802-wawer": {
+    "street": "ŁABĘDZIA",
+    "district": "Wawer",
+    "postcode": "04-802"
+  },
+  "zapłocie-02-970-wilanów": {
+    "street": "ZAPŁOCIE",
+    "district": "Wilanów",
+    "postcode": "02-970"
+  },
+  "zwoleńska-04-761-wawer": {
+    "street": "ZWOLEŃSKA",
+    "district": "Wawer",
+    "postcode": "04-761"
+  },
+  "łagodna-02-654-mokotów": {
+    "street": "ŁAGODNA",
+    "district": "Mokotów",
+    "postcode": "02-654"
+  },
+  "łagodna-05-077-wesoła": {
+    "street": "ŁAGODNA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "łagowska-01-464-bemowo": {
+    "street": "ŁAGOWSKA",
+    "district": "Bemowo",
+    "postcode": "01-464"
+  },
+  "łamana-02-480-włochy": {
+    "street": "ŁAMANA",
+    "district": "Włochy",
+    "postcode": "02-480"
+  },
+  "łany-03-684-targówek": {
+    "street": "ŁANY",
+    "district": "Targówek",
+    "postcode": "03-684"
+  },
+  "łasińska-03-646-targówek": {
+    "street": "ŁASIŃSKA",
+    "district": "Targówek",
+    "postcode": "03-646"
+  },
+  "ładna-03-629-targówek": {
+    "street": "ŁADNA",
+    "district": "Targówek",
+    "postcode": "03-629"
+  },
+  "łaziebna-04-316-praga-południe": {
+    "street": "ŁAZIEBNA",
+    "district": "Praga-Południe",
+    "postcode": "04-316"
+  },
+  "łanowa-03-107-białołęka": {
+    "street": "ŁANOWA",
+    "district": "Białołęka",
+    "postcode": "03-107"
+  },
+  "bartoszycka-04-923-wawer": {
+    "street": "BARTOSZYCKA",
+    "district": "Wawer",
+    "postcode": "04-923"
+  },
+  "macedońska-02-761-mokotów": {
+    "street": "MACEDOŃSKA",
+    "district": "Mokotów",
+    "postcode": "02-761"
+  },
+  "mątwicka-02-373-ochota": {
+    "street": "MĄTWICKA",
+    "district": "Ochota",
+    "postcode": "02-373"
+  },
+  "z.-mączeńskiego-02-829-ursynów": {
+    "street": "Z. MĄCZEŃSKIEGO",
+    "district": "Ursynów",
+    "postcode": "02-829"
+  },
+  "mchów-04-735-wawer": {
+    "street": "MCHÓW",
+    "district": "Wawer",
+    "postcode": "04-735"
+  },
+  "meander-02-791-ursynów": {
+    "street": "MEANDER",
+    "district": "Ursynów",
+    "postcode": "02-791"
+  },
+  "męcińska-04-069-praga-południe": {
+    "street": "MĘCIŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-069"
+  },
+  "męcińska-04-080-praga-południe": {
+    "street": "MĘCIŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-080"
+  },
+  "amfory-02-991-wilanów": {
+    "street": "AMFORY",
+    "district": "Wilanów",
+    "postcode": "02-991"
+  },
+  "batalionu-„miotła”-01-366-bemowo": {
+    "street": "BATALIONU „MIOTŁA”",
+    "district": "Bemowo",
+    "postcode": "01-366"
+  },
+  "mjr.-f.-m.-amałowicza-„tatara”-04-474-rembertów": {
+    "street": "MJR. F. M. AMAŁOWICZA „TATARA”",
+    "district": "Rembertów",
+    "postcode": "04-474"
+  },
+  "bramka-03-102-białołęka": {
+    "street": "BRAMKA",
+    "district": "Białołęka",
+    "postcode": "03-102"
+  },
+  "dumki-02-868-ursynów": {
+    "street": "DUMKI",
+    "district": "Ursynów",
+    "postcode": "02-868"
+  },
+  "mleczna-03-667-targówek": {
+    "street": "MLECZNA",
+    "district": "Targówek",
+    "postcode": "03-667"
+  },
+  "mławska-03-113-białołęka": {
+    "street": "MŁAWSKA",
+    "district": "Białołęka",
+    "postcode": "03-113"
+  },
+  "gen.-w.-thomméego-01-491-bemowo": {
+    "street": "GEN. W. THOMMÉEGO",
+    "district": "Bemowo",
+    "postcode": "01-491"
+  },
+  "mniszka-04-720-wawer": {
+    "street": "MNISZKA",
+    "district": "Wawer",
+    "postcode": "04-720"
+  },
+  "cichociemnych-03-984-praga-południe": {
+    "street": "CICHOCIEMNYCH",
+    "district": "Praga-Południe",
+    "postcode": "03-984"
+  },
+  "ciemna-03-785-targówek": {
+    "street": "CIEMNA",
+    "district": "Targówek",
+    "postcode": "03-785"
+  },
+  "astronomów-01-450-wola": {
+    "street": "ASTRONOMÓW",
+    "district": "Wola",
+    "postcode": "01-450"
+  },
+  "adampolska-03-913-praga-południe": {
+    "street": "ADAMPOLSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-913"
+  },
+  "czempińska-02-852-ursynów": {
+    "street": "CZEMPIŃSKA",
+    "district": "Ursynów",
+    "postcode": "02-852"
+  },
+  "mroczna-01-456-wola": {
+    "street": "MROCZNA",
+    "district": "Wola",
+    "postcode": "01-456"
+  },
+  "mrozowska-03-585-targówek": {
+    "street": "MROZOWSKA",
+    "district": "Targówek",
+    "postcode": "03-585"
+  },
+  "mszańska-04-847-wawer": {
+    "street": "MSZAŃSKA",
+    "district": "Wawer",
+    "postcode": "04-847"
+  },
+  "mścisławska-01-647-żoliborz": {
+    "street": "MŚCISŁAWSKA",
+    "district": "Żoliborz",
+    "postcode": "01-647"
+  },
+  "muchomora-02-973-ursynów": {
+    "street": "MUCHOMORA",
+    "district": "Ursynów",
+    "postcode": "02-973"
+  },
+  "municypalna-02-281-włochy": {
+    "street": "MUNICYPALNA",
+    "district": "Włochy",
+    "postcode": "02-281"
+  },
+  "tramwajowa-05-077-wesoła": {
+    "street": "TRAMWAJOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "warszawskich-tramwajarzy-03-237-białołęka": {
+    "street": "WARSZAWSKICH TRAMWAJARZY",
+    "district": "Białołęka",
+    "postcode": "03-237"
+  },
+  "chełmżyńska-04-247-rembertów": {
+    "street": "CHEŁMŻYŃSKA",
+    "district": "Rembertów",
+    "postcode": "04-247"
+  },
+  "trocinowa-04-927-wawer": {
+    "street": "TROCINOWA",
+    "district": "Wawer",
+    "postcode": "04-927"
+  },
+  "portowa-03-197-białołęka": {
+    "street": "PORTOWA",
+    "district": "Białołęka",
+    "postcode": "03-197"
+  },
+  "wspólna-05-075-wesoła": {
+    "street": "WSPÓLNA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "zyndrama-z-maszkowic-03-030-białołęka": {
+    "street": "ZYNDRAMA Z MASZKOWIC",
+    "district": "Białołęka",
+    "postcode": "03-030"
+  },
+  "a.-dyżewskiego-00-707-mokotów": {
+    "street": "A. DYŻEWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "00-707"
+  },
+  "a.-gierymskiego-00-772-mokotów": {
+    "street": "A. GIERYMSKIEGO",
+    "district": "Mokotów",
+    "postcode": "00-772"
+  },
+  "a.-e.-odyńca-02-606-mokotów": {
+    "street": "A. E. ODYŃCA",
+    "district": "Mokotów",
+    "postcode": "02-606"
+  },
+  "pasymska-01-993-bielany": {
+    "street": "PASYMSKA",
+    "district": "Bielany",
+    "postcode": "01-993"
+  },
+  "wichrowa-04-682-wawer": {
+    "street": "WICHROWA",
+    "district": "Wawer",
+    "postcode": "04-682"
+  },
+  "rzodkiewki-02-748-wilanów": {
+    "street": "RZODKIEWKI",
+    "district": "Wilanów",
+    "postcode": "02-748"
+  },
+  "a.-grottgera-00-785-mokotów": {
+    "street": "A. GROTTGERA",
+    "district": "Mokotów",
+    "postcode": "00-785"
+  },
+  "na-bateryjce-02-335-ochota": {
+    "street": "NA BATERYJCE",
+    "district": "Ochota",
+    "postcode": "02-335"
+  },
+  "kwitnąca-01-926-bielany": {
+    "street": "KWITNĄCA",
+    "district": "Bielany",
+    "postcode": "01-926"
+  },
+  "aplikancka-02-075-ochota": {
+    "street": "APLIKANCKA",
+    "district": "Ochota",
+    "postcode": "02-075"
+  },
+  "al.-komandosów-04-485-rembertów": {
+    "street": "AL. KOMANDOSÓW",
+    "district": "Rembertów",
+    "postcode": "04-485"
+  },
+  "nefrytowa-03-680-targówek": {
+    "street": "NEFRYTOWA",
+    "district": "Targówek",
+    "postcode": "03-680"
+  },
+  "nefrytowa-05-077-wesoła": {
+    "street": "NEFRYTOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "fanfarowa-02-858-ursynów": {
+    "street": "FANFAROWA",
+    "district": "Ursynów",
+    "postcode": "02-858"
+  },
+  "h.-steinhausa-02-747-mokotów": {
+    "street": "H. STEINHAUSA",
+    "district": "Mokotów",
+    "postcode": "02-747"
+  },
+  "h.-sternhela-03-597-targówek": {
+    "street": "H. STERNHELA",
+    "district": "Targówek",
+    "postcode": "03-597"
+  },
+  "gen.-a.-e.-fieldorfa-„nila”-03-984-praga-południe": {
+    "street": "GEN. A. E. FIELDORFA „NILA”",
+    "district": "Praga-Południe",
+    "postcode": "03-984"
+  },
+  "a.-munka-01-529-żoliborz": {
+    "street": "A. MUNKA",
+    "district": "Żoliborz",
+    "postcode": "01-529"
+  },
+  "anny-jagiellonki-01-989-bielany": {
+    "street": "ANNY JAGIELLONKI",
+    "district": "Bielany",
+    "postcode": "01-989"
+  },
+  "finlandzka-03-903-praga-południe": {
+    "street": "FINLANDZKA",
+    "district": "Praga-Południe",
+    "postcode": "03-903"
+  },
+  "nokturnu-01-942-bielany": {
+    "street": "NOKTURNU",
+    "district": "Bielany",
+    "postcode": "01-942"
+  },
+  "henryka-brodatego-02-496-ursus": {
+    "street": "HENRYKA BRODATEGO",
+    "district": "Ursus",
+    "postcode": "02-496"
+  },
+  "a.-fontany-01-835-bielany": {
+    "street": "A. FONTANY",
+    "district": "Bielany",
+    "postcode": "01-835"
+  },
+  "a.-fontany-01-885-bielany": {
+    "street": "A. FONTANY",
+    "district": "Bielany",
+    "postcode": "01-885"
+  },
+  "nubijska-03-977-praga-południe": {
+    "street": "NUBIJSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-977"
+  },
+  "nugat-02-776-ursynów": {
+    "street": "NUGAT",
+    "district": "Ursynów",
+    "postcode": "02-776"
+  },
+  "dywizjonu-01-470-wola": {
+    "street": "DYWIZJONU",
+    "district": "Wola",
+    "postcode": "01-470"
+  },
+  "dywizjonu-01-470-bemowo": {
+    "street": "DYWIZJONU",
+    "district": "Bemowo",
+    "postcode": "01-470"
+  },
+  "konwaliowa-05-077-wesoła": {
+    "street": "KONWALIOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "konwaliowa-03-194-białołęka": {
+    "street": "KONWALIOWA",
+    "district": "Białołęka",
+    "postcode": "03-194"
+  },
+  "marii-ludwiki-gonzagi-01-994-bielany": {
+    "street": "MARII LUDWIKI GONZAGI",
+    "district": "Bielany",
+    "postcode": "01-994"
+  },
+  "rondo-onz-00-124-śródmieście": {
+    "street": "RONDO ONZ",
+    "district": "Śródmieście",
+    "postcode": "00-124"
+  },
+  "inżynierska-03-410-praga-północ": {
+    "street": "INŻYNIERSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-410"
+  },
+  "inżynierska-03-422-praga-północ": {
+    "street": "INŻYNIERSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-422"
+  },
+  "chodzieska-04-791-wawer": {
+    "street": "CHODZIESKA",
+    "district": "Wawer",
+    "postcode": "04-791"
+  },
+  "jagiellońska-03-215-praga-północ": {
+    "street": "JAGIELLOŃSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-215"
+  },
+  "kadrowa-04-426-rembertów": {
+    "street": "KADROWA",
+    "district": "Rembertów",
+    "postcode": "04-426"
+  },
+  "guńki-03-012-białołęka": {
+    "street": "GUŃKI",
+    "district": "Białołęka",
+    "postcode": "03-012"
+  },
+  "a.-j.-madalińskiego-02-513-mokotów": {
+    "street": "A. J. MADALIŃSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-513"
+  },
+  "a.-solińskiego-03-599-targówek": {
+    "street": "A. SOLIŃSKIEGO",
+    "district": "Targówek",
+    "postcode": "03-599"
+  },
+  "akermańska-02-760-mokotów": {
+    "street": "AKERMAŃSKA",
+    "district": "Mokotów",
+    "postcode": "02-760"
+  },
+  "apenińska-01-493-bemowo": {
+    "street": "APENIŃSKA",
+    "district": "Bemowo",
+    "postcode": "01-493"
+  },
+  "barcelońska-02-762-mokotów": {
+    "street": "BARCELOŃSKA",
+    "district": "Mokotów",
+    "postcode": "02-762"
+  },
+  "a.-krzywoń-01-391-bemowo": {
+    "street": "A. KRZYWOŃ",
+    "district": "Bemowo",
+    "postcode": "01-391"
+  },
+  "amelińska-03-675-targówek": {
+    "street": "AMELIŃSKA",
+    "district": "Targówek",
+    "postcode": "03-675"
+  },
+  "argentyńska-03-952-praga-południe": {
+    "street": "ARGENTYŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-952"
+  },
+  "batalionu-ak-„oaza”-02-908-mokotów": {
+    "street": "BATALIONU AK „OAZA”",
+    "district": "Mokotów",
+    "postcode": "02-908"
+  },
+  "s.-noakowskiego-00-664-śródmieście": {
+    "street": "S. NOAKOWSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-664"
+  },
+  "s.-noakowskiego-00-666-śródmieście": {
+    "street": "S. NOAKOWSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-666"
+  },
+  "obarowska-04-322-praga-południe": {
+    "street": "OBAROWSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-322"
+  },
+  "a.-krzyckiego-02-052-ochota": {
+    "street": "A. KRZYCKIEGO",
+    "district": "Ochota",
+    "postcode": "02-052"
+  },
+  "odblask-02-195-włochy": {
+    "street": "ODBLASK",
+    "district": "Włochy",
+    "postcode": "02-195"
+  },
+  "odeska-04-778-wawer": {
+    "street": "ODESKA",
+    "district": "Wawer",
+    "postcode": "04-778"
+  },
+  "e.-schroegera-01-822-bielany": {
+    "street": "E. SCHROEGERA",
+    "district": "Bielany",
+    "postcode": "01-822"
+  },
+  "celofanowa-04-711-wawer": {
+    "street": "CELOFANOWA",
+    "district": "Wawer",
+    "postcode": "04-711"
+  },
+  "ogniowa-02-495-ursus": {
+    "street": "OGNIOWA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "ogniskowa-03-289-białołęka": {
+    "street": "OGNISKOWA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "choinkowa-04-965-wawer": {
+    "street": "CHOINKOWA",
+    "district": "Wawer",
+    "postcode": "04-965"
+  },
+  "okaryny-02-787-ursynów": {
+    "street": "OKARYNY",
+    "district": "Ursynów",
+    "postcode": "02-787"
+  },
+  "olchy-04-837-wawer": {
+    "street": "OLCHY",
+    "district": "Wawer",
+    "postcode": "04-837"
+  },
+  "olchy-05-077-wesoła": {
+    "street": "OLCHY",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "oławska-01-494-bemowo": {
+    "street": "OŁAWSKA",
+    "district": "Bemowo",
+    "postcode": "01-494"
+  },
+  "ołtarzewska-01-472-bemowo": {
+    "street": "OŁTARZEWSKA",
+    "district": "Bemowo",
+    "postcode": "01-472"
+  },
+  "omulewska-04-128-praga-południe": {
+    "street": "OMULEWSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-128"
+  },
+  "ondraszka-02-085-ochota": {
+    "street": "ONDRASZKA",
+    "district": "Ochota",
+    "postcode": "02-085"
+  },
+  "bajońska-03-963-praga-południe": {
+    "street": "BAJOŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-963"
+  },
+  "opacka-04-956-wawer": {
+    "street": "OPACKA",
+    "district": "Wawer",
+    "postcode": "04-956"
+  },
+  "opaczewska-02-368-ochota": {
+    "street": "OPACZEWSKA",
+    "district": "Ochota",
+    "postcode": "02-368"
+  },
+  "or-ota-01-507-żoliborz": {
+    "street": "OR-OTA",
+    "district": "Żoliborz",
+    "postcode": "01-507"
+  },
+  "oraczy-04-270-rembertów": {
+    "street": "ORACZY",
+    "district": "Rembertów",
+    "postcode": "04-270"
+  },
+  "os.-przyjaźń-01-355-bemowo": {
+    "street": "OS. PRZYJAŹŃ",
+    "district": "Bemowo",
+    "postcode": "01-355"
+  },
+  "oś-królewska-02-972-wilanów": {
+    "street": "OŚ KRÓLEWSKA",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "oświatowa-01-366-bemowo": {
+    "street": "OŚWIATOWA",
+    "district": "Bemowo",
+    "postcode": "01-366"
+  },
+  "otawska-04-836-wawer": {
+    "street": "OTAWSKA",
+    "district": "Wawer",
+    "postcode": "04-836"
+  },
+  "bolesława-krzywoustego-02-496-ursus": {
+    "street": "BOLESŁAWA KRZYWOUSTEGO",
+    "district": "Ursus",
+    "postcode": "02-496"
+  },
+  "owalna-02-467-włochy": {
+    "street": "OWALNA",
+    "district": "Włochy",
+    "postcode": "02-467"
+  },
+  "owczarska-01-351-bemowo": {
+    "street": "OWCZARSKA",
+    "district": "Bemowo",
+    "postcode": "01-351"
+  },
+  "j.-joyce'a-01-368-bemowo": {
+    "street": "J. JOYCE'A",
+    "district": "Bemowo",
+    "postcode": "01-368"
+  },
+  "al.-jerozolimskie-00-374-śródmieście": {
+    "street": "AL. JEROZOLIMSKIE",
+    "district": "Śródmieście",
+    "postcode": "00-374"
+  },
+  "al.-jerozolimskie-00-495-śródmieście": {
+    "street": "AL. JEROZOLIMSKIE",
+    "district": "Śródmieście",
+    "postcode": "00-495"
+  },
+  "al.-jerozolimskie-00-508-śródmieście": {
+    "street": "AL. JEROZOLIMSKIE",
+    "district": "Śródmieście",
+    "postcode": "00-508"
+  },
+  "goździków-04-231-wawer": {
+    "street": "GOŹDZIKÓW",
+    "district": "Wawer",
+    "postcode": "04-231"
+  },
+  "ożarowska-01-416-wola": {
+    "street": "OŻAROWSKA",
+    "district": "Wola",
+    "postcode": "01-416"
+  },
+  "ożarowska-01-408-wola": {
+    "street": "OŻAROWSKA",
+    "district": "Wola",
+    "postcode": "01-408"
+  },
+  "a.-pługa-02-047-ochota": {
+    "street": "A. PŁUGA",
+    "district": "Ochota",
+    "postcode": "02-047"
+  },
+  "a.-solariego-02-070-ochota": {
+    "street": "A. SOLARIEGO",
+    "district": "Ochota",
+    "postcode": "02-070"
+  },
+  "architektów-02-395-ochota": {
+    "street": "ARCHITEKTÓW",
+    "district": "Ochota",
+    "postcode": "02-395"
+  },
+  "białobrzeska-02-379-ochota": {
+    "street": "BIAŁOBRZESKA",
+    "district": "Ochota",
+    "postcode": "02-379"
+  },
+  "barska-02-315-ochota": {
+    "street": "BARSKA",
+    "district": "Ochota",
+    "postcode": "02-315"
+  },
+  "akademicka-02-038-ochota": {
+    "street": "AKADEMICKA",
+    "district": "Ochota",
+    "postcode": "02-038"
+  },
+  "andrzejowska-02-312-ochota": {
+    "street": "ANDRZEJOWSKA",
+    "district": "Ochota",
+    "postcode": "02-312"
+  },
+  "białobrzeska-02-380-ochota": {
+    "street": "BIAŁOBRZESKA",
+    "district": "Ochota",
+    "postcode": "02-380"
+  },
+  "bielska-02-394-ochota": {
+    "street": "BIELSKA",
+    "district": "Ochota",
+    "postcode": "02-394"
+  },
+  "w.-wróblewskiego-02-978-mokotów": {
+    "street": "W. WRÓBLEWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-978"
+  },
+  "wróbla-02-736-mokotów": {
+    "street": "WRÓBLA",
+    "district": "Mokotów",
+    "postcode": "02-736"
+  },
+  "dwóch-mieczy-04-491-rembertów": {
+    "street": "DWÓCH MIECZY",
+    "district": "Rembertów",
+    "postcode": "04-491"
+  },
+  "grójecka-02-021-ochota": {
+    "street": "GRÓJECKA",
+    "district": "Ochota",
+    "postcode": "02-021"
+  },
+  "grójecka-02-019-ochota": {
+    "street": "GRÓJECKA",
+    "district": "Ochota",
+    "postcode": "02-019"
+  },
+  "grójecka-02-301-ochota": {
+    "street": "GRÓJECKA",
+    "district": "Ochota",
+    "postcode": "02-301"
+  },
+  "b.-bartóka-02-787-ursynów": {
+    "street": "B. BARTÓKA",
+    "district": "Ursynów",
+    "postcode": "02-787"
+  },
+  "włóki-02-995-wilanów": {
+    "street": "WŁÓKI",
+    "district": "Wilanów",
+    "postcode": "02-995"
+  },
+  "k.-króla-04-854-wawer": {
+    "street": "K. KRÓLA",
+    "district": "Wawer",
+    "postcode": "04-854"
+  },
+  "ks.-z.-trószyńskiego-01-693-żoliborz": {
+    "street": "KS. Z. TRÓSZYŃSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-693"
+  },
+  "krótka-02-293-włochy": {
+    "street": "KRÓTKA",
+    "district": "Włochy",
+    "postcode": "02-293"
+  },
+  "krótka-05-075-wesoła": {
+    "street": "KRÓTKA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "11-listopada-03-504-targówek": {
+    "street": "11 LISTOPADA",
+    "district": "Targówek",
+    "postcode": "03-504"
+  },
+  "w-brzózkach-04-937-wawer": {
+    "street": "W BRZÓZKACH",
+    "district": "Wawer",
+    "postcode": "04-937"
+  },
+  "al.-róż-00-556-śródmieście": {
+    "street": "AL. RÓŻ",
+    "district": "Śródmieście",
+    "postcode": "00-556"
+  },
+  "a.-kowalskiego-03-288-targówek": {
+    "street": "A. KOWALSKIEGO",
+    "district": "Targówek",
+    "postcode": "03-288"
+  },
+  "a.-kraushara-02-505-mokotów": {
+    "street": "A. KRAUSHARA",
+    "district": "Mokotów",
+    "postcode": "02-505"
+  },
+  "a.-locciego-02-928-mokotów": {
+    "street": "A. LOCCIEGO",
+    "district": "Mokotów",
+    "postcode": "02-928"
+  },
+  "a.-corazziego-00-087-śródmieście": {
+    "street": "A. CORAZZIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-087"
+  },
+  "a.-janowskiego-02-784-ursynów": {
+    "street": "A. JANOWSKIEGO",
+    "district": "Ursynów",
+    "postcode": "02-784"
+  },
+  "a.-kostki-napierskiego-02-847-ursynów": {
+    "street": "A. KOSTKI NAPIERSKIEGO",
+    "district": "Ursynów",
+    "postcode": "02-847"
+  },
+  "a.-brodowskiego-03-627-targówek": {
+    "street": "A. BRODOWSKIEGO",
+    "district": "Targówek",
+    "postcode": "03-627"
+  },
+  "a.-grabowskiego-00-519-śródmieście": {
+    "street": "A. GRABOWSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-519"
+  },
+  "a.-fredry-00-097-śródmieście": {
+    "street": "A. FREDRY",
+    "district": "Śródmieście",
+    "postcode": "00-097"
+  },
+  "batalionu-ak-„parasol”-01-120-wola": {
+    "street": "BATALIONU AK „PARASOL”",
+    "district": "Wola",
+    "postcode": "01-120"
+  },
+  "batalionu-ak-„parasol”-01-118-wola": {
+    "street": "BATALIONU AK „PARASOL”",
+    "district": "Wola",
+    "postcode": "01-118"
+  },
+  "pod-lipą-02-798-ursynów": {
+    "street": "POD LIPĄ",
+    "district": "Ursynów",
+    "postcode": "02-798"
+  },
+  "e.-konopczyńskiego-00-335-śródmieście": {
+    "street": "E. KONOPCZYŃSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-335"
+  },
+  "lipcowa-04-871-wawer": {
+    "street": "LIPCOWA",
+    "district": "Wawer",
+    "postcode": "04-871"
+  },
+  "pelargonii-04-990-wawer": {
+    "street": "PELARGONII",
+    "district": "Wawer",
+    "postcode": "04-990"
+  },
+  "pęcicka-01-688-bielany": {
+    "street": "PĘCICKA",
+    "district": "Bielany",
+    "postcode": "01-688"
+  },
+  "al.-t.-hopfera-00-459-śródmieście": {
+    "street": "AL. T. HOPFERA",
+    "district": "Śródmieście",
+    "postcode": "00-459"
+  },
+  "ks.-i.-skorupki-00-546-śródmieście": {
+    "street": "KS. I. SKORUPKI",
+    "district": "Śródmieście",
+    "postcode": "00-546"
+  },
+  "lipkowska-04-801-wawer": {
+    "street": "LIPKOWSKA",
+    "district": "Wawer",
+    "postcode": "04-801"
+  },
+  "pl.-1905-roku-02-495-ursus": {
+    "street": "PL. 1905 ROKU",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "pl.-a.-rembowskiego-02-915-mokotów": {
+    "street": "PL. A. REMBOWSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-915"
+  },
+  "płatków-róż-02-757-mokotów": {
+    "street": "PŁATKÓW RÓŻ",
+    "district": "Mokotów",
+    "postcode": "02-757"
+  },
+  "płatnerska-04-473-rembertów": {
+    "street": "PŁATNERSKA",
+    "district": "Rembertów",
+    "postcode": "04-473"
+  },
+  "ppłk.-m.-sokołowskiego-„grzymały”-02-324-ochota": {
+    "street": "PPŁK. M. SOKOŁOWSKIEGO „GRZYMAŁY”",
+    "district": "Ochota",
+    "postcode": "02-324"
+  },
+  "ppłk.-w.-szadkowskiego-01-493-bemowo": {
+    "street": "PPŁK. W. SZADKOWSKIEGO",
+    "district": "Bemowo",
+    "postcode": "01-493"
+  },
+  "pstra-03-061-białołęka": {
+    "street": "PSTRA",
+    "district": "Białołęka",
+    "postcode": "03-061"
+  },
+  "ptaków-leśnych-04-965-wawer": {
+    "street": "PTAKÓW LEŚNYCH",
+    "district": "Wawer",
+    "postcode": "04-965"
+  },
+  "puchaczy-02-837-ursynów": {
+    "street": "PUCHACZY",
+    "district": "Ursynów",
+    "postcode": "02-837"
+  },
+  "pyszniańska-02-828-ursynów": {
+    "street": "PYSZNIAŃSKA",
+    "district": "Ursynów",
+    "postcode": "02-828"
+  },
+  "a.-kordeckiego-04-143-praga-południe": {
+    "street": "A. KORDECKIEGO",
+    "district": "Praga-Południe",
+    "postcode": "04-143"
+  },
+  "a.-mackiewicza-03-732-praga-północ": {
+    "street": "A. MACKIEWICZA",
+    "district": "Praga-Północ",
+    "postcode": "03-732"
+  },
+  "wałuszewska-03-005-białołęka": {
+    "street": "WAŁUSZEWSKA",
+    "district": "Białołęka",
+    "postcode": "03-005"
+  },
+  "quo-vadis-02-495-ursus": {
+    "street": "QUO VADIS",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "bohaterów-03-026-białołęka": {
+    "street": "BOHATERÓW",
+    "district": "Białołęka",
+    "postcode": "03-026"
+  },
+  "rabarbarowa-02-751-mokotów": {
+    "street": "RABARBAROWA",
+    "district": "Mokotów",
+    "postcode": "02-751"
+  },
+  "rabatowa-04-666-wawer": {
+    "street": "RABATOWA",
+    "district": "Wawer",
+    "postcode": "04-666"
+  },
+  "rąblowska-01-472-bemowo": {
+    "street": "RĄBLOWSKA",
+    "district": "Bemowo",
+    "postcode": "01-472"
+  },
+  "arbuzowa-02-747-mokotów": {
+    "street": "ARBUZOWA",
+    "district": "Mokotów",
+    "postcode": "02-747"
+  },
+  "arbuzowa-02-747-wilanów": {
+    "street": "ARBUZOWA",
+    "district": "Wilanów",
+    "postcode": "02-747"
+  },
+  "al.-harcerzy-rzeczypospolitej-02-722-mokotów": {
+    "street": "AL. HARCERZY RZECZYPOSPOLITEJ",
+    "district": "Mokotów",
+    "postcode": "02-722"
+  },
+  "archimedesa-01-481-bemowo": {
+    "street": "ARCHIMEDESA",
+    "district": "Bemowo",
+    "postcode": "01-481"
+  },
+  "rębkowska-04-375-praga-południe": {
+    "street": "RĘBKOWSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-375"
+  },
+  "rękawicznicza-04-432-rembertów": {
+    "street": "RĘKAWICZNICZA",
+    "district": "Rembertów",
+    "postcode": "04-432"
+  },
+  "cyrhli-02-829-ursynów": {
+    "street": "CYRHLI",
+    "district": "Ursynów",
+    "postcode": "02-829"
+  },
+  "adriatycka-02-761-mokotów": {
+    "street": "ADRIATYCKA",
+    "district": "Mokotów",
+    "postcode": "02-761"
+  },
+  "bulwar-j.-karskiego-00-259-śródmieście": {
+    "street": "BULWAR J. KARSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-259"
+  },
+  "b.-orlińskiego-01-315-bemowo": {
+    "street": "B. ORLIŃSKIEGO",
+    "district": "Bemowo",
+    "postcode": "01-315"
+  },
+  "burleska-01-939-bielany": {
+    "street": "BURLESKA",
+    "district": "Bielany",
+    "postcode": "01-939"
+  },
+  "a.-orłowskiego-04-830-wawer": {
+    "street": "A. ORŁOWSKIEGO",
+    "district": "Wawer",
+    "postcode": "04-830"
+  },
+  "a.-german-01-794-żoliborz": {
+    "street": "A. GERMAN",
+    "district": "Żoliborz",
+    "postcode": "01-794"
+  },
+  "agrarna-04-269-rembertów": {
+    "street": "AGRARNA",
+    "district": "Rembertów",
+    "postcode": "04-269"
+  },
+  "robinii-02-495-ursus": {
+    "street": "ROBINII",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "równa-03-418-praga-północ": {
+    "street": "RÓWNA",
+    "district": "Praga-Północ",
+    "postcode": "03-418"
+  },
+  "równa-05-075-wesoła": {
+    "street": "RÓWNA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "arrasowa-01-981-bielany": {
+    "street": "ARRASOWA",
+    "district": "Bielany",
+    "postcode": "01-981"
+  },
+  "rtm.-w.-pileckiego-02-781-ursynów": {
+    "street": "RTM. W. PILECKIEGO",
+    "district": "Ursynów",
+    "postcode": "02-781"
+  },
+  "j.-bytnara-„rudego”-02-645-mokotów": {
+    "street": "J. BYTNARA „RUDEGO”",
+    "district": "Mokotów",
+    "postcode": "02-645"
+  },
+  "barwinkowa-04-730-wawer": {
+    "street": "BARWINKOWA",
+    "district": "Wawer",
+    "postcode": "04-730"
+  },
+  "al.-a.-ścibora-rylskiego-00-608-śródmieście": {
+    "street": "AL. A. ŚCIBORA-RYLSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-608"
+  },
+  "batalionu-ak-„ryś”-00-713-mokotów": {
+    "street": "BATALIONU AK „RYŚ”",
+    "district": "Mokotów",
+    "postcode": "00-713"
+  },
+  "rybacka-03-046-białołęka": {
+    "street": "RYBACKA",
+    "district": "Białołęka",
+    "postcode": "03-046"
+  },
+  "rybaki-00-221-śródmieście": {
+    "street": "RYBAKI",
+    "district": "Śródmieście",
+    "postcode": "00-221"
+  },
+  "rzeczna-03-794-targówek": {
+    "street": "RZECZNA",
+    "district": "Targówek",
+    "postcode": "03-794"
+  },
+  "rzeczycka-04-940-wawer": {
+    "street": "RZECZYCKA",
+    "district": "Wawer",
+    "postcode": "04-940"
+  },
+  "birżańska-03-780-targówek": {
+    "street": "BIRŻAŃSKA",
+    "district": "Targówek",
+    "postcode": "03-780"
+  },
+  "dzierżoniowska-01-985-bielany": {
+    "street": "DZIERŻONIOWSKA",
+    "district": "Bielany",
+    "postcode": "01-985"
+  },
+  "al.-sztandarów-04-423-rembertów": {
+    "street": "AL. SZTANDARÓW",
+    "district": "Rembertów",
+    "postcode": "04-423"
+  },
+  "arsenalska-04-476-rembertów": {
+    "street": "ARSENALSKA",
+    "district": "Rembertów",
+    "postcode": "04-476"
+  },
+  "b.-gembarzewskiego-04-489-rembertów": {
+    "street": "B. GEMBARZEWSKIEGO",
+    "district": "Rembertów",
+    "postcode": "04-489"
+  },
+  "sabały-02-174-włochy": {
+    "street": "SABAŁY",
+    "district": "Włochy",
+    "postcode": "02-174"
+  },
+  "sąchocka-02-116-ochota": {
+    "street": "SĄCHOCKA",
+    "district": "Ochota",
+    "postcode": "02-116"
+  },
+  "sągi-02-995-wilanów": {
+    "street": "SĄGI",
+    "district": "Wilanów",
+    "postcode": "02-995"
+  },
+  "j.-nusbauma-hilarowicza-03-485-praga-północ": {
+    "street": "J. NUSBAUMA-HILAROWICZA",
+    "district": "Praga-Północ",
+    "postcode": "03-485"
+  },
+  "scalona-04-785-wawer": {
+    "street": "SCALONA",
+    "district": "Wawer",
+    "postcode": "04-785"
+  },
+  "secemińska-01-485-bemowo": {
+    "street": "SECEMIŃSKA",
+    "district": "Bemowo",
+    "postcode": "01-485"
+  },
+  "sianokosów-03-025-białołęka": {
+    "street": "SIANOKOSÓW",
+    "district": "Białołęka",
+    "postcode": "03-025"
+  },
+  "siarczana-03-786-targówek": {
+    "street": "SIARCZANA",
+    "district": "Targówek",
+    "postcode": "03-786"
+  },
+  "sieciechowska-01-928-bielany": {
+    "street": "SIECIECHOWSKA",
+    "district": "Bielany",
+    "postcode": "01-928"
+  },
+  "z.-roesler-01-991-bielany": {
+    "street": "Z. ROESLER",
+    "district": "Bielany",
+    "postcode": "01-991"
+  },
+  "sławińska-01-218-wola": {
+    "street": "SŁAWIŃSKA",
+    "district": "Wola",
+    "postcode": "01-218"
+  },
+  "sławkowska-02-979-mokotów": {
+    "street": "SŁAWKOWSKA",
+    "district": "Mokotów",
+    "postcode": "02-979"
+  },
+  "smardzewska-04-742-wawer": {
+    "street": "SMARDZEWSKA",
+    "district": "Wawer",
+    "postcode": "04-742"
+  },
+  "snopowa-04-689-wawer": {
+    "street": "SNOPOWA",
+    "district": "Wawer",
+    "postcode": "04-689"
+  },
+  "al.-„solidarności”-03-402-praga-północ": {
+    "street": "AL. „SOLIDARNOŚCI”",
+    "district": "Praga-Północ",
+    "postcode": "03-402"
+  },
+  "sójki-02-812-ursynów": {
+    "street": "SÓJKI",
+    "district": "Ursynów",
+    "postcode": "02-812"
+  },
+  "sóweczki-04-965-wawer": {
+    "street": "SÓWECZKI",
+    "district": "Wawer",
+    "postcode": "04-965"
+  },
+  "spacerowa-00-592-śródmieście": {
+    "street": "SPACEROWA",
+    "district": "Śródmieście",
+    "postcode": "00-592"
+  },
+  "spacerowa-05-075-wesoła": {
+    "street": "SPACEROWA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "srebrna-00-810-wola": {
+    "street": "SREBRNA",
+    "district": "Wola",
+    "postcode": "00-810"
+  },
+  "srebrnogórska-03-166-białołęka": {
+    "street": "SREBRNOGÓRSKA",
+    "district": "Białołęka",
+    "postcode": "03-166"
+  },
+  "g.-rossiniego-03-289-białołęka": {
+    "street": "G. ROSSINIEGO",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "stadionowa-02-205-ochota": {
+    "street": "STADIONOWA",
+    "district": "Ochota",
+    "postcode": "02-205"
+  },
+  "stajenna-02-466-włochy": {
+    "street": "STAJENNA",
+    "district": "Włochy",
+    "postcode": "02-466"
+  },
+  "stalowa-03-425-praga-północ": {
+    "street": "STALOWA",
+    "district": "Praga-Północ",
+    "postcode": "03-425"
+  },
+  "stalowa-03-427-praga-północ": {
+    "street": "STALOWA",
+    "district": "Praga-Północ",
+    "postcode": "03-427"
+  },
+  "sucha-03-649-targówek": {
+    "street": "SUCHA",
+    "district": "Targówek",
+    "postcode": "03-649"
+  },
+  "swarożyca-01-921-bielany": {
+    "street": "SWAROŻYCA",
+    "district": "Bielany",
+    "postcode": "01-921"
+  },
+  "swarzewska-01-821-bielany": {
+    "street": "SWARZEWSKA",
+    "district": "Bielany",
+    "postcode": "01-821"
+  },
+  "sybilli-01-742-żoliborz": {
+    "street": "SYBILLI",
+    "district": "Żoliborz",
+    "postcode": "01-742"
+  },
+  "sycowska-02-266-włochy": {
+    "street": "SYCOWSKA",
+    "district": "Włochy",
+    "postcode": "02-266"
+  },
+  "h.-melcera-szczawińskiego-02-495-ursus": {
+    "street": "H. MELCERA-SZCZAWIŃSKIEGO",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "czwartaków-04-430-rembertów": {
+    "street": "CZWARTAKÓW",
+    "district": "Rembertów",
+    "postcode": "04-430"
+  },
+  "j.-iwanowa-szajnowicza-02-796-ursynów": {
+    "street": "J. IWANOWA-SZAJNOWICZA",
+    "district": "Ursynów",
+    "postcode": "02-796"
+  },
+  "jeziorowa-03-991-wawer": {
+    "street": "JEZIOROWA",
+    "district": "Wawer",
+    "postcode": "03-991"
+  },
+  "k.-sotta-„sokoła”-02-790-ursynów": {
+    "street": "K. SOTTA „SOKOŁA”",
+    "district": "Ursynów",
+    "postcode": "02-790"
+  },
+  "mrówcza-04-768-wawer": {
+    "street": "MRÓWCZA",
+    "district": "Wawer",
+    "postcode": "04-768"
+  },
+  "s.-baleya-02-132-ochota": {
+    "street": "S. BALEYA",
+    "district": "Ochota",
+    "postcode": "02-132"
+  },
+  "kośby-03-059-białołęka": {
+    "street": "KOŚBY",
+    "district": "Białołęka",
+    "postcode": "03-059"
+  },
+  "ścieżka-03-108-białołęka": {
+    "street": "ŚCIEŻKA",
+    "district": "Białołęka",
+    "postcode": "03-108"
+  },
+  "batalionu-ak-„zośka”-01-122-wola": {
+    "street": "BATALIONU AK „ZOŚKA”",
+    "district": "Wola",
+    "postcode": "01-122"
+  },
+  "ślazowa-04-728-wawer": {
+    "street": "ŚLAZOWA",
+    "district": "Wawer",
+    "postcode": "04-728"
+  },
+  "śmiała-01-523-żoliborz": {
+    "street": "ŚMIAŁA",
+    "district": "Żoliborz",
+    "postcode": "01-523"
+  },
+  "śmiała-05-077-wesoła": {
+    "street": "ŚMIAŁA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "śniardwy-02-695-mokotów": {
+    "street": "ŚNIARDWY",
+    "district": "Mokotów",
+    "postcode": "02-695"
+  },
+  "śnieguliczki-04-867-wawer": {
+    "street": "ŚNIEGULICZKI",
+    "district": "Wawer",
+    "postcode": "04-867"
+  },
+  "śpiewaków-03-029-białołęka": {
+    "street": "ŚPIEWAKÓW",
+    "district": "Białołęka",
+    "postcode": "03-029"
+  },
+  "św.-andrzeja-boboli-02-525-mokotów": {
+    "street": "ŚW. ANDRZEJA BOBOLI",
+    "district": "Mokotów",
+    "postcode": "02-525"
+  },
+  "św.-andrzeja-boboli-02-533-mokotów": {
+    "street": "ŚW. ANDRZEJA BOBOLI",
+    "district": "Mokotów",
+    "postcode": "02-533"
+  },
+  "św.-antoniego-05-077-wesoła": {
+    "street": "ŚW. ANTONIEGO",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "agrykola-00-460-śródmieście": {
+    "street": "AGRYKOLA",
+    "district": "Śródmieście",
+    "postcode": "00-460"
+  },
+  "al.-j.-ch.-szucha-00-580-śródmieście": {
+    "street": "AL. J. CH. SZUCHA",
+    "district": "Śródmieście",
+    "postcode": "00-580"
+  },
+  "al.-ujazdowskie-00-583-śródmieście": {
+    "street": "AL. UJAZDOWSKIE",
+    "district": "Śródmieście",
+    "postcode": "00-583"
+  },
+  "al.-wyzwolenia-00-572-śródmieście": {
+    "street": "AL. WYZWOLENIA",
+    "district": "Śródmieście",
+    "postcode": "00-572"
+  },
+  "bielańska-00-086-śródmieście": {
+    "street": "BIELAŃSKA",
+    "district": "Śródmieście",
+    "postcode": "00-086"
+  },
+  "al.-j.-ch.-szucha-00-582-śródmieście": {
+    "street": "AL. J. CH. SZUCHA",
+    "district": "Śródmieście",
+    "postcode": "00-582"
+  },
+  "al.-wyzwolenia-00-570-śródmieście": {
+    "street": "AL. WYZWOLENIA",
+    "district": "Śródmieście",
+    "postcode": "00-570"
+  },
+  "b.-prusa-00-493-śródmieście": {
+    "street": "B. PRUSA",
+    "district": "Śródmieście",
+    "postcode": "00-493"
+  },
+  "a.-suligowskiego-00-466-śródmieście": {
+    "street": "A. SULIGOWSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-466"
+  },
+  "al.-armii-ludowej-00-571-śródmieście": {
+    "street": "AL. ARMII LUDOWEJ",
+    "district": "Śródmieście",
+    "postcode": "00-571"
+  },
+  "al.-ujazdowskie-00-478-śródmieście": {
+    "street": "AL. UJAZDOWSKIE",
+    "district": "Śródmieście",
+    "postcode": "00-478"
+  },
+  "al.-armii-ludowej-00-575-śródmieście": {
+    "street": "AL. ARMII LUDOWEJ",
+    "district": "Śródmieście",
+    "postcode": "00-575"
+  },
+  "al.-ujazdowskie-00-461-śródmieście": {
+    "street": "AL. UJAZDOWSKIE",
+    "district": "Śródmieście",
+    "postcode": "00-461"
+  },
+  "bagatela-00-585-śródmieście": {
+    "street": "BAGATELA",
+    "district": "Śródmieście",
+    "postcode": "00-585"
+  },
+  "bednarska-00-310-śródmieście": {
+    "street": "BEDNARSKA",
+    "district": "Śródmieście",
+    "postcode": "00-310"
+  },
+  "stągiewna-03-117-białołęka": {
+    "street": "STĄGIEWNA",
+    "district": "Białołęka",
+    "postcode": "03-117"
+  },
+  "trakt-brzeski-05-077-wesoła": {
+    "street": "TRAKT BRZESKI",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "tczewska-01-674-bielany": {
+    "street": "TCZEWSKA",
+    "district": "Bielany",
+    "postcode": "01-674"
+  },
+  "fabryki-„tewa”-02-676-mokotów": {
+    "street": "FABRYKI „TEWA”",
+    "district": "Mokotów",
+    "postcode": "02-676"
+  },
+  "techniczna-04-910-wawer": {
+    "street": "TECHNICZNA",
+    "district": "Wawer",
+    "postcode": "04-910"
+  },
+  "tęczowa-04-557-wawer": {
+    "street": "TĘCZOWA",
+    "district": "Wawer",
+    "postcode": "04-557"
+  },
+  "tęczowa-05-075-wesoła": {
+    "street": "TĘCZOWA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "l.-kossutha-01-315-bemowo": {
+    "street": "L. KOSSUTHA",
+    "district": "Bemowo",
+    "postcode": "01-315"
+  },
+  "d.-scarlattiego-03-289-białołęka": {
+    "street": "D. SCARLATTIEGO",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "e.-wittiga-03-188-białołęka": {
+    "street": "E. WITTIGA",
+    "district": "Białołęka",
+    "postcode": "03-188"
+  },
+  "tkaczy-01-346-bemowo": {
+    "street": "TKACZY",
+    "district": "Bemowo",
+    "postcode": "01-346"
+  },
+  "atlasowa-02-437-włochy": {
+    "street": "ATLASOWA",
+    "district": "Włochy",
+    "postcode": "02-437"
+  },
+  "tłomackie-00-088-śródmieście": {
+    "street": "TŁOMACKIE",
+    "district": "Śródmieście",
+    "postcode": "00-088"
+  },
+  "tłuchowska-03-147-białołęka": {
+    "street": "TŁUCHOWSKA",
+    "district": "Białołęka",
+    "postcode": "03-147"
+  },
+  "hetmańska-04-305-praga-południe": {
+    "street": "HETMAŃSKA",
+    "district": "Praga-Południe",
+    "postcode": "04-305"
+  },
+  "plutonu-ak-„torpedy”-02-495-ursus": {
+    "street": "PLUTONU AK „TORPEDY”",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "fort-piłsudskiego-02-704-mokotów": {
+    "street": "FORT PIŁSUDSKIEGO",
+    "district": "Mokotów",
+    "postcode": "02-704"
+  },
+  "traczy-04-271-rembertów": {
+    "street": "TRACZY",
+    "district": "Rembertów",
+    "postcode": "04-271"
+  },
+  "fort-służew-02-787-ursynów": {
+    "street": "FORT SŁUŻEW",
+    "district": "Ursynów",
+    "postcode": "02-787"
+  },
+  "tuberozy-04-956-wawer": {
+    "street": "TUBEROZY",
+    "district": "Wawer",
+    "postcode": "04-956"
+  },
+  "tuchlińska-02-695-mokotów": {
+    "street": "TUCHLIŃSKA",
+    "district": "Mokotów",
+    "postcode": "02-695"
+  },
+  "twarda-00-114-śródmieście": {
+    "street": "TWARDA",
+    "district": "Śródmieście",
+    "postcode": "00-114"
+  },
+  "twarda-00-105-śródmieście": {
+    "street": "TWARDA",
+    "district": "Śródmieście",
+    "postcode": "00-105"
+  },
+  "tykocińska-03-545-targówek": {
+    "street": "TYKOCIŃSKA",
+    "district": "Targówek",
+    "postcode": "03-545"
+  },
+  "mozaikowa-04-888-wawer": {
+    "street": "MOZAIKOWA",
+    "district": "Wawer",
+    "postcode": "04-888"
+  },
+  "agnieszki-03-663-targówek": {
+    "street": "AGNIESZKI",
+    "district": "Targówek",
+    "postcode": "03-663"
+  },
+  "antygony-03-642-targówek": {
+    "street": "ANTYGONY",
+    "district": "Targówek",
+    "postcode": "03-642"
+  },
+  "bajeczna-03-681-targówek": {
+    "street": "BAJECZNA",
+    "district": "Targówek",
+    "postcode": "03-681"
+  },
+  "ametystowa-03-680-targówek": {
+    "street": "AMETYSTOWA",
+    "district": "Targówek",
+    "postcode": "03-680"
+  },
+  "batalionu-ak-„bałtyk”-00-713-mokotów": {
+    "street": "BATALIONU AK „BAŁTYK”",
+    "district": "Mokotów",
+    "postcode": "00-713"
+  },
+  "biernata-z-lublina-02-495-ursus": {
+    "street": "BIERNATA Z LUBLINA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "uczniowska-03-112-białołęka": {
+    "street": "UCZNIOWSKA",
+    "district": "Białołęka",
+    "postcode": "03-112"
+  },
+  "g.-p.-boduena-00-011-śródmieście": {
+    "street": "G. P. BODUENA",
+    "district": "Śródmieście",
+    "postcode": "00-011"
+  },
+  "menueta-02-827-ursynów": {
+    "street": "MENUETA",
+    "district": "Ursynów",
+    "postcode": "02-827"
+  },
+  "hufcowa-04-826-wawer": {
+    "street": "HUFCOWA",
+    "district": "Wawer",
+    "postcode": "04-826"
+  },
+  "ugorek-03-147-białołęka": {
+    "street": "UGOREK",
+    "district": "Białołęka",
+    "postcode": "03-147"
+  },
+  "uhrocie-02-828-ursynów": {
+    "street": "UHROCIE",
+    "district": "Ursynów",
+    "postcode": "02-828"
+  },
+  "jezuicka-00-281-śródmieście": {
+    "street": "JEZUICKA",
+    "district": "Śródmieście",
+    "postcode": "00-281"
+  },
+  "al.-ujazdowskie-00-567-śródmieście": {
+    "street": "AL. UJAZDOWSKIE",
+    "district": "Śródmieście",
+    "postcode": "00-567"
+  },
+  "ukośna-04-605-wawer": {
+    "street": "UKOŚNA",
+    "district": "Wawer",
+    "postcode": "04-605"
+  },
+  "ulanowska-04-859-wawer": {
+    "street": "ULANOWSKA",
+    "district": "Wawer",
+    "postcode": "04-859"
+  },
+  "ułanów-krechowieckich-04-682-wawer": {
+    "street": "UŁANÓW KRECHOWIECKICH",
+    "district": "Wawer",
+    "postcode": "04-682"
+  },
+  "umowna-04-902-wawer": {
+    "street": "UMOWNA",
+    "district": "Wawer",
+    "postcode": "04-902"
+  },
+  "batumi-02-760-mokotów": {
+    "street": "BATUMI",
+    "district": "Mokotów",
+    "postcode": "02-760"
+  },
+  "uniejowska-01-485-bemowo": {
+    "street": "UNIEJOWSKA",
+    "district": "Bemowo",
+    "postcode": "01-485"
+  },
+  "buńczuk-02-267-włochy": {
+    "street": "BUŃCZUK",
+    "district": "Włochy",
+    "postcode": "02-267"
+  },
+  "herbu-oksza-02-495-ursus": {
+    "street": "HERBU OKSZA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "uprawna-02-967-wilanów": {
+    "street": "UPRAWNA",
+    "district": "Wilanów",
+    "postcode": "02-967"
+  },
+  "ustronie-02-798-ursynów": {
+    "street": "USTRONIE",
+    "district": "Ursynów",
+    "postcode": "02-798"
+  },
+  "uśmiech-02-402-włochy": {
+    "street": "UŚMIECH",
+    "district": "Włochy",
+    "postcode": "02-402"
+  },
+  "utrata-03-877-targówek": {
+    "street": "UTRATA",
+    "district": "Targówek",
+    "postcode": "03-877"
+  },
+  "orderu-uśmiechu-02-495-ursus": {
+    "street": "ORDERU UŚMIECHU",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "j.-tuwima-05-075-wesoła": {
+    "street": "J. TUWIMA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "ku-wiśle-00-707-mokotów": {
+    "street": "KU WIŚLE",
+    "district": "Mokotów",
+    "postcode": "00-707"
+  },
+  "k.-levittoux-01-539-żoliborz": {
+    "street": "K. LEVITTOUX",
+    "district": "Żoliborz",
+    "postcode": "01-539"
+  },
+  "uzdowska-03-011-białołęka": {
+    "street": "UZDOWSKA",
+    "district": "Białołęka",
+    "postcode": "03-011"
+  },
+  "uznamska-03-699-targówek": {
+    "street": "UZNAMSKA",
+    "district": "Targówek",
+    "postcode": "03-699"
+  },
+  "kuźnicy-kołłątajowskiej-02-495-ursus": {
+    "street": "KUŹNICY KOŁŁĄTAJOWSKIEJ",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "drużynowa-02-590-mokotów": {
+    "street": "DRUŻYNOWA",
+    "district": "Mokotów",
+    "postcode": "02-590"
+  },
+  "e.-drużbackiej-01-622-żoliborz": {
+    "street": "E. DRUŻBACKIEJ",
+    "district": "Żoliborz",
+    "postcode": "01-622"
+  },
+  "liliowa-04-953-wawer": {
+    "street": "LILIOWA",
+    "district": "Wawer",
+    "postcode": "04-953"
+  },
+  "wał-miedzeszyński-04-987-wawer": {
+    "street": "WAŁ MIEDZESZYŃSKI",
+    "district": "Wawer",
+    "postcode": "04-987"
+  },
+  "achillesa-02-874-ursynów": {
+    "street": "ACHILLESA",
+    "district": "Ursynów",
+    "postcode": "02-874"
+  },
+  "al.-bzów-02-495-ursus": {
+    "street": "AL. BZÓW",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "akustyczna-02-860-ursynów": {
+    "street": "AKUSTYCZNA",
+    "district": "Ursynów",
+    "postcode": "02-860"
+  },
+  "wąbrzeska-04-673-wawer": {
+    "street": "WĄBRZESKA",
+    "district": "Wawer",
+    "postcode": "04-673"
+  },
+  "wczasowa-05-077-wesoła": {
+    "street": "WCZASOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "wędkarska-04-869-wawer": {
+    "street": "WĘDKARSKA",
+    "district": "Wawer",
+    "postcode": "04-869"
+  },
+  "obrońców-helu-02-495-ursus": {
+    "street": "OBROŃCÓW HELU",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "wjazdowa-04-671-wawer": {
+    "street": "WJAZDOWA",
+    "district": "Wawer",
+    "postcode": "04-671"
+  },
+  "budowlana-03-315-targówek": {
+    "street": "BUDOWLANA",
+    "district": "Targówek",
+    "postcode": "03-315"
+  },
+  "wilków-morskich-03-687-targówek": {
+    "street": "WILKÓW MORSKICH",
+    "district": "Targówek",
+    "postcode": "03-687"
+  },
+  "wójcicka-04-763-wawer": {
+    "street": "WÓJCICKA",
+    "district": "Wawer",
+    "postcode": "04-763"
+  },
+  "królów-polskich-02-496-ursus": {
+    "street": "KRÓLÓW POLSKICH",
+    "district": "Ursus",
+    "postcode": "02-496"
+  },
+  "j.-hoene-wrońskiego-00-459-śródmieście": {
+    "street": "J. HOENE-WROŃSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-459"
+  },
+  "j.-hoene-wrońskiego-00-434-śródmieście": {
+    "street": "J. HOENE-WROŃSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-434"
+  },
+  "wrocławska-01-493-bemowo": {
+    "street": "WROCŁAWSKA",
+    "district": "Bemowo",
+    "postcode": "01-493"
+  },
+  "wschodnia-03-693-targówek": {
+    "street": "WSCHODNIA",
+    "district": "Targówek",
+    "postcode": "03-693"
+  },
+  "wschodnia-05-075-wesoła": {
+    "street": "WSCHODNIA",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "piastów-śląskich-01-494-bemowo": {
+    "street": "PIASTÓW ŚLĄSKICH",
+    "district": "Bemowo",
+    "postcode": "01-494"
+  },
+  "wybieg-00-788-mokotów": {
+    "street": "WYBIEG",
+    "district": "Mokotów",
+    "postcode": "00-788"
+  },
+  "wzorcowa-04-031-praga-południe": {
+    "street": "WZORCOWA",
+    "district": "Praga-Południe",
+    "postcode": "04-031"
+  },
+  "wzorzysta-04-956-wawer": {
+    "street": "WZORZYSTA",
+    "district": "Wawer",
+    "postcode": "04-956"
+  },
+  "al.-stanów-zjednoczonych-03-965-praga-południe": {
+    "street": "AL. STANÓW ZJEDNOCZONYCH",
+    "district": "Praga-Południe",
+    "postcode": "03-965"
+  },
+  "al.-stanów-zjednoczonych-03-964-praga-południe": {
+    "street": "AL. STANÓW ZJEDNOCZONYCH",
+    "district": "Praga-Południe",
+    "postcode": "03-964"
+  },
+  "a.-kostki-napierskiego-05-075-wesoła": {
+    "street": "A. KOSTKI NAPIERSKIEGO",
+    "district": "Wesoła",
+    "postcode": "05-075"
+  },
+  "xii-poprzeczna-04-638-wawer": {
+    "street": "XII POPRZECZNA",
+    "district": "Wawer",
+    "postcode": "04-638"
+  },
+  "x-poprzeczna-04-637-wawer": {
+    "street": "X POPRZECZNA",
+    "district": "Wawer",
+    "postcode": "04-637"
+  },
+  "szamocin-03-002-białołęka": {
+    "street": "SZAMOCIN",
+    "district": "Białołęka",
+    "postcode": "03-002"
+  },
+  "ludwinowska-02-856-ursynów": {
+    "street": "LUDWINOWSKA",
+    "district": "Ursynów",
+    "postcode": "02-856"
+  },
+  "w.-k.-roentgena-02-781-ursynów": {
+    "street": "W. K. ROENTGENA",
+    "district": "Ursynów",
+    "postcode": "02-781"
+  },
+  "x.-dunikowskiego-02-784-ursynów": {
+    "street": "X. DUNIKOWSKIEGO",
+    "district": "Ursynów",
+    "postcode": "02-784"
+  },
+  "wał-miedzeszyński-03-994-wawer": {
+    "street": "WAŁ MIEDZESZYŃSKI",
+    "district": "Wawer",
+    "postcode": "03-994"
+  },
+  "kroczewska-03-287-białołęka": {
+    "street": "KROCZEWSKA",
+    "district": "Białołęka",
+    "postcode": "03-287"
+  },
+  "włodarzewska-02-393-ochota": {
+    "street": "WŁODARZEWSKA",
+    "district": "Ochota",
+    "postcode": "02-393"
+  },
+  "wał-zawadowski-02-986-wilanów": {
+    "street": "WAŁ ZAWADOWSKI",
+    "district": "Wilanów",
+    "postcode": "02-986"
+  },
+  "b.-dybowskiego-02-776-ursynów": {
+    "street": "B. DYBOWSKIEGO",
+    "district": "Ursynów",
+    "postcode": "02-776"
+  },
+  "a.-frycza-modrzewskiego-03-803-praga-południe": {
+    "street": "A. FRYCZA MODRZEWSKIEGO",
+    "district": "Praga-Południe",
+    "postcode": "03-803"
+  },
+  "irydowa-05-077-wesoła": {
+    "street": "IRYDOWA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "petyhorska-02-949-wilanów": {
+    "street": "PETYHORSKA",
+    "district": "Wilanów",
+    "postcode": "02-949"
+  },
+  "antka-rozpylacza-01-107-wola": {
+    "street": "ANTKA ROZPYLACZA",
+    "district": "Wola",
+    "postcode": "01-107"
+  },
+  "mokry-ług-04-434-rembertów": {
+    "street": "MOKRY ŁUG",
+    "district": "Rembertów",
+    "postcode": "04-434"
+  },
+  "al.-rzeczypospolitej-02-972-wilanów": {
+    "street": "AL. RZECZYPOSPOLITEJ",
+    "district": "Wilanów",
+    "postcode": "02-972"
+  },
+  "zdziarska-03-289-białołęka": {
+    "street": "ZDZIARSKA",
+    "district": "Białołęka",
+    "postcode": "03-289"
+  },
+  "ząbkowska-03-735-praga-północ": {
+    "street": "ZĄBKOWSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-735"
+  },
+  "ząbkowska-03-736-praga-północ": {
+    "street": "ZĄBKOWSKA",
+    "district": "Praga-Północ",
+    "postcode": "03-736"
+  },
+  "zielna-00-108-śródmieście": {
+    "street": "ZIELNA",
+    "district": "Śródmieście",
+    "postcode": "00-108"
+  },
+  "zielona-02-913-mokotów": {
+    "street": "ZIELONA",
+    "district": "Mokotów",
+    "postcode": "02-913"
+  },
+  "złocienia-01-168-wola": {
+    "street": "ZŁOCIENIA",
+    "district": "Wola",
+    "postcode": "01-168"
+  },
+  "złoczowska-03-972-praga-południe": {
+    "street": "ZŁOCZOWSKA",
+    "district": "Praga-Południe",
+    "postcode": "03-972"
+  },
+  "zręby-03-104-białołęka": {
+    "street": "ZRĘBY",
+    "district": "Białołęka",
+    "postcode": "03-104"
+  },
+  "rozszerzona-04-825-wawer": {
+    "street": "ROZSZERZONA",
+    "district": "Wawer",
+    "postcode": "04-825"
+  },
+  "zwardońska-02-907-mokotów": {
+    "street": "ZWARDOŃSKA",
+    "district": "Mokotów",
+    "postcode": "02-907"
+  },
+  "zwierzyniecka-00-719-mokotów": {
+    "street": "ZWIERZYNIECKA",
+    "district": "Mokotów",
+    "postcode": "00-719"
+  },
+  "zygmunta-augusta-02-496-ursus": {
+    "street": "ZYGMUNTA AUGUSTA",
+    "district": "Ursus",
+    "postcode": "02-496"
+  },
+  "z.-beksińskiego-03-184-białołęka": {
+    "street": "Z. BEKSIŃSKIEGO",
+    "district": "Białołęka",
+    "postcode": "03-184"
+  },
+  "z.-glogera-02-051-ochota": {
+    "street": "Z. GLOGERA",
+    "district": "Ochota",
+    "postcode": "02-051"
+  },
+  "z.-jórskiego-03-584-targówek": {
+    "street": "Z. JÓRSKIEGO",
+    "district": "Targówek",
+    "postcode": "03-584"
+  },
+  "z.-klemensiewicza-01-318-bemowo": {
+    "street": "Z. KLEMENSIEWICZA",
+    "district": "Bemowo",
+    "postcode": "01-318"
+  },
+  "z.-markerta-02-495-ursus": {
+    "street": "Z. MARKERTA",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "z.-moraczewskiej-02-495-ursus": {
+    "street": "Z. MORACZEWSKIEJ",
+    "district": "Ursus",
+    "postcode": "02-495"
+  },
+  "źródlana-05-077-wesoła": {
+    "street": "ŹRÓDLANA",
+    "district": "Wesoła",
+    "postcode": "05-077"
+  },
+  "źródlana-04-776-wawer": {
+    "street": "ŹRÓDLANA",
+    "district": "Wawer",
+    "postcode": "04-776"
+  },
+  "rzeźbiarska-04-633-wawer": {
+    "street": "RZEŹBIARSKA",
+    "district": "Wawer",
+    "postcode": "04-633"
+  },
+  "koźla-00-234-śródmieście": {
+    "street": "KOŹLA",
+    "district": "Śródmieście",
+    "postcode": "00-234"
+  },
+  "koźla-00-228-śródmieście": {
+    "street": "KOŹLA",
+    "district": "Śródmieście",
+    "postcode": "00-228"
+  },
+  "k.-koźmiana-01-606-żoliborz": {
+    "street": "K. KOŹMIANA",
+    "district": "Żoliborz",
+    "postcode": "01-606"
+  },
+  "dźwiękowa-02-857-ursynów": {
+    "street": "DŹWIĘKOWA",
+    "district": "Ursynów",
+    "postcode": "02-857"
+  },
+  "jadźwingów-02-692-mokotów": {
+    "street": "JADŹWINGÓW",
+    "district": "Mokotów",
+    "postcode": "02-692"
+  },
+  "moździerzy-01-321-bemowo": {
+    "street": "MOŹDZIERZY",
+    "district": "Bemowo",
+    "postcode": "01-321"
+  },
+  "mroźna-03-654-targówek": {
+    "street": "MROŹNA",
+    "district": "Targówek",
+    "postcode": "03-654"
+  },
+  "niedźwiedzia-02-737-mokotów": {
+    "street": "NIEDŹWIEDZIA",
+    "district": "Mokotów",
+    "postcode": "02-737"
+  },
+  "dźwińska-03-876-targówek": {
+    "street": "DŹWIŃSKA",
+    "district": "Targówek",
+    "postcode": "03-876"
+  },
+  "koźmińska-00-448-śródmieście": {
+    "street": "KOŹMIŃSKA",
+    "district": "Śródmieście",
+    "postcode": "00-448"
+  },
+  "oboźna-00-332-śródmieście": {
+    "street": "OBOŹNA",
+    "district": "Śródmieście",
+    "postcode": "00-332"
+  },
+  "przewoźników-03-691-targówek": {
+    "street": "PRZEWOŹNIKÓW",
+    "district": "Targówek",
+    "postcode": "03-691"
+  },
+  "koźlaków-02-798-ursynów": {
+    "street": "KOŹLAKÓW",
+    "district": "Ursynów",
+    "postcode": "02-798"
+  },
+  "koźmińska-00-435-śródmieście": {
+    "street": "KOŹMIŃSKA",
+    "district": "Śródmieście",
+    "postcode": "00-435"
+  },
+  "żaglowa-02-654-mokotów": {
+    "street": "ŻAGLOWA",
+    "district": "Mokotów",
+    "postcode": "02-654"
+  },
+  "żakowska-04-977-wawer": {
+    "street": "ŻAKOWSKA",
+    "district": "Wawer",
+    "postcode": "04-977"
+  },
+  "żarecka-04-810-wawer": {
+    "street": "ŻARECKA",
+    "district": "Wawer",
+    "postcode": "04-810"
+  },
+  "książąt-mazowieckich-01-990-bielany": {
+    "street": "KSIĄŻĄT MAZOWIECKICH",
+    "district": "Bielany",
+    "postcode": "01-990"
+  },
+  "koziorożca-02-438-włochy": {
+    "street": "KOZIOROŻCA",
+    "district": "Włochy",
+    "postcode": "02-438"
+  },
+  "t.-boya-żeleńskiego-00-621-śródmieście": {
+    "street": "T. BOYA-ŻELEŃSKIEGO",
+    "district": "Śródmieście",
+    "postcode": "00-621"
+  },
+  "żegańska-04-713-wawer": {
+    "street": "ŻEGAŃSKA",
+    "district": "Wawer",
+    "postcode": "04-713"
+  },
+  "książęca-00-418-śródmieście": {
+    "street": "KSIĄŻĘCA",
+    "district": "Śródmieście",
+    "postcode": "00-418"
+  },
+  "książęca-00-498-śródmieście": {
+    "street": "KSIĄŻĘCA",
+    "district": "Śródmieście",
+    "postcode": "00-498"
+  },
+  "j.-żiżki-03-117-białołęka": {
+    "street": "J. ŻIŻKI",
+    "district": "Białołęka",
+    "postcode": "03-117"
+  },
+  "a.-bożka-01-464-bemowo": {
+    "street": "A. BOŻKA",
+    "district": "Bemowo",
+    "postcode": "01-464"
+  },
+  "anyżkowa-02-768-ursynów": {
+    "street": "ANYŻKOWA",
+    "district": "Ursynów",
+    "postcode": "02-768"
+  },
+  "żużlowa-03-108-białołęka": {
+    "street": "ŻUŻLOWA",
+    "district": "Białołęka",
+    "postcode": "03-108"
+  },
+  "żniwna-02-296-włochy": {
+    "street": "ŻNIWNA",
+    "district": "Włochy",
+    "postcode": "02-296"
+  },
+  "żółkowskich-01-636-żoliborz": {
+    "street": "ŻÓŁKOWSKICH",
+    "district": "Żoliborz",
+    "postcode": "01-636"
+  },
+  "żółta-03-062-białołęka": {
+    "street": "ŻÓŁTA",
+    "district": "Białołęka",
+    "postcode": "03-062"
+  },
+  "żółwia-01-927-bielany": {
+    "street": "ŻÓŁWIA",
+    "district": "Bielany",
+    "postcode": "01-927"
+  },
+  "pasaż-s.-wiecheckiego-„wiecha”-00-027-śródmieście": {
+    "street": "PASAŻ S. WIECHECKIEGO „WIECHA”",
+    "district": "Śródmieście",
+    "postcode": "00-027"
+  },
+  "pasaż-stokłosy-02-787-ursynów": {
+    "street": "PASAŻ STOKŁOSY",
+    "district": "Ursynów",
+    "postcode": "02-787"
+  },
+  "zgrupowania-ak-„żubr”-01-876-bielany": {
+    "street": "ZGRUPOWANIA AK „ŻUBR”",
+    "district": "Bielany",
+    "postcode": "01-876"
+  },
+  "żubowiecka-03-192-białołęka": {
+    "street": "ŻUBOWIECKA",
+    "district": "Białołęka",
+    "postcode": "03-192"
+  },
+  "żwanowiecka-04-849-wawer": {
+    "street": "ŻWANOWIECKA",
+    "district": "Wawer",
+    "postcode": "04-849"
+  },
+  "płk.-m.-niedzielskiego-„żywiciela”-01-875-bielany": {
+    "street": "PŁK. M. NIEDZIELSKIEGO „ŻYWICIELA”",
+    "district": "Bielany",
+    "postcode": "01-875"
+  },
+  "zgrupowania-ak-„żyrafa”-01-877-bielany": {
+    "street": "ZGRUPOWANIA AK „ŻYRAFA”",
+    "district": "Bielany",
+    "postcode": "01-877"
+  },
+  "życzliwa-03-184-białołęka": {
+    "street": "ŻYCZLIWA",
+    "district": "Białołęka",
+    "postcode": "03-184"
+  },
+  "a.-jakiela-01-540-żoliborz": {
+    "street": "A. JAKIELA",
+    "district": "Żoliborz",
+    "postcode": "01-540"
+  },
+  "bieniewicka-01-632-żoliborz": {
+    "street": "BIENIEWICKA",
+    "district": "Żoliborz",
+    "postcode": "01-632"
+  },
+  "braci-załuskich-01-773-żoliborz": {
+    "street": "BRACI ZAŁUSKICH",
+    "district": "Żoliborz",
+    "postcode": "01-773"
+  },
+  "bytomska-01-612-żoliborz": {
+    "street": "BYTOMSKA",
+    "district": "Żoliborz",
+    "postcode": "01-612"
+  },
+  "cz.-l.-rybińskiego-01-611-żoliborz": {
+    "street": "CZ. L. RYBIŃSKIEGO",
+    "district": "Żoliborz",
+    "postcode": "01-611"
+  },
+  "drohicka-01-647-żoliborz": {
+    "street": "DROHICKA",
+    "district": "Żoliborz",
+    "postcode": "01-647"
+  },
+  "barszczewska-01-654-żoliborz": {
+    "street": "BARSZCZEWSKA",
+    "district": "Żoliborz",
+    "postcode": "01-654"
+  },
+  "dziennikarska-01-605-żoliborz": {
+    "street": "DZIENNIKARSKA",
+    "district": "Żoliborz",
+    "postcode": "01-605"
+  },
+  "dymińska-01-519-żoliborz": {
+    "street": "DYMIŃSKA",
+    "district": "Żoliborz",
+    "postcode": "01-519"
+  }
+}
