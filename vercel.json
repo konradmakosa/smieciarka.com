@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/fb-share.jpg",
+      "dest": "api/index.py"
+    },
+    {
       "src": "/ical/(.*)",
       "dest": "api/index.py"
     },
