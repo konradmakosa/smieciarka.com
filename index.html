@@ -3,11 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Śmieciarka.com - Harmonogram wywozu odpadów Warszawa</title>
+  <title>Śmieciarka.com – Harmonogram wywozu śmieci Warszawa | Kiedy śmieciarka?</title>
+  <meta name="description" content="Sprawdź harmonogram wywozu śmieci w Warszawie. Wpisz adres i pobierz kalendarz wywozu odpadów (.ics) do Google Calendar, iPhone lub Outlook. Kiedy śmieciarka? Sprawdź teraz!">
+  <meta name="keywords" content="harmonogram wywozu śmieci Warszawa, kiedy śmieciarka, wywóz odpadów Warszawa, kalendarz śmieci, harmonogram odpadów">
+  <link rel="canonical" href="https://www.smieciarka.com/">
+  <meta property="og:title" content="Śmieciarka.com – Harmonogram wywozu śmieci Warszawa">
+  <meta property="og:description" content="Wpisz adres i sprawdź kiedy przyjedzie śmieciarka. Pobierz harmonogram do kalendarza (Google, iPhone, Outlook).">
+  <meta property="og:url" content="https://www.smieciarka.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/konradmakosa/smieciarka.com/main/public/tlo_desktop.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Śmieciarka.com – Harmonogram wywozu śmieci Warszawa">
+  <meta name="twitter:description" content="Sprawdź kiedy przyjedzie śmieciarka i dodaj do kalendarza.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Śmieciarka.com","url":"https://www.smieciarka.com","description":"Harmonogram wywozu śmieci dla Warszawy","applicationCategory":"UtilitiesApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"PLN"}}</script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" media="print" onload="this.media='all'"/>
   <style>
     html, body {
       margin: 0;
@@ -489,20 +500,25 @@
     let _mapMarker = null;
     let _mapTargetInput = null;
 
+    function _initMap() {
+      _map = L.map('map').setView([52.2297, 21.0122], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+      }).addTo(_map);
+      _map.on('click', onMapClick);
+    }
+
     function openMap(target) {
       _mapTargetInput = target;
       document.getElementById('map-modal').classList.add('open');
-      setTimeout(() => {
-        if (!_map) {
-          _map = L.map('map').setView([52.2297, 21.0122], 13);
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap'
-          }).addTo(_map);
-          _map.on('click', onMapClick);
-        } else {
-          _map.invalidateSize();
-        }
-      }, 100);
+      if (!window.L) {
+        const s = document.createElement('script');
+        s.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+        s.onload = () => setTimeout(_initMap, 100);
+        document.head.appendChild(s);
+      } else {
+        setTimeout(() => { if (!_map) _initMap(); else _map.invalidateSize(); }, 100);
+      }
     }
 
     function closeMap() {
