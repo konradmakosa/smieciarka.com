@@ -210,24 +210,22 @@
       </div>
 
       <!-- Adres -->
-      <div style="margin-bottom:12px">
-        <label for="addressInputM" style="display:block;font-size:0.8rem;font-weight:600;color:#374151;margin-bottom:4px">Adres</label>
-        <div style="display:flex;gap:8px">
-          <div style="position:relative;flex:1">
-            <input
-              type="text"
-              id="addressInputM"
-              placeholder="np. Płatnicza 65"
-              autocomplete="off"
-              style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:12px;font-size:0.95rem;color:#111;outline:none;box-sizing:border-box"
-            >
-            <div class="autocomplete-list" id="acListM"></div>
-          </div>
-          <button
-            onclick="searchAddressM()"
-            style="padding:10px 18px;background:#16a34a;color:white;font-weight:700;border:none;border-radius:12px;font-size:0.95rem;cursor:pointer"
-          >Szukaj</button>
+      <div style="margin-bottom:16px">
+        <label for="addressInputM" style="display:block;font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:6px">Adres</label>
+        <div style="position:relative">
+          <input
+            type="text"
+            id="addressInputM"
+            placeholder="np. Płatnicza 65"
+            autocomplete="off"
+            style="width:100%;padding:14px 16px;border:1px solid #d1d5db;border-radius:12px;font-size:1.05rem;color:#111;outline:none;box-sizing:border-box;min-height:48px"
+          >
+          <div class="autocomplete-list" id="acListM"></div>
         </div>
+        <button
+          onclick="searchAddressM()"
+          style="width:100%;margin-top:10px;padding:14px;background:#16a34a;color:white;font-weight:700;border:none;border-radius:12px;font-size:1rem;cursor:pointer;min-height:48px"
+        >Szukaj</button>
         <p style="font-size:0.75rem;color:#6b7280;margin:6px 0 0">Format: ulica numer (np. "Marszałkowska 100")</p>
       </div>
 

@@ -277,8 +277,8 @@ def districts_page():
     for d in by_district:
         by_district[d].sort(key=lambda x: x["street"])
 
-    title = "Wszystkie ulice Warszawy - harmonogram wywozu śmieci"
-    desc = "Spis ulic i dzielnic Warszawy. Sprawdź harmonogram wywozu odpadów dla każdej ulicy."
+    title = "Wybrane ulice Warszawy - harmonogram wywozu śmieci"
+    desc = "Spis ulic i dzielnic Warszawy objętych harmonogramem wywozu odpadów. Sprawdź terminy dla swojej ulicy."
     parts = [f"<!DOCTYPE html><html lang='pl'><head><meta charset='UTF-8'><title>{title}</title><meta name='description' content='{desc}'><link rel='canonical' href='https://www.smieciarka.com/dzielnice/'></head><body style='font-family:sans-serif;max-width:900px;margin:40px auto;padding:20px'><h1>🗑️ {title}</h1><p>{desc}</p>"]
     for district in sorted(by_district.keys()):
         parts.append(f"<h2 style='margin-top:32px;color:#16a34a'>{district}</h2><ul style='columns:2;column-gap:40px;list-style:none;padding:0;margin:0'>")
