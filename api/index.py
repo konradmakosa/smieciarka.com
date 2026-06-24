@@ -258,6 +258,16 @@ def sitemap():
     return Response(content='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>', media_type="application/xml")
 
 
+@app.get("/fb-share.jpg")
+def fb_share_image():
+    """Obraz do podglądu Facebook / Open Graph"""
+    img_path = os.path.join(_project_root, "public", "fb-share.jpg")
+    if os.path.exists(img_path):
+        with open(img_path, "rb") as f:
+            return Response(content=f.read(), media_type="image/jpeg")
+    return Response(content="Not found", media_type="text/plain", status_code=404)
+
+
 @app.get("/dzielnice/")
 def districts_page():
     """Spis dzielnic i ulic - wewnętrzne linki SEO"""
