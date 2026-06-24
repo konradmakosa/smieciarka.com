@@ -184,11 +184,9 @@ def search_addresses(request: Request, q: str = Query(..., min_length=3, descrip
             }
             return ''.join(polish_map.get(c, c) for c in text)
         
-        import urllib.parse
         # Link z polskimi znakami (URL-encoded) - API Warszawy wymaga polskich znaków!
         # np. "Płatnicza 65" -> "P%C5%82atnicza-65"
-        # Link bez PL znaków (ładniejszy): platnicza-65
-        url_path = normalize_for_url(q).replace(' ', '-').lower()
+        url_path = q.replace(' ', '-').replace('/', '-')
         
         today = datetime.now().date()
         future = sorted([c for c in collections if c.date >= today], key=lambda c: c.date)
@@ -428,23 +426,8 @@ def generate_ical(request: Request, address_path: str):
     """
     import traceback
     try:
-        # Odtwórz adres z URL (zamień myślniki na spacje)
-        address_normalized = address_path.replace("-", " ").replace("_", " ")
-        
-        # Zamień z powrotem na polskie znaki (API Warszawy wymaga oryginału!)
-        def denormalize(text):
-            text = text.title()
-            result = []
-            for i, char in enumerate(text):
-                if char == 'l' and i > 0 and text[i-1].lower() in 'ptkbdgmnrswz':
-                    result.append('ł')
-                elif char == 'L' and i > 0 and text[i-1].lower() in 'ptkbdgmnrswz':
-                    result.append('Ł')
-                else:
-                    result.append(char)
-            return ''.join(result)
-        
-        address_original = denormalize(address_normalized)
+        # Odtwórz adres z URL (zamień myślniki na spacje, zostaw polskie znaki)
+        address_original = address_path.replace("-", " ").replace("_", " ")
         
         # Pobierz bezpośrednio z API Warszawy
         scraper = WarsawWasteScraper(street_address=address_original)
