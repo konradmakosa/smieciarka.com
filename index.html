@@ -562,6 +562,20 @@
         document.getElementById('map-loading').style.display = 'none';
       }
     }
+
+    // Obsługa ?q= z podstron /ulica/
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get('q');
+      if (!q) return;
+      const isMobile = window.innerWidth <= 768;
+      const input = document.getElementById(isMobile ? 'addressInputM' : 'addressInput');
+      if (input) {
+        input.value = q;
+        input.focus();
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    })();
   </script>
 
   <!-- MODAL MAPA -->

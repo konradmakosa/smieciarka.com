@@ -295,10 +295,25 @@ def districts_page():
 @app.get("/ulica/{slug:path}")
 def address_page(slug: str):
     """Dedykowana strona SEO dla adresu"""
-    from urllib.parse import unquote
+    from urllib.parse import unquote, quote
+    streets_path = os.path.join(_project_root, "seo", "streets.json")
+    street_name = None
+    if os.path.exists(streets_path):
+        with open(streets_path, "r", encoding="utf-8") as f:
+            streets = json.load(f)
+        info = streets.get(slug) or streets.get(unquote(slug))
+        if info:
+            street_name = info.get("street", "").title()
+    if not street_name:
+        address = unquote(slug).replace("-", " ").title()
+        import re
+        m = re.search(r'^(\d+|[A-ZĄĆĘŁŃÓŚŹŻ][A-ZĄĆĘŁŃÓŚŹŻa-ząćęłńóśźż\s]+?)\s+\d{2}\s\d{3}\b', address)
+        street_name = m.group(1) if m else address
+
     address = unquote(slug).replace("-", " ").title()
     title = f"Harmonogram wywozu śmieci {address} Warszawa"
     desc = f"Sprawdź kiedy odbierają śmieci przy ul. {address} w Warszawie. Pobierz harmonogram wywozu odpadów do kalendarza."
+    q = quote(street_name)
     html = f"""<!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -315,9 +330,9 @@ def address_page(slug: str):
 <body style="font-family:sans-serif;max-width:600px;margin:40px auto;padding:20px">
   <h1 style="font-size:1.4rem;color:#16a34a">🗑️ {title}</h1>
   <p>{desc}</p>
-  <p style="margin:24px 0">Sprawdź dokładne terminy wywozu odpadów dla tej ulicy. Pobierz gotowy plik kalendarza (.ics) i dodaj do Google Calendar, Outlook lub kalendarza iPhone.</p>
-  <a href="/?q={address}" style="display:inline-block;padding:14px 28px;background:#16a34a;color:white;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
-    Sprawdź harmonogram dla {address}
+  <p style="margin:24px 0">Sprawdź dokładne terminy wywozu odpadów dla tej ulicy. Wpisz numer domu i pobierz gotowy plik kalendarza (.ics).</p>
+  <a href="/?q={q}" style="display:inline-block;padding:14px 28px;background:#16a34a;color:white;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
+    Sprawdź harmonogram dla {street_name}
   </a>
   <div style="margin-top:32px;padding:16px;background:#f3f4f6;border-radius:8px">
     <h2 style="font-size:1rem;margin:0 0 8px;color:#111">Co znajdziesz?</h2>
