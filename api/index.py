@@ -258,6 +258,11 @@ def sitemap():
     return Response(content='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>', media_type="application/xml")
 
 
+@app.get("/fb-share")
+def fb_share_test():
+    return Response(content="OK fb-share", media_type="text/plain")
+
+
 @app.get("/fb-share.jpg")
 def fb_share_image():
     """Obraz do podglądu Facebook / Open Graph"""
