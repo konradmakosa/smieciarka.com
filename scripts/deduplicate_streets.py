@@ -1,4 +1,5 @@
 import json, re, os
+from urllib.parse import quote
 
 OUT_DIR = "seo"
 BASE_URL = "https://www.smieciarka.com"
@@ -22,7 +23,8 @@ for addr_id, full_name in all_addresses.items():
     if not name_parts:
         continue
     street = " ".join(name_parts)
-    slug = f"{street}-{postcode}-{district}".lower().replace(" ", "-")
+    raw_slug = f"{street}-{postcode}-{district}".lower().replace(" ", "-")
+    slug = quote(raw_slug, safe="-/")
     if slug not in unique_streets:
         unique_streets[slug] = {"street": street, "district": district, "postcode": postcode}
 

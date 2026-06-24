@@ -261,7 +261,8 @@ def sitemap():
 @app.get("/ulica/{slug:path}")
 def address_page(slug: str):
     """Dedykowana strona SEO dla adresu"""
-    address = slug.replace("-", " ").title()
+    from urllib.parse import unquote
+    address = unquote(slug).replace("-", " ").title()
     title = f"Harmonogram wywozu śmieci {address} Warszawa"
     desc = f"Sprawdź kiedy odbierają śmieci przy ul. {address} w Warszawie. Pobierz harmonogram wywozu odpadów do kalendarza."
     html = f"""<!DOCTYPE html>
